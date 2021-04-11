@@ -1,0 +1,139 @@
+
+
+================================================================
+== Vivado HLS Report for 'DigitRec_entry3'
+================================================================
+* Date:           Sat Apr 10 19:07:29 2021
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        digit_t1
+* Solution:       latency
+* Product family: kintexuplus
+* Target device:  xcku5p-ffvb676-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     1.838|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    0|    0|    0|    0|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      -|       0|       2|    -|
+|FIFO             |        -|      -|       -|       -|    -|
+|Instance         |        -|      -|       -|       -|    -|
+|Memory           |        -|      -|       -|       -|    -|
+|Multiplexer      |        -|      -|       -|      36|    -|
+|Register         |        -|      -|       3|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |        0|      0|       3|      38|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |      960|   1824|  433920|  216960|   64|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |        0|      0|   ~0   |   ~0   |    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+-------+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |ap_block_state1  |    or    |      0|  0|   2|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+    |Total            |          |      0|  0|   2|           1|           1|
+    +-----------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +------------------------+----+-----------+-----+-----------+
+    |          Name          | LUT| Input Size| Bits| Total Bits|
+    +------------------------+----+-----------+-----+-----------+
+    |ap_done                 |   9|          2|    1|          2|
+    |num_test_out_blk_n      |   9|          2|    1|          2|
+    |num_training_out_blk_n  |   9|          2|    1|          2|
+    |real_start              |   9|          2|    1|          2|
+    +------------------------+----+-----------+-----+-----------+
+    |Total                   |  36|          8|    4|          8|
+    +------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------+---+----+-----+-----------+
+    |      Name      | FF| LUT| Bits| Const Bits|
+    +----------------+---+----+-----+-----------+
+    |ap_CS_fsm       |  1|   0|    1|          0|
+    |ap_done_reg     |  1|   0|    1|          0|
+    |start_once_reg  |  1|   0|    1|          0|
+    +----------------+---+----+-----+-----------+
+    |Total           |  3|   0|    3|          0|
+    +----------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------------+-----+-----+------------+------------------+--------------+
+|        RTL Ports        | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++-------------------------+-----+-----+------------+------------------+--------------+
+|ap_clk                   |  in |    1| ap_ctrl_hs |  DigitRec.entry3 | return value |
+|ap_rst                   |  in |    1| ap_ctrl_hs |  DigitRec.entry3 | return value |
+|ap_start                 |  in |    1| ap_ctrl_hs |  DigitRec.entry3 | return value |
+|start_full_n             |  in |    1| ap_ctrl_hs |  DigitRec.entry3 | return value |
+|ap_done                  | out |    1| ap_ctrl_hs |  DigitRec.entry3 | return value |
+|ap_continue              |  in |    1| ap_ctrl_hs |  DigitRec.entry3 | return value |
+|ap_idle                  | out |    1| ap_ctrl_hs |  DigitRec.entry3 | return value |
+|ap_ready                 | out |    1| ap_ctrl_hs |  DigitRec.entry3 | return value |
+|start_out                | out |    1| ap_ctrl_hs |  DigitRec.entry3 | return value |
+|start_write              | out |    1| ap_ctrl_hs |  DigitRec.entry3 | return value |
+|num_training             |  in |   32|   ap_none  |   num_training   |    scalar    |
+|num_test                 |  in |   32|   ap_none  |     num_test     |    scalar    |
+|num_training_out_din     | out |   32|   ap_fifo  | num_training_out |    pointer   |
+|num_training_out_full_n  |  in |    1|   ap_fifo  | num_training_out |    pointer   |
+|num_training_out_write   | out |    1|   ap_fifo  | num_training_out |    pointer   |
+|num_test_out_din         | out |   32|   ap_fifo  |   num_test_out   |    pointer   |
+|num_test_out_full_n      |  in |    1|   ap_fifo  |   num_test_out   |    pointer   |
+|num_test_out_write       | out |    1|   ap_fifo  |   num_test_out   |    pointer   |
++-------------------------+-----+-----+------------+------------------+--------------+
+

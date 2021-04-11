@@ -1,0 +1,1376 @@
+INFO-FLOW: Workspace C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency opened at Sat Apr 10 19:07:04 +0530 2021
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintexuplus/kintexuplus 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.lib 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintexuplus/dsp48e2.hlp 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintexuplus/kintexuplus.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.103 sec.
+Command     ap_source done; 0.103 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib C:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintexuplus/kintexuplus_fpv7 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute     source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintexuplus/kintexuplus_fpv7.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xcku5p-ffvb676-2-e 
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data single -quiet 
+Command       ap_part_info done; 0.39 sec.
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data info 
+Execute       add_library xilinx/kintexuplus/kintexuplus:xcku5p:-ffvb676:-2-e 
+Execute         get_default_platform 
+Execute         license_isbetapart xcku5p 
+Command         license_isbetapart done; error code: 1; 
+Execute         ap_part_info -data single -name xcku5p-ffvb676-2-e 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data resources 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info 
+Execute         config_chip_info -quiet -resource {SLICE 27120} {LUT 216960} {FF 433920} {DSP48E 1824} {BRAM 960} {URAM 64} 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info 
+Execute         config_chip_info -quiet -speed medium 
+Execute       add_library xilinx/kintexuplus/kintexuplus_fpv7 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib C:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintexuplus/kintexuplus_fpv7 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute               source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute               source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintexuplus/kintexuplus_fpv7.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO: [HLS 200-10] Setting target device to 'xcku5p-ffvb676-2-e'
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data info 
+Execute       get_default_platform 
+Command     set_part done; 0.485 sec.
+Execute     ap_part_info -data single -name xcku5p-ffvb676-2-e 
+Execute     ap_part_info -name xcku5p-ffvb676-2-e -data resources 
+Execute     ap_part_info -name xcku5p-ffvb676-2-e -data info 
+Execute     ap_part_info -name xcku5p-ffvb676-2-e -data info 
+Execute     config_chip_info -quiet -resource {SLICE 27120} {LUT 216960} {FF 433920} {DSP48E 1824} {BRAM 960} {URAM 64} 
+Execute     ap_part_info -name xcku5p-ffvb676-2-e -data info 
+Execute     config_chip_info -quiet -speed medium 
+Command   open_solution done; 0.632 sec.
+Execute   set_part xcku5p-ffvb676-2-e 
+Execute     ap_part_info -name xcku5p-ffvb676-2-e -data single -quiet 
+Execute     ap_part_info -name xcku5p-ffvb676-2-e -data info 
+Execute     add_library xilinx/kintexuplus/kintexuplus:xcku5p:-ffvb676:-2-e 
+Execute       get_default_platform 
+Execute       license_isbetapart xcku5p 
+Command       license_isbetapart done; error code: 1; 
+Execute       ap_part_info -data single -name xcku5p-ffvb676-2-e 
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data resources 
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data info 
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data info 
+Execute       config_chip_info -quiet -resource {SLICE 27120} {LUT 216960} {FF 433920} {DSP48E 1824} {BRAM 960} {URAM 64} 
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data info 
+Execute       config_chip_info -quiet -speed medium 
+Execute     add_library xilinx/kintexuplus/kintexuplus_fpv7 
+Execute       get_default_platform 
+Execute       open_platform DefaultPlatform 
+Execute       import_lib C:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintexuplus/kintexuplus_fpv7 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.lib 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.hlp 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/target_info.tcl 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.hlp 
+Execute               source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.hlp 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintexuplus/kintexuplus_fpv7.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     ap_part_info -name xcku5p-ffvb676-2-e -data info 
+Execute     get_default_platform 
+Execute   create_clock -period 10 -name default 
+Execute   csynth_design 
+Execute     get_config_compile -dump_cfg 
+Execute     get_config_compile -effort 
+Execute     get_config_compile -enable_clang39 
+Execute     get_config_compile -g 
+Execute     get_config_compile -ng 
+Execute     get_config_compile -opt_fp 
+Execute     get_config_compile -skip_cdt 
+Execute     get_config_compile -skip_syncheck 
+Execute     get_config_compile -skip_transform 
+Execute     get_config_compile -keep_printf 
+Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -opt_fp=0 -from_csynth_design=1 
+Execute       get_config_schedule -relax_ii_for_timing 
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+Execute       get_config_schedule -suppress_dependence_error_break 
+INFO: [HLS 200-10] Analyzing design file 'digitrec.cpp' ... 
+INFO-FLOW: Compiling one TU...
+Execute       is_m_axi_addr64 
+INFO-FLOW: Handling digitrec.cpp as C++
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data info 
+Execute       is_encrypted digitrec.cpp 
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data info 
+INFO-FLOW: Running: GCC PP
+INFO-FLOW: Source preprocessing
+Execute       clang  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2019.1/msys" -hls  -fno-exceptions  -D__llvm__  -E "digitrec.cpp"     -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  -o "C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.pp.0.cpp" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -fno-exceptions -D__llvm__ -E digitrec.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.pp.0.cpp
+Command       clang done; 0.902 sec.
+Execute       tidy_31 xilinx-xfmat-array-geometry C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.pp.0.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-xfmat-array-geometry -quiet -fix C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.428 sec.
+INFO-FLOW: Syntax Checking before pre-processing...
+Execute       clang -syntaxcheck -src C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.pp.0.cpp  -fno-limit-debug-info -gcc-toolchain "C:/Xilinx/Vivado/2019.1/msys" -hls    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit  -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__  "C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.pp.0.cpp"  -o "C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/useless.bc"  
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -fno-threadsafe-statics -fno-use-cxa-atexit -D__CLANG_3_1__ -D__cdecl= -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.pp.0.cpp -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/useless.bc
+Command       clang done; 1.115 sec.
+INFO-FLOW: Done: GCC PP time: 2.4 seconds per iteration
+Execute       source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/huddle.tcl 
+Execute       source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/json2huddle.tcl 
+Execute         source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/try/try.tcl 
+Execute       list_core -type functional_unit 
+Execute       tidy_31 xilinx-systemc-detector C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.pp.0.cpp std=gnu++98 -directive=C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/.systemc_flag 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-systemc-detector -import-directive=C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/.systemc_flag -quiet -fix-errors C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.408 sec.
+INFO-FLOW: Running: tidy-3.1 CDT preprocess
+Execute       tidy_31 xilinx-directive2pragma C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.pp.0.cpp std=gnu++98 -directive=C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/all.directive.json 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-directive2pragma -import-directive=C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/all.directive.json -quiet -fix-errors C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.401 sec.
+Execute       get_config_dataflow -strict_mode 
+Execute       ap_eval exec -ignorestderr C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/xilinx-dataflow-lawyer.digitrec.pp.0.cpp.diag.yml C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 -fstrict-dataflow > C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/xilinx-dataflow-lawyer.digitrec.pp.0.cpp.out.log 2> C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/xilinx-dataflow-lawyer.digitrec.pp.0.cpp.err.log 
+Command       ap_eval done; 0.261 sec.
+Execute       source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/yaml/yaml.tcl 
+Execute         source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/cmdline/cmdline.tcl 
+WARNING: [HLS 214-111] Static variables and non-static stream cannot be used inside a dataflow region: digitrec.cpp:151:24
+Execute       send_msg_by_id WARNING @200-471@%s%s 1 digitrec.cpp 
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file digitrec.cpp
+Execute       tidy_31 -errorcheck xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.pp.0.cpp std=gnu++98 
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -export-fixes=C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/tidy-3.1.digitrec.pp.0.cpp.diag.yml -header-filter=.* -checks=-*,xilinx-constantarray-param,xilinx-resource-pragma-transformer,xilinx-xfmat-array-geometry -quiet -fix-errors C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/tidy-3.1.digitrec.pp.0.cpp.out.log 2> C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/tidy-3.1.digitrec.pp.0.cpp.err.log 
+Command         ap_eval done; 0.898 sec.
+Execute         ap_eval exec -ignorestderr C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/xilinx-legacy-rewriter C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.pp.0.cpp -- -std=gnu++98 -fhls -ferror-limit=0 > C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/xilinx-legacy-rewriter.digitrec.pp.0.cpp.out.log 2> C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/xilinx-legacy-rewriter.digitrec.pp.0.cpp.err.log 
+Command         ap_eval done; 0.286 sec.
+Command       tidy_31 done; 1.215 sec.
+INFO-FLOW: Done: tidy-3.1 CDT preprocess time: 1.9 seconds per iteration
+INFO-FLOW: Pragma Handling...
+Execute       tidy_31 xilinx-ssdm-intrinsics-arguments C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.pragma.1.cpp std=gnu++98 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-ssdm-intrinsics-arguments -quiet -fix-errors C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.pragma.1.cpp -- -std=gnu++98 -fhls -ferror-limit=0
+Command       tidy_31 done; 0.844 sec.
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data info 
+INFO-FLOW: Processing labels
+Execute       clang -src C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.pragma.2.cpp  -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions  -D__llvm__  -w  "C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.pragma.2.cpp"    -fno-math-errno -c -emit-llvm -O0  -mllvm -disable-llvm-optzns -fno-threadsafe-statics  -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot" -I "C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc" -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o "C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.bc" 
+INFO-FLOW: exec C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin/clang -fno-limit-debug-info -gcc-toolchain C:/Xilinx/Vivado/2019.1/msys -hls -hls-analyze-label -hls-analyze-pragma -fno-exceptions -D__llvm__ -w C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.pragma.2.cpp -fno-math-errno -c -emit-llvm -O0 -mllvm -disable-llvm-optzns -fno-threadsafe-statics -fno-use-cxa-atexit -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot -I C:/Xilinx/Vivado/2019.1/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E2__ -g -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.bc
+Command       clang done; 1.137 sec.
+INFO-FLOW: Linking Debug ...
+Execute       llvm-ld C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/digitrec.g.bc -hls-opt -except-internalize DigitRec -LC:/Xilinx/Vivado/2019.1/win64/lib -lhlsm -lhlsmc++ -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/a.g 
+Command       llvm-ld done; 0.858 sec.
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 175.246 ; gain = 83.723
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 175.246 ; gain = 83.723
+Execute       get_config_sdx -target 
+Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
+Execute         cleanup_all_models 
+INFO: [HLS 200-10] Starting code transformations ...
+Execute         transform -promote-dbg-pointer C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/a.pp.bc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/a.pp.0.bc -f 
+Execute         llvm-ld C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/a.pp.0.bc -disable-opt -LC:/Xilinx/Vivado/2019.1/win64/lib -lfloatconversion -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/a.g.0 
+Command         llvm-ld done; 0.446 sec.
+INFO-FLOW: Running Standard Transforms...
+Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -prune-eh -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top DigitRec -deadargelim -mem2reg -instcombine -dce -presyn-prepare -auto-rom-infer -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -func-inst -deadargelim -auto-shift-reg-idiom -promote-dbg-pointer -norm-name C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/a.g.0.bc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/a.g.1.bc -f -phase std-opt 
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 175.246 ; gain = 83.723
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO-FLOW: Checking Synthesizability 1/2..
+Execute         transform -hls -syn-check -check-rec-only -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -function-uniquify -directive-preproc -mem2reg -dse -dce -auto-rom-infer -dce -pag -array-normalize -instcombine -dce -warn-fifo-pointer -array-seg-normalize -instcombine -dce -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -disaggr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -function-uniquify -directive-preproc -mem2reg -dse -dce -globaldce -check-dspbuiltin C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/a.g.1.bc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/a.g.2.prechk.bc -f 
+INFO: [XFORM 203-602] Inlining function 'popcount' into 'update_knn' (digitrec.cpp:35) automatically.
+INFO-FLOW: Checking Synthesizability 2/2..
+Execute         transform -syn-check C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/a.g.2.prechk.bc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/a.g.2.bc -f -phase syn-check 
+WARNING: [SYNCHK 200-23] digitrec.cpp:18: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 175.246 ; gain = 83.723
+INFO-FLOW: Compiler optimizing ...
+INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/a.g.1.bc to C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/a.o.1.bc
+INFO-FLOW: Presyn 1...
+Execute         transform -hls -tmp C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db -interface-port-rename -type-info -function-uniquify -directive-preproc -mem2reg -dse -dce -disaggr -scalarrepl -norm-name -deadargelim -mem2reg -instcombine -dce -simplifycfg -auto-rom-infer -dce -function-uniquify -resource-proc -clib-intrinsic-prepare -dce -func-buffer -dce -pag -array-normalize -func-legal -instcombine -gvn -constprop -dce -simplifycfg -mem2reg -globaldce -resolve-double-ptr -dce -deadargelim -dce -instcombine -ptrArgReplace -mem2reg -dce -array-seg-normalize -deadargelim -instcombine -dce -pointer-simplify -dce -port-alignment -dce -interface-preproc -data-pack -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -loop-simplify -indvars -instcombine -gvn -loop-simplify -mem2reg -dce -find-region -instcombine -auto-loop-pipeline -inst-simplify -interface-preproc -cfgopt -instcombine -indvars -auto-loop-unroll -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -clean-region -attach-range -gvn -inst-simplify -constprop -simplifycfg -dce -pointer-simplify -dce -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -auto-par -instcombine -dce -array-transform-check -array-reshape -instcombine -simplifycfg -dce -ptrArgReplace -deadargelim -mem2reg -instcombine -simplifycfg -dce -indvars -loop-simplify -loop-bound -xunroll -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -duplicate-dataflow-processes -globaldce -instcombine -array-partition -instcombine -simplifycfg -dce -ptrArgReplace -global-constprop -deadargelim -mem2reg -func-legal -dce -global-constprop -deadargelim -mem2reg -simplifycfg -dce -merge-param -deadargelim -globalopt -constprop -dce -array-promote -constprop -dce -ptrArgReplace -mem2reg -simplifycfg -dce -mem-intrinsic-preproc -dce -global-internalize -global-privatize -mem2reg -globaldce -promote-global-argument -ptrArgReplace -mem2reg -dce -globalopt -mergereturn -simplify-global-access -mem2reg -dce -pointer-simplify -dce -functionattrs -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -dce -norm-name -function-inline -complex-op-raise -inst-simplify -globaldce -func-inst -constprop -instcombine -simplifycfg -dce -func-legal -dce -loop-bound -arraycheck -bitwidthmin -on-by-dataflow -loop-delete -instcombine -simplifycfg -globaldce -dce -gvn -deadargelim -dce -loop-simplify -clean-region -simplifycfg -propagate-stable-arguments -loop-stream -instcombine -simplifycfg -dce -globaldce -duplicate-dataflow-processes -stream-intrinsic-preproc -dce -check-ap-stream -loop-simplify -eliminate-keepreads -extract-dataflow-in-loop -loop-simplify -dce -gvn -deadargelim -dse -check-dataflow-syntax -legalize-stream-variable -legalize-global -extract-subproc -dce -dead-channel-elimination -canonicalize-gep -globaldce -dce -gvn -deadargelim -annotate-dataflow-channels -scalar-propagation -deadargelim -globaldce -mem2reg -check-dataflow-channels -function-stream -dce -globaldce -prop-fifo-spec -internal-stream-gen -canonicalize-gep -globaldce -dce -gvn -deadargelim -mergereturn -indvars -loop-simplify -instcombine -array-stream -array-seg-normalize -array-partition -func-legal -instcombine -simplifycfg -dce -bundle-memfifo-ops -deadargelim -function-uniquify -directive-preproc -mem2reg -dse -dce -group-axi-access -licm -simplifycfg -dce -loop-delete -norm-name C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/a.o.1.bc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/a.o.1.tmp.bc -f 
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'popcount' (digitrec.cpp:17:27).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'TRAINING_LOOP' (digitrec.cpp:193) in function 'DigitRec' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'INSERTION_SORT_OUTER' (digitrec.cpp:95) in function 'knn_vote' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'update_knn' (digitrec.cpp:27).
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 18000 for loop 'Loop-0' (digitrec.cpp:166:1) in function 'DigitRec'.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (digitrec.cpp:17) in function 'popcount' completely with a factor of 256.
+INFO: [HLS 200-489] Unrolling loop 'SET_KNN_SET' (digitrec.cpp:187) in function 'DigitRec' completely with a factor of 30.
+INFO: [HLS 200-489] Unrolling loop 'LANES' (digitrec.cpp:195) in function 'DigitRec' completely with a factor of 10.
+INFO: [HLS 200-489] Unrolling loop 'INIT_1' (digitrec.cpp:81) in function 'knn_vote' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'INIT_2' (digitrec.cpp:87) in function 'knn_vote' completely with a factor of 10.
+INFO: [HLS 200-489] Unrolling loop 'INSERTION_SORT_INNER' (digitrec.cpp:98) in function 'knn_vote' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'INSERT' (digitrec.cpp:104) in function 'knn_vote' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VOTE' (digitrec.cpp:127) in function 'knn_vote' completely with a factor of 10.
+INFO: [HLS 200-489] Unrolling loop 'FIND_MAX_DIST' (digitrec.cpp:42) in function 'update_knn' completely with a factor of 3.
+INFO: [XFORM 203-101] Partitioning array 'knn_set' (digitrec.cpp:148) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'training_set.V'  in dimension 1 with a block factor 10.
+INFO: [XFORM 203-101] Partitioning array 'min_distance_list' (digitrec.cpp:65) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'label_list' (digitrec.cpp:68) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'vote_list' (digitrec.cpp:71) in dimension 1 completely.
+INFO: [XFORM 203-721] Change variable 'test_set.V' to FIFO automatically.
+INFO: [XFORM 203-721] Changing loop 'Loop_1_proc' (digitrec.cpp:165) to a process function for dataflow in function 'DigitRec'.
+INFO: [XFORM 203-721] Changing loop 'Loop_2_proc' (digitrec.cpp:172) to a process function for dataflow in function 'DigitRec'.
+INFO: [XFORM 203-721] Changing loop 'Loop_TEST_LOOP_proc' (digitrec.cpp:181) to a process function for dataflow in function 'DigitRec'.
+INFO: [XFORM 203-721] Changing loop 'Loop_4_proc' (digitrec.cpp:215) to a process function for dataflow in function 'DigitRec'.
+WARNING: [XFORM 203-713] Reading dataflow channel 'global_training_set.V' in the middle of dataflow may stall the dataflow pipeline:
+WARNING: [XFORM 203-713] Argument 'global_training_set.V' has read operations in process function 'Loop_1_proc'.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.0'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.1'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.2'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.3'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.4'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.5'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.6'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.7'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.8'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.9'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] Reading dataflow channel 'global_test_set.V' in the middle of dataflow may stall the dataflow pipeline:
+WARNING: [XFORM 203-713] Argument 'global_test_set.V' has read operations in process function 'Loop_2_proc'.
+WARNING: [XFORM 203-713] All the elements of global array 'test_set.V'  should be updated in process function 'Loop_2_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'results'  should be updated in process function 'Loop_TEST_LOOP_proc27', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'global_results' should be updated in process function 'Loop_4_proc', otherwise it may not be synthesized correctly.
+INFO: [XFORM 203-712] Applying dataflow to function 'DigitRec', detected/extracted 5 process function(s): 
+	 'DigitRec.entry28'
+	 'Loop_1_proc'
+	 'Loop_2_proc'
+	 'Loop_TEST_LOOP_proc27'
+	 'Loop_4_proc'.
+Command         transform done; 4.073 sec.
+INFO-FLOW: Presyn 2...
+Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -auto-burst -norm-name C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/a.o.1.tmp.bc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/a.o.2.bc -f -phase presyn 
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (digitrec.cpp:95:54) to (digitrec.cpp:95:48) in function 'knn_vote'... converting 15 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'popcount' (digitrec.cpp:18:15)...252 expression(s) balanced.
+Command         transform done; 2.302 sec.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 175.246 ; gain = 83.723
+INFO-FLOW: Building ssdm...
+Execute         transform -hls -function-uniquify -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -licm -loop-dep -loop-bound -licm -loop-simplify -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg -loop-simplify -array-burst -promote-global-argument -dce -ptrLegalization -axi4-lower -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -disaggr -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -auto-rom-infer -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -cfgopt -simplifycfg -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -bitwidthmin -deadargelim -dce -canonicalize-dataflow -dce -scalar-propagation -deadargelim -globaldce -mem2reg -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable -deadargelim -inst-simplify -dce -gvn -mem2reg -instcombine -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -adce -deadargelim -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg -loop-simplify -mergereturn -inst-simplify -inst-rectify -dce -load-elim -bitop-lower -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -check-stream -norm-name -legalize -validate-dataflow -inst-clarity -bitwidth -dump-loop-dep-to-ir -check-all-ssdm -cdfg-build C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/a.o.2.bc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
+INFO: [XFORM 203-541] Flattening a loop nest 'LANES' (digitrec.cpp:94:39) in function 'knn_vote'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'TEST_LOOP' (digitrec.cpp:181:49) in function 'Loop_TEST_LOOP_proc27' : 
+
+the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [XFORM 203-631] Renaming function 'Loop_TEST_LOOP_proc27' to 'Loop_TEST_LOOP_proc2' (digitrec.cpp:144:61)
+Command         transform done; 3.749 sec.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 256.523 ; gain = 165.000
+INFO-FLOW: Finish building internal data model.
+Command       opt_and_import_c done; 10.756 sec.
+Command     elaborate done; 18.483 sec.
+Execute     autosyn -from_csynth_design=1 
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO-FLOW: Synthesizing C/C++ design ...
+INFO: [HLS 200-10] Synthesizing 'DigitRec' ...
+Execute       ap_set_top_model DigitRec 
+WARNING: [SYN 201-103] Legalizing function name 'DigitRec.entry3' to 'DigitRec_entry3'.
+WARNING: [SYN 201-103] Legalizing function name 'DigitRec.entry28' to 'DigitRec_entry28'.
+Execute       get_model_list DigitRec -filter all-wo-channel -topdown 
+Execute       preproc_iomode -model DigitRec 
+Execute       preproc_iomode -model Loop_4_proc 
+Execute       preproc_iomode -model Loop_TEST_LOOP_proc2 
+Execute       preproc_iomode -model knn_vote 
+Execute       preproc_iomode -model update_knn 
+Execute       preproc_iomode -model popcount 
+Execute       preproc_iomode -model Loop_2_proc 
+Execute       preproc_iomode -model Loop_1_proc 
+Execute       preproc_iomode -model DigitRec.entry28 
+Execute       preproc_iomode -model DigitRec.entry3 
+Execute       get_model_list DigitRec -filter all-wo-channel 
+INFO-FLOW: Model list for configure: DigitRec.entry3 DigitRec.entry28 Loop_1_proc Loop_2_proc popcount update_knn knn_vote Loop_TEST_LOOP_proc2 Loop_4_proc DigitRec
+INFO-FLOW: Configuring Module : DigitRec.entry3 ...
+Execute       set_default_model DigitRec.entry3 
+Execute       apply_spec_resource_limit DigitRec.entry3 
+INFO-FLOW: Configuring Module : DigitRec.entry28 ...
+Execute       set_default_model DigitRec.entry28 
+Execute       apply_spec_resource_limit DigitRec.entry28 
+INFO-FLOW: Configuring Module : Loop_1_proc ...
+Execute       set_default_model Loop_1_proc 
+Execute       apply_spec_resource_limit Loop_1_proc 
+INFO-FLOW: Configuring Module : Loop_2_proc ...
+Execute       set_default_model Loop_2_proc 
+Execute       apply_spec_resource_limit Loop_2_proc 
+INFO-FLOW: Configuring Module : popcount ...
+Execute       set_default_model popcount 
+Execute       apply_spec_resource_limit popcount 
+INFO-FLOW: Configuring Module : update_knn ...
+Execute       set_default_model update_knn 
+Execute       apply_spec_resource_limit update_knn 
+INFO-FLOW: Configuring Module : knn_vote ...
+Execute       set_default_model knn_vote 
+Execute       apply_spec_resource_limit knn_vote 
+INFO-FLOW: Configuring Module : Loop_TEST_LOOP_proc2 ...
+Execute       set_default_model Loop_TEST_LOOP_proc2 
+Execute       apply_spec_resource_limit Loop_TEST_LOOP_proc2 
+INFO-FLOW: Configuring Module : Loop_4_proc ...
+Execute       set_default_model Loop_4_proc 
+Execute       apply_spec_resource_limit Loop_4_proc 
+INFO-FLOW: Configuring Module : DigitRec ...
+Execute       set_default_model DigitRec 
+Execute       apply_spec_resource_limit DigitRec 
+INFO-FLOW: Model list for preprocess: DigitRec.entry3 DigitRec.entry28 Loop_1_proc Loop_2_proc popcount update_knn knn_vote Loop_TEST_LOOP_proc2 Loop_4_proc DigitRec
+INFO-FLOW: Preprocessing Module: DigitRec.entry3 ...
+Execute       set_default_model DigitRec.entry3 
+Execute       cdfg_preprocess -model DigitRec.entry3 
+Execute       rtl_gen_preprocess DigitRec.entry3 
+INFO-FLOW: Preprocessing Module: DigitRec.entry28 ...
+Execute       set_default_model DigitRec.entry28 
+Execute       cdfg_preprocess -model DigitRec.entry28 
+Execute       rtl_gen_preprocess DigitRec.entry28 
+INFO-FLOW: Preprocessing Module: Loop_1_proc ...
+Execute       set_default_model Loop_1_proc 
+Execute       cdfg_preprocess -model Loop_1_proc 
+Execute       rtl_gen_preprocess Loop_1_proc 
+INFO-FLOW: Preprocessing Module: Loop_2_proc ...
+Execute       set_default_model Loop_2_proc 
+Execute       cdfg_preprocess -model Loop_2_proc 
+Execute       rtl_gen_preprocess Loop_2_proc 
+INFO-FLOW: Preprocessing Module: popcount ...
+Execute       set_default_model popcount 
+Execute       cdfg_preprocess -model popcount 
+Execute       rtl_gen_preprocess popcount 
+INFO-FLOW: Preprocessing Module: update_knn ...
+Execute       set_default_model update_knn 
+Execute       cdfg_preprocess -model update_knn 
+Execute       rtl_gen_preprocess update_knn 
+INFO-FLOW: Preprocessing Module: knn_vote ...
+Execute       set_default_model knn_vote 
+Execute       cdfg_preprocess -model knn_vote 
+Execute       rtl_gen_preprocess knn_vote 
+INFO-FLOW: Preprocessing Module: Loop_TEST_LOOP_proc2 ...
+Execute       set_default_model Loop_TEST_LOOP_proc2 
+Execute       cdfg_preprocess -model Loop_TEST_LOOP_proc2 
+Execute       rtl_gen_preprocess Loop_TEST_LOOP_proc2 
+INFO-FLOW: Preprocessing Module: Loop_4_proc ...
+Execute       set_default_model Loop_4_proc 
+Execute       cdfg_preprocess -model Loop_4_proc 
+Execute       rtl_gen_preprocess Loop_4_proc 
+INFO-FLOW: Preprocessing Module: DigitRec ...
+Execute       set_default_model DigitRec 
+Execute       cdfg_preprocess -model DigitRec 
+Execute       rtl_gen_preprocess DigitRec 
+INFO-FLOW: Model list for synthesis: DigitRec.entry3 DigitRec.entry28 Loop_1_proc Loop_2_proc popcount update_knn knn_vote Loop_TEST_LOOP_proc2 Loop_4_proc DigitRec
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DigitRec_entry3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model DigitRec.entry3 
+Execute       schedule -model DigitRec.entry3 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 19.691 seconds; current allocated memory: 204.258 MB.
+Execute       syn_report -verbosereport -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry3.verbose.sched.rpt 
+Execute       db_write -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry3.sched.adb -f 
+INFO-FLOW: Finish scheduling DigitRec.entry3.
+Execute       set_default_model DigitRec.entry3 
+Execute       bind -model DigitRec.entry3 
+BIND OPTION: model=DigitRec.entry3
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.071 seconds; current allocated memory: 204.319 MB.
+Execute       syn_report -verbosereport -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry3.verbose.bind.rpt 
+Execute       db_write -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry3.bind.adb -f 
+INFO-FLOW: Finish binding DigitRec.entry3.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DigitRec_entry28' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model DigitRec.entry28 
+Execute       schedule -model DigitRec.entry28 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.126 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.167 seconds; current allocated memory: 204.360 MB.
+Execute       syn_report -verbosereport -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry28.verbose.sched.rpt 
+Execute       db_write -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry28.sched.adb -f 
+INFO-FLOW: Finish scheduling DigitRec.entry28.
+Execute       set_default_model DigitRec.entry28 
+Execute       bind -model DigitRec.entry28 
+BIND OPTION: model=DigitRec.entry28
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.052 seconds; current allocated memory: 204.449 MB.
+Execute       syn_report -verbosereport -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry28.verbose.bind.rpt 
+Execute       db_write -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry28.bind.adb -f 
+INFO-FLOW: Finish binding DigitRec.entry28.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_1_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Loop_1_proc 
+Execute       schedule -model Loop_1_proc 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.078 seconds; current allocated memory: 204.648 MB.
+Execute       syn_report -verbosereport -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_1_proc.verbose.sched.rpt 
+Execute       db_write -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_1_proc.sched.adb -f 
+INFO-FLOW: Finish scheduling Loop_1_proc.
+Execute       set_default_model Loop_1_proc 
+Execute       bind -model Loop_1_proc 
+BIND OPTION: model=Loop_1_proc
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.072 seconds; current allocated memory: 204.892 MB.
+Execute       syn_report -verbosereport -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_1_proc.verbose.bind.rpt 
+Execute       db_write -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_1_proc.bind.adb -f 
+INFO-FLOW: Finish binding Loop_1_proc.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_2_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Loop_2_proc 
+Execute       schedule -model Loop_2_proc 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.139 seconds; current allocated memory: 204.954 MB.
+Execute       syn_report -verbosereport -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_2_proc.verbose.sched.rpt 
+Execute       db_write -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_2_proc.sched.adb -f 
+INFO-FLOW: Finish scheduling Loop_2_proc.
+Execute       set_default_model Loop_2_proc 
+Execute       bind -model Loop_2_proc 
+BIND OPTION: model=Loop_2_proc
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 205.046 MB.
+Execute       syn_report -verbosereport -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_2_proc.verbose.bind.rpt 
+Execute       db_write -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_2_proc.bind.adb -f 
+INFO-FLOW: Finish binding Loop_2_proc.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'popcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model popcount 
+Execute       schedule -model popcount 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'popcount'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.247 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.299 seconds; current allocated memory: 207.109 MB.
+Execute       syn_report -verbosereport -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/popcount.verbose.sched.rpt 
+Command       syn_report done; 0.105 sec.
+Execute       db_write -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/popcount.sched.adb -f 
+Command       db_write done; 0.205 sec.
+INFO-FLOW: Finish scheduling popcount.
+Execute       set_default_model popcount 
+Execute       bind -model popcount 
+BIND OPTION: model=popcount
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.116 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.455 seconds; current allocated memory: 209.532 MB.
+Execute       syn_report -verbosereport -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/popcount.verbose.bind.rpt 
+Command       syn_report done; 0.235 sec.
+Execute       db_write -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/popcount.bind.adb -f 
+Command       db_write done; 0.176 sec.
+INFO-FLOW: Finish binding popcount.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'update_knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model update_knn 
+Execute       schedule -model update_knn 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'update_knn'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.12 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.571 seconds; current allocated memory: 210.332 MB.
+Execute       syn_report -verbosereport -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/update_knn.verbose.sched.rpt 
+Execute       db_write -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/update_knn.sched.adb -f 
+INFO-FLOW: Finish scheduling update_knn.
+Execute       set_default_model update_knn 
+Execute       bind -model update_knn 
+BIND OPTION: model=update_knn
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 211.864 MB.
+Execute       syn_report -verbosereport -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/update_knn.verbose.bind.rpt 
+Command       syn_report done; 0.22 sec.
+Execute       db_write -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/update_knn.bind.adb -f 
+INFO-FLOW: Finish binding update_knn.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'knn_vote' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model knn_vote 
+Execute       schedule -model knn_vote 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LANES_INSERTION_SORT_OUTER'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'INCREMENT'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.411 seconds; current allocated memory: 212.659 MB.
+Execute       syn_report -verbosereport -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/knn_vote.verbose.sched.rpt 
+Execute       db_write -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/knn_vote.sched.adb -f 
+INFO-FLOW: Finish scheduling knn_vote.
+Execute       set_default_model knn_vote 
+Execute       bind -model knn_vote 
+BIND OPTION: model=knn_vote
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.148 seconds; current allocated memory: 213.608 MB.
+Execute       syn_report -verbosereport -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/knn_vote.verbose.bind.rpt 
+Execute       db_write -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/knn_vote.bind.adb -f 
+INFO-FLOW: Finish binding knn_vote.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_TEST_LOOP_proc2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Loop_TEST_LOOP_proc2 
+Execute       schedule -model Loop_TEST_LOOP_proc2 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'TRAINING_LOOP'.
+WARNING: [SCHED 204-68] The II Violation in module 'Loop_TEST_LOOP_proc2' (Loop: TRAINING_LOOP): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'call' operation ('call_ret9', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn' and 'call' operation ('call_ret', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn'.
+WARNING: [SCHED 204-68] The II Violation in module 'Loop_TEST_LOOP_proc2' (Loop: TRAINING_LOOP): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between 'call' operation ('call_ret9', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn' and 'call' operation ('call_ret', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn'.
+WARNING: [SCHED 204-68] The II Violation in module 'Loop_TEST_LOOP_proc2' (Loop: TRAINING_LOOP): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between 'call' operation ('call_ret9', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn' and 'call' operation ('call_ret', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn'.
+WARNING: [SCHED 204-68] The II Violation in module 'Loop_TEST_LOOP_proc2' (Loop: TRAINING_LOOP): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between 'call' operation ('call_ret9', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn' and 'call' operation ('call_ret', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn'.
+WARNING: [SCHED 204-68] The II Violation in module 'Loop_TEST_LOOP_proc2' (Loop: TRAINING_LOOP): Unable to enforce a carried dependence constraint (II = 19, distance = 1, offset = 1)
+   between 'call' operation ('call_ret9', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn' and 'call' operation ('call_ret', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 20, Depth = 22.
+INFO: [SCHED 204-11] Finished scheduling.
+Command       schedule done; 0.38 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.541 seconds; current allocated memory: 214.757 MB.
+Execute       syn_report -verbosereport -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_TEST_LOOP_proc2.verbose.sched.rpt 
+INFO: [HLS 200-434] Only 1 loops out of a total 2 loops have been pipelined in this design.
+Command       syn_report done; 0.188 sec.
+Execute       db_write -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_TEST_LOOP_proc2.sched.adb -f 
+INFO-FLOW: Finish scheduling Loop_TEST_LOOP_proc2.
+Execute       set_default_model Loop_TEST_LOOP_proc2 
+Execute       bind -model Loop_TEST_LOOP_proc2 
+BIND OPTION: model=Loop_TEST_LOOP_proc2
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.254 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.552 seconds; current allocated memory: 216.747 MB.
+Execute       syn_report -verbosereport -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_TEST_LOOP_proc2.verbose.bind.rpt 
+Command       syn_report done; 0.292 sec.
+Execute       db_write -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_TEST_LOOP_proc2.bind.adb -f 
+INFO-FLOW: Finish binding Loop_TEST_LOOP_proc2.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_4_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model Loop_4_proc 
+Execute       schedule -model Loop_4_proc 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.481 seconds; current allocated memory: 217.190 MB.
+Execute       syn_report -verbosereport -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_4_proc.verbose.sched.rpt 
+Execute       db_write -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_4_proc.sched.adb -f 
+INFO-FLOW: Finish scheduling Loop_4_proc.
+Execute       set_default_model Loop_4_proc 
+Execute       bind -model Loop_4_proc 
+BIND OPTION: model=Loop_4_proc
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.074 seconds; current allocated memory: 217.281 MB.
+Execute       syn_report -verbosereport -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_4_proc.verbose.bind.rpt 
+Execute       db_write -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_4_proc.bind.adb -f 
+INFO-FLOW: Finish binding Loop_4_proc.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DigitRec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       set_default_model DigitRec 
+Execute       schedule -model DigitRec 
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.078 seconds; current allocated memory: 217.357 MB.
+Execute       syn_report -verbosereport -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.verbose.sched.rpt 
+Execute       db_write -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.sched.adb -f 
+INFO-FLOW: Finish scheduling DigitRec.
+Execute       set_default_model DigitRec 
+Execute       bind -model DigitRec 
+BIND OPTION: model=DigitRec
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+Command       bind done; 0.297 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.348 seconds; current allocated memory: 217.896 MB.
+Execute       syn_report -verbosereport -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.verbose.bind.rpt 
+Command       syn_report done; 0.257 sec.
+Execute       db_write -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.bind.adb -f 
+INFO-FLOW: Finish binding DigitRec.
+Execute       get_model_list DigitRec -filter all-wo-channel 
+INFO-FLOW: Preprocessing for RTLGen ...
+Execute       rtl_gen_preprocess DigitRec.entry3 
+Execute       rtl_gen_preprocess DigitRec.entry28 
+Execute       rtl_gen_preprocess Loop_1_proc 
+Execute       rtl_gen_preprocess Loop_2_proc 
+Execute       rtl_gen_preprocess popcount 
+Execute       rtl_gen_preprocess update_knn 
+Execute       rtl_gen_preprocess knn_vote 
+Execute       rtl_gen_preprocess Loop_TEST_LOOP_proc2 
+Execute       rtl_gen_preprocess Loop_4_proc 
+Execute       rtl_gen_preprocess DigitRec 
+INFO-FLOW: Model list for RTL generation: DigitRec.entry3 DigitRec.entry28 Loop_1_proc Loop_2_proc popcount update_knn knn_vote Loop_TEST_LOOP_proc2 Loop_4_proc DigitRec
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DigitRec_entry3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model DigitRec.entry3 -vendor xilinx -mg_file C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry3.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DigitRec_entry3'.
+INFO: [HLS 200-111]  Elapsed time: 0.328 seconds; current allocated memory: 218.383 MB.
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.rtl_wrap.cfg.tcl 
+Execute       gen_rtl DigitRec.entry3 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/systemc/DigitRec_entry3 -synmodules DigitRec.entry3 DigitRec.entry28 Loop_1_proc Loop_2_proc popcount update_knn knn_vote Loop_TEST_LOOP_proc2 Loop_4_proc DigitRec 
+Execute       gen_rtl DigitRec.entry3 -style xilinx -f -lang vhdl -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/vhdl/DigitRec_entry3 
+Execute       gen_rtl DigitRec.entry3 -style xilinx -f -lang vlog -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/verilog/DigitRec_entry3 
+Execute       syn_report -csynth -model DigitRec.entry3 -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/report/DigitRec_entry3_csynth.rpt 
+Execute       syn_report -rtlxml -model DigitRec.entry3 -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/report/DigitRec_entry3_csynth.xml 
+Execute       syn_report -verbosereport -model DigitRec.entry3 -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry3.verbose.rpt 
+Execute       db_write -model DigitRec.entry3 -f -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry3.adb 
+Execute       gen_tb_info DigitRec.entry3 -p C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry3 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DigitRec_entry28' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model DigitRec.entry28 -vendor xilinx -mg_file C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry28.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DigitRec_entry28'.
+INFO: [HLS 200-111]  Elapsed time: 0.085 seconds; current allocated memory: 218.552 MB.
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.rtl_wrap.cfg.tcl 
+Execute       gen_rtl DigitRec.entry28 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/systemc/DigitRec_entry28 -synmodules DigitRec.entry3 DigitRec.entry28 Loop_1_proc Loop_2_proc popcount update_knn knn_vote Loop_TEST_LOOP_proc2 Loop_4_proc DigitRec 
+Execute       gen_rtl DigitRec.entry28 -style xilinx -f -lang vhdl -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/vhdl/DigitRec_entry28 
+Execute       gen_rtl DigitRec.entry28 -style xilinx -f -lang vlog -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/verilog/DigitRec_entry28 
+Execute       syn_report -csynth -model DigitRec.entry28 -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/report/DigitRec_entry28_csynth.rpt 
+Execute       syn_report -rtlxml -model DigitRec.entry28 -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/report/DigitRec_entry28_csynth.xml 
+Execute       syn_report -verbosereport -model DigitRec.entry28 -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry28.verbose.rpt 
+Execute       db_write -model DigitRec.entry28 -f -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry28.adb 
+Execute       gen_tb_info DigitRec.entry28 -p C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry28 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_1_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model Loop_1_proc -vendor xilinx -mg_file C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_1_proc.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_1_proc'.
+INFO: [HLS 200-111]  Elapsed time: 0.094 seconds; current allocated memory: 218.969 MB.
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Loop_1_proc -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/systemc/Loop_1_proc -synmodules DigitRec.entry3 DigitRec.entry28 Loop_1_proc Loop_2_proc popcount update_knn knn_vote Loop_TEST_LOOP_proc2 Loop_4_proc DigitRec 
+Execute       gen_rtl Loop_1_proc -style xilinx -f -lang vhdl -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/vhdl/Loop_1_proc 
+Execute       gen_rtl Loop_1_proc -style xilinx -f -lang vlog -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/verilog/Loop_1_proc 
+Execute       syn_report -csynth -model Loop_1_proc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/report/Loop_1_proc_csynth.rpt 
+Execute       syn_report -rtlxml -model Loop_1_proc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/report/Loop_1_proc_csynth.xml 
+Execute       syn_report -verbosereport -model Loop_1_proc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_1_proc.verbose.rpt 
+Execute       db_write -model Loop_1_proc -f -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_1_proc.adb 
+Execute       gen_tb_info Loop_1_proc -p C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_1_proc 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_2_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model Loop_2_proc -vendor xilinx -mg_file C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_2_proc.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_2_proc'.
+INFO: [HLS 200-111]  Elapsed time: 0.179 seconds; current allocated memory: 219.229 MB.
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Loop_2_proc -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/systemc/Loop_2_proc -synmodules DigitRec.entry3 DigitRec.entry28 Loop_1_proc Loop_2_proc popcount update_knn knn_vote Loop_TEST_LOOP_proc2 Loop_4_proc DigitRec 
+Execute       gen_rtl Loop_2_proc -style xilinx -f -lang vhdl -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/vhdl/Loop_2_proc 
+Execute       gen_rtl Loop_2_proc -style xilinx -f -lang vlog -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/verilog/Loop_2_proc 
+Execute       syn_report -csynth -model Loop_2_proc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/report/Loop_2_proc_csynth.rpt 
+Execute       syn_report -rtlxml -model Loop_2_proc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/report/Loop_2_proc_csynth.xml 
+Execute       syn_report -verbosereport -model Loop_2_proc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_2_proc.verbose.rpt 
+Execute       db_write -model Loop_2_proc -f -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_2_proc.adb 
+Execute       gen_tb_info Loop_2_proc -p C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_2_proc 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'popcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model popcount -vendor xilinx -mg_file C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/popcount.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'popcount'.
+Command       create_rtl_model done; 0.111 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.218 seconds; current allocated memory: 223.955 MB.
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.rtl_wrap.cfg.tcl 
+Execute       gen_rtl popcount -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/systemc/popcount -synmodules DigitRec.entry3 DigitRec.entry28 Loop_1_proc Loop_2_proc popcount update_knn knn_vote Loop_TEST_LOOP_proc2 Loop_4_proc DigitRec 
+Execute       gen_rtl popcount -style xilinx -f -lang vhdl -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/vhdl/popcount 
+Execute       gen_rtl popcount -style xilinx -f -lang vlog -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/verilog/popcount 
+Execute       syn_report -csynth -model popcount -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/report/popcount_csynth.rpt 
+Execute       syn_report -rtlxml -model popcount -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/report/popcount_csynth.xml 
+Execute       syn_report -verbosereport -model popcount -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/popcount.verbose.rpt 
+Command       syn_report done; 0.307 sec.
+Execute       db_write -model popcount -f -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/popcount.adb 
+Command       db_write done; 0.376 sec.
+Execute       gen_tb_info popcount -p C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/popcount 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'update_knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model update_knn -vendor xilinx -mg_file C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/update_knn.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'DigitRec_mux_305_32_1_0' to 'DigitRec_mux_305_bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_mux_325_1_1_0' to 'DigitRec_mux_325_cud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'DigitRec_mux_305_bkb': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DigitRec_mux_325_cud': 30 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'update_knn'.
+Command       create_rtl_model done; 0.175 sec.
+INFO: [HLS 200-111]  Elapsed time: 2.199 seconds; current allocated memory: 230.550 MB.
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.rtl_wrap.cfg.tcl 
+Execute       gen_rtl update_knn -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/systemc/update_knn -synmodules DigitRec.entry3 DigitRec.entry28 Loop_1_proc Loop_2_proc popcount update_knn knn_vote Loop_TEST_LOOP_proc2 Loop_4_proc DigitRec 
+Execute       gen_rtl update_knn -style xilinx -f -lang vhdl -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/vhdl/update_knn 
+Execute       gen_rtl update_knn -style xilinx -f -lang vlog -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/verilog/update_knn 
+Execute       syn_report -csynth -model update_knn -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/report/update_knn_csynth.rpt 
+Execute       syn_report -rtlxml -model update_knn -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/report/update_knn_csynth.xml 
+Execute       syn_report -verbosereport -model update_knn -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/update_knn.verbose.rpt 
+Command       syn_report done; 0.217 sec.
+Execute       db_write -model update_knn -f -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/update_knn.adb 
+Command       db_write done; 0.163 sec.
+Execute       gen_tb_info update_knn -p C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/update_knn 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'knn_vote' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model knn_vote -vendor xilinx -mg_file C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/knn_vote.compgen.tcl 
+INFO: [SYN 201-210] Renamed object name 'DigitRec_mux_32_32_1_1' to 'DigitRec_mux_32_3dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_mux_104_32_1_1' to 'DigitRec_mux_104_eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_mux_164_32_1_1' to 'DigitRec_mux_164_fYi' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'DigitRec_mux_104_eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DigitRec_mux_164_fYi': 7 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DigitRec_mux_305_bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DigitRec_mux_32_3dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'knn_vote'.
+INFO: [HLS 200-111]  Elapsed time: 0.85 seconds; current allocated memory: 232.657 MB.
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.rtl_wrap.cfg.tcl 
+Execute       gen_rtl knn_vote -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/systemc/knn_vote -synmodules DigitRec.entry3 DigitRec.entry28 Loop_1_proc Loop_2_proc popcount update_knn knn_vote Loop_TEST_LOOP_proc2 Loop_4_proc DigitRec 
+Execute       gen_rtl knn_vote -style xilinx -f -lang vhdl -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/vhdl/knn_vote 
+Execute       gen_rtl knn_vote -style xilinx -f -lang vlog -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/verilog/knn_vote 
+Execute       syn_report -csynth -model knn_vote -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/report/knn_vote_csynth.rpt 
+Execute       syn_report -rtlxml -model knn_vote -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/report/knn_vote_csynth.xml 
+Execute       syn_report -verbosereport -model knn_vote -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/knn_vote.verbose.rpt 
+Command       syn_report done; 0.104 sec.
+Execute       db_write -model knn_vote -f -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/knn_vote.adb 
+Command       db_write done; 0.157 sec.
+Execute       gen_tb_info knn_vote -p C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/knn_vote 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_TEST_LOOP_proc2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model Loop_TEST_LOOP_proc2 -vendor xilinx -mg_file C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_TEST_LOOP_proc2.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_TEST_LOOP_proc2'.
+Command       create_rtl_model done; 0.204 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.811 seconds; current allocated memory: 236.259 MB.
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Loop_TEST_LOOP_proc2 -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/systemc/Loop_TEST_LOOP_proc2 -synmodules DigitRec.entry3 DigitRec.entry28 Loop_1_proc Loop_2_proc popcount update_knn knn_vote Loop_TEST_LOOP_proc2 Loop_4_proc DigitRec 
+Execute       gen_rtl Loop_TEST_LOOP_proc2 -style xilinx -f -lang vhdl -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/vhdl/Loop_TEST_LOOP_proc2 
+Execute       gen_rtl Loop_TEST_LOOP_proc2 -style xilinx -f -lang vlog -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/verilog/Loop_TEST_LOOP_proc2 
+Execute       syn_report -csynth -model Loop_TEST_LOOP_proc2 -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/report/Loop_TEST_LOOP_proc2_csynth.rpt 
+Execute       syn_report -rtlxml -model Loop_TEST_LOOP_proc2 -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/report/Loop_TEST_LOOP_proc2_csynth.xml 
+Execute       syn_report -verbosereport -model Loop_TEST_LOOP_proc2 -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_TEST_LOOP_proc2.verbose.rpt 
+Command       syn_report done; 0.319 sec.
+Execute       db_write -model Loop_TEST_LOOP_proc2 -f -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_TEST_LOOP_proc2.adb 
+Command       db_write done; 0.207 sec.
+Execute       gen_tb_info Loop_TEST_LOOP_proc2 -p C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_TEST_LOOP_proc2 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_4_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model Loop_4_proc -vendor xilinx -mg_file C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_4_proc.compgen.tcl 
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_4_proc'.
+INFO: [HLS 200-111]  Elapsed time: 1.125 seconds; current allocated memory: 237.126 MB.
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.rtl_wrap.cfg.tcl 
+Execute       gen_rtl Loop_4_proc -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/systemc/Loop_4_proc -synmodules DigitRec.entry3 DigitRec.entry28 Loop_1_proc Loop_2_proc popcount update_knn knn_vote Loop_TEST_LOOP_proc2 Loop_4_proc DigitRec 
+Execute       gen_rtl Loop_4_proc -style xilinx -f -lang vhdl -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/vhdl/Loop_4_proc 
+Execute       gen_rtl Loop_4_proc -style xilinx -f -lang vlog -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/verilog/Loop_4_proc 
+Execute       syn_report -csynth -model Loop_4_proc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/report/Loop_4_proc_csynth.rpt 
+Execute       syn_report -rtlxml -model Loop_4_proc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/report/Loop_4_proc_csynth.xml 
+Execute       syn_report -verbosereport -model Loop_4_proc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_4_proc.verbose.rpt 
+Execute       db_write -model Loop_4_proc -f -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_4_proc.adb 
+Command       db_write done; 0.102 sec.
+Execute       gen_tb_info Loop_4_proc -p C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_4_proc 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DigitRec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+Execute       get_config_rtl -module_prefix 
+Execute       get_config_rtl -module_auto_prefix 
+Execute       create_rtl_model DigitRec -vendor xilinx -mg_file C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.compgen.tcl 
+INFO: [RTGEN 206-500] Setting interface mode on port 'DigitRec/global_training_set_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'DigitRec/global_test_set_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'DigitRec/global_results' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'DigitRec/num_training' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'DigitRec/num_test' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'DigitRec' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_0' to 'DigitRec_trainingg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_1' to 'DigitRec_traininghbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_2' to 'DigitRec_trainingibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_3' to 'DigitRec_trainingjbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_4' to 'DigitRec_trainingkbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_5' to 'DigitRec_traininglbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_6' to 'DigitRec_trainingmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_7' to 'DigitRec_trainingncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_8' to 'DigitRec_trainingocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_9' to 'DigitRec_trainingpcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_DigitRec_entry28_U0' to 'start_for_DigitReqcK' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DigitRec'.
+Command       create_rtl_model done; 0.154 sec.
+INFO: [HLS 200-111]  Elapsed time: 0.358 seconds; current allocated memory: 238.814 MB.
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.rtl_wrap.cfg.tcl 
+Execute       gen_rtl DigitRec -istop -style xilinx -tracefl mytrace -tracefmt vcd -traceopt all -f -lang sc -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/systemc/DigitRec -synmodules DigitRec.entry3 DigitRec.entry28 Loop_1_proc Loop_2_proc popcount update_knn knn_vote Loop_TEST_LOOP_proc2 Loop_4_proc DigitRec 
+Execute       gen_rtl DigitRec -istop -style xilinx -f -lang vhdl -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/vhdl/DigitRec 
+Execute       gen_rtl DigitRec -istop -style xilinx -f -lang vlog -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/verilog/DigitRec 
+Execute       syn_report -csynth -model DigitRec -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/report/DigitRec_csynth.rpt 
+Execute       syn_report -rtlxml -model DigitRec -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/syn/report/DigitRec_csynth.xml 
+Execute       syn_report -verbosereport -model DigitRec -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.verbose.rpt 
+Command       syn_report done; 0.284 sec.
+Execute       db_write -model DigitRec -f -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.adb 
+Command       db_write done; 0.672 sec.
+Execute       gen_tb_info DigitRec -p C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec 
+Execute       export_constraint_db -f -tool general -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.constraint.tcl 
+Execute       syn_report -designview -model DigitRec -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.design.xml 
+Command       syn_report done; 0.257 sec.
+Execute       get_config_rtl -disable_wave_debug 
+Execute       syn_report -wcfg -model DigitRec -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_dataflow_ana.wcfg 
+Execute       syn_report -protoinst -model DigitRec -o C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.protoinst 
+Execute       get_config_debug -directory 
+Execute       sc_get_clocks DigitRec 
+Execute       get_config_export -vivado_clock 
+Execute       sc_get_portdomain DigitRec 
+INFO-FLOW: Model list for RTL component generation: DigitRec.entry3 DigitRec.entry28 Loop_1_proc Loop_2_proc popcount update_knn knn_vote Loop_TEST_LOOP_proc2 Loop_4_proc DigitRec
+INFO-FLOW: Handling components in module [DigitRec_entry3] ... 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry3.compgen.tcl 
+INFO-FLOW: Handling components in module [DigitRec_entry28] ... 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry28.compgen.tcl 
+INFO-FLOW: Handling components in module [Loop_1_proc] ... 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_1_proc.compgen.tcl 
+INFO-FLOW: Handling components in module [Loop_2_proc] ... 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_2_proc.compgen.tcl 
+INFO-FLOW: Handling components in module [popcount] ... 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/popcount.compgen.tcl 
+INFO-FLOW: Handling components in module [update_knn] ... 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/update_knn.compgen.tcl 
+INFO-FLOW: Found component DigitRec_mux_305_bkb.
+INFO-FLOW: Append model DigitRec_mux_305_bkb
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Found component DigitRec_mux_325_cud.
+INFO-FLOW: Append model DigitRec_mux_325_cud
+INFO-FLOW: Handling components in module [knn_vote] ... 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/knn_vote.compgen.tcl 
+INFO-FLOW: Found component DigitRec_mux_32_3dEe.
+INFO-FLOW: Append model DigitRec_mux_32_3dEe
+INFO-FLOW: Found component DigitRec_mux_104_eOg.
+INFO-FLOW: Append model DigitRec_mux_104_eOg
+INFO-FLOW: Found component DigitRec_mux_164_fYi.
+INFO-FLOW: Append model DigitRec_mux_164_fYi
+INFO-FLOW: Handling components in module [Loop_TEST_LOOP_proc2] ... 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_TEST_LOOP_proc2.compgen.tcl 
+INFO-FLOW: Handling components in module [Loop_4_proc] ... 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_4_proc.compgen.tcl 
+INFO-FLOW: Handling components in module [DigitRec] ... 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.compgen.tcl 
+INFO-FLOW: Found component fifo_w32_d2_A.
+INFO-FLOW: Append model fifo_w32_d2_A
+INFO-FLOW: Found component fifo_w32_d2_A.
+INFO-FLOW: Append model fifo_w32_d2_A
+INFO-FLOW: Found component fifo_w32_d3_A.
+INFO-FLOW: Append model fifo_w32_d3_A
+INFO-FLOW: Found component fifo_w32_d2_A.
+INFO-FLOW: Append model fifo_w32_d2_A
+INFO-FLOW: Found component fifo_w32_d3_A.
+INFO-FLOW: Append model fifo_w32_d3_A
+INFO-FLOW: Found component fifo_w256_d2000_A.
+INFO-FLOW: Append model fifo_w256_d2000_A
+INFO-FLOW: Found component fifo_w32_d2_A.
+INFO-FLOW: Append model fifo_w32_d2_A
+INFO-FLOW: Found component start_for_DigitReqcK.
+INFO-FLOW: Append model start_for_DigitReqcK
+INFO-FLOW: Append model DigitRec_entry3
+INFO-FLOW: Append model DigitRec_entry28
+INFO-FLOW: Append model Loop_1_proc
+INFO-FLOW: Append model Loop_2_proc
+INFO-FLOW: Append model popcount
+INFO-FLOW: Append model update_knn
+INFO-FLOW: Append model knn_vote
+INFO-FLOW: Append model Loop_TEST_LOOP_proc2
+INFO-FLOW: Append model Loop_4_proc
+INFO-FLOW: Append model DigitRec
+INFO-FLOW: Generating RTL model list ...
+INFO-FLOW: All models in this session: DigitRec_mux_305_bkb DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_325_cud DigitRec_mux_32_3dEe DigitRec_mux_104_eOg DigitRec_mux_164_fYi fifo_w32_d2_A fifo_w32_d2_A fifo_w32_d3_A fifo_w32_d2_A fifo_w32_d3_A fifo_w256_d2000_A fifo_w32_d2_A start_for_DigitReqcK DigitRec_entry3 DigitRec_entry28 Loop_1_proc Loop_2_proc popcount update_knn knn_vote Loop_TEST_LOOP_proc2 Loop_4_proc DigitRec
+INFO-FLOW: To file: write model DigitRec_mux_305_bkb
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_325_cud
+INFO-FLOW: To file: write model DigitRec_mux_32_3dEe
+INFO-FLOW: To file: write model DigitRec_mux_104_eOg
+INFO-FLOW: To file: write model DigitRec_mux_164_fYi
+INFO-FLOW: To file: write model fifo_w32_d2_A
+INFO-FLOW: To file: write model fifo_w32_d2_A
+INFO-FLOW: To file: write model fifo_w32_d3_A
+INFO-FLOW: To file: write model fifo_w32_d2_A
+INFO-FLOW: To file: write model fifo_w32_d3_A
+INFO-FLOW: To file: write model fifo_w256_d2000_A
+INFO-FLOW: To file: write model fifo_w32_d2_A
+INFO-FLOW: To file: write model start_for_DigitReqcK
+INFO-FLOW: To file: write model DigitRec_entry3
+INFO-FLOW: To file: write model DigitRec_entry28
+INFO-FLOW: To file: write model Loop_1_proc
+INFO-FLOW: To file: write model Loop_2_proc
+INFO-FLOW: To file: write model popcount
+INFO-FLOW: To file: write model update_knn
+INFO-FLOW: To file: write model knn_vote
+INFO-FLOW: To file: write model Loop_TEST_LOOP_proc2
+INFO-FLOW: To file: write model Loop_4_proc
+INFO-FLOW: To file: write model DigitRec
+INFO-FLOW: Finished generating RTL model list.
+
+
+INFO-FLOW: RTL Generation done.
+INFO-FLOW: CAS Generation done.
+INFO-FLOW: CBC Generation done.
+INFO-FLOW: DBG:CMD: auto_generate_csynth_design
+INFO-FLOW: DBG:CMD:     auto_generate --sim-model -phase csynth_design -d C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintexuplus/kintexuplus.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Command         ap_source done; 0.101 sec.
+Command       ap_source done; 0.101 sec.
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintexuplus/kintexuplus_fpv7.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=1 export=0 expOnly=0 dstVlogDir=syn/verilog
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry3.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry28.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_1_proc.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_2_proc.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/popcount.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/update_knn.compgen.tcl 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Command       ap_source done; 0.221 sec.
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/knn_vote.compgen.tcl 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_TEST_LOOP_proc2.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_4_proc.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.compgen.tcl 
+INFO: [RTMG 210-278] Implementing memory 'DigitRec_trainingg8j_memcore_ram (RAM)' using block RAMs with power-on initialization.
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+INFO: [RTMG 210-278] Implementing memory 'DigitRec_results_memcore_ram (RAM)' using block RAMs with power-on initialization.
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'num_training_c1_U(fifo_w32_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'num_test_c2_U(fifo_w32_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'num_training_c_U(fifo_w32_d3_A)' using Shift Registers.
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'num_test_c_U(fifo_w32_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'num_test_c1108_U(fifo_w32_d3_A)' using Shift Registers.
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'test_set_V_U(fifo_w256_d2000_A)' using Block RAMs.
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'num_test_c1109_U(fifo_w32_d2_A)' using Shift Registers.
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_DigitReqcK_U(start_for_DigitReqcK)' using Shift Registers.
+Command       ap_source done; 0.175 sec.
+INFO-FLOW: DBG:CMD:     auto_generate -export -impltomg_flag -rtl both -tool Vivado -pcore_version 1.00.a -phase csynth_design -d C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/global.setting.tcl
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/common.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/APCoreGen.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/op_simcore.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/generic/autopilot/interface.gen 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/global.setting.tcl 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintexuplus/kintexuplus.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/fsl.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/maxi.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/dsp48.gen 
+Execute       source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/kintexuplus/kintexuplus_fpv7.gen 
+Execute         source C:/Xilinx/Vivado/2019.1/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:       initCTypeInfo top_module=DigitRec xml_exists=0
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.tbgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       export_impl_rtl
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.verilog
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry3.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry28.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_1_proc.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_2_proc.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/popcount.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/update_knn.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/knn_vote.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_TEST_LOOP_proc2.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_4_proc.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.compgen.tcl 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=1 expOnly=1 dstVlogDir=impl/.pcores/verilog
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry3.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry28.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_1_proc.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_2_proc.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/popcount.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/update_knn.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/knn_vote.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_TEST_LOOP_proc2.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_4_proc.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.compgen.tcl 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.tbgen.tcl 
+Execute         source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.tbgen.tcl 
+Execute         source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.tbgen.tcl 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+INFO-FLOW: DBG:CMD:       generate_ip_cores sim=0 export=0 expOnly=0 dstVlogDir=impl/.pcores/verilog_sim
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry3.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry28.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_1_proc.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_2_proc.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/popcount.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/update_knn.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/knn_vote.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_TEST_LOOP_proc2.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_4_proc.compgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.compgen.tcl 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute         ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.constraint.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.tbgen.tcl 
+INFO-FLOW: DBG:CMD:       hasPcoreIpAdapter=false #gSsdmPorts=12
+INFO-FLOW: DBG:CMD: Skipping loadAnalyze_DB, #g_database=5
+INFO-FLOW: DBG:CMD:       generate_json is_phase_csynth=1 g_has_adaptors=false generate_bd_files=0 #modelList=52 #gSsdmPorts=12
+Execute       source C:/Xilinx/Vivado/2019.1/tps/tcl/tcllib1.11.1/fileutil/fileutil.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/global.setting.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/global.setting.tcl 
+Execute       get_config_export -xo 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.tbgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.tbgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.tbgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.tbgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.tbgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.tbgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.tbgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.tbgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/global.setting.tcl 
+Execute       get_config_sdx -target 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.rtl_wrap.cfg.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.compgen.dataonly.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/global.setting.tcl 
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.constraint.tcl 
+Execute       sc_get_clocks DigitRec 
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data names -quiet 
+Execute       ap_part_info -name xcku5p-ffvb676-2-e -data info -quiet 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/global.setting.tcl 
+Execute       get_config_debug -directory 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry3.tbgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec_entry28.tbgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_1_proc.tbgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_2_proc.tbgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/popcount.tbgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/update_knn.tbgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/knn_vote.tbgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_TEST_LOOP_proc2.tbgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/Loop_4_proc.tbgen.tcl 
+Execute       source C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/DigitRec.tbgen.tcl 
+Execute       get_config_sdx -target 
+Execute       get_config_sdx -profile 
+Execute       get_config_rtl -kernel_profile 
+Execute       get_config_rtl -stall_sig_gen 
+Execute       get_config_rtl -profile 
+INFO-FLOW: DBG:CMD: add_json_sdx_info kernel file does not exist, skipping opencl info: C:/Users/Shivank/Downloads/Sem2/VLSI/digit-recognition/digit_t1/latency/.autopilot/db/kernel.internal.xml
+INFO-FLOW: DBG:CMD:       delete-temp-dirs (skipped for debug)
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 336.508 ; gain = 244.984
+INFO: [VHDL 208-304] Generating VHDL RTL for DigitRec.
+INFO: [VLOG 209-307] Generating Verilog RTL for DigitRec.
+Command     autosyn done; 15.148 sec.
+Command   csynth_design done; 33.642 sec.
+Command ap_source done; 34.387 sec.
+Execute cleanup_all 

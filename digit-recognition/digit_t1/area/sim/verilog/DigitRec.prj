@@ -1,0 +1,11 @@
+sv work "glbl.v"
+sv xil_defaultlib "AESL_automem_array4.v"
+sv xil_defaultlib "AESL_automem_global_results.v"
+sv xil_defaultlib "DigitRec.autotb.v"
+sv xil_defaultlib "DigitRec.v"
+sv xil_defaultlib "DigitRec_array3.v"
+sv xil_defaultlib "DigitRec_knn_set.v"
+sv xil_defaultlib "DigitRec_results.v"
+sv xil_defaultlib "DigitRec_test_set_V.v"
+sv xil_defaultlib "DigitRec_trainingbkb.v"
+

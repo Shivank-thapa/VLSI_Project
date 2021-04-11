@@ -1,0 +1,265 @@
+
+
+================================================================
+== Vivado HLS Report for 'DigitRec'
+================================================================
+* Date:           Sat Apr 10 19:07:35 2021
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        digit_t1
+* Solution:       latency
+* Product family: kintexuplus
+* Target device:  xcku5p-ffvb676-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.663|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-------+----------+-------+----------+----------+
+    |      Latency     |     Interval     | Pipeline |
+    |  min  |    max   |  min  |    max   |   Type   |
+    +-------+----------+-------+----------+----------+
+    |  18007|  72148007|  18003|  72128002| dataflow |
+    +-------+----------+-------+----------+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------+----------------------+-------+----------+-------+----------+---------+
+        |                         |                      |      Latency     |     Interval     | Pipeline|
+        |         Instance        |        Module        |  min  |    max   |  min  |    max   |   Type  |
+        +-------------------------+----------------------+-------+----------+-------+----------+---------+
+        |Loop_TEST_LOOP_proc2_U0  |Loop_TEST_LOOP_proc2  |      1|  72128001|      1|  72128001|   none  |
+        |Loop_1_proc_U0           |Loop_1_proc           |  18002|     18002|  18002|     18002|   none  |
+        |Loop_4_proc_U0           |Loop_4_proc           |      2|      2002|      2|      2002|   none  |
+        |Loop_2_proc_U0           |Loop_2_proc           |      2|      2002|      2|      2002|   none  |
+        |DigitRec_entry28_U0      |DigitRec_entry28      |      0|         0|      0|         0|   none  |
+        |DigitRec_entry3_U0       |DigitRec_entry3       |      0|         0|      0|         0|   none  |
+        +-------------------------+----------------------+-------+----------+-------+----------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      -|       0|      87|    -|
+|FIFO             |       29|      -|     323|     755|    -|
+|Instance         |        -|      4|    9070|   11790|    -|
+|Memory           |      291|      -|       0|       0|    0|
+|Multiplexer      |        -|      -|       -|     144|    -|
+|Register         |        -|      -|      19|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |      320|      4|    9412|   12776|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |      960|   1824|  433920|  216960|   64|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |       33|   ~0  |       2|       5|    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+-------+------+-------+-----+
+    |         Instance        |        Module        | BRAM_18K| DSP48E|  FF  |  LUT  | URAM|
+    +-------------------------+----------------------+---------+-------+------+-------+-----+
+    |DigitRec_entry28_U0      |DigitRec_entry28      |        0|      0|     2|     56|    0|
+    |DigitRec_entry3_U0       |DigitRec_entry3       |        0|      0|     3|     38|    0|
+    |Loop_1_proc_U0           |Loop_1_proc           |        0|      0|    71|    200|    0|
+    |Loop_2_proc_U0           |Loop_2_proc           |        0|      0|    70|    140|    0|
+    |Loop_4_proc_U0           |Loop_4_proc           |        0|      0|   101|    127|    0|
+    |Loop_TEST_LOOP_proc2_U0  |Loop_TEST_LOOP_proc2  |        0|      4|  8823|  11229|    0|
+    +-------------------------+----------------------+---------+-------+------+-------+-----+
+    |Total                    |                      |        0|      4|  9070|  11790|    0|
+    +-------------------------+----------------------+---------+-------+------+-------+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    +--------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |       Memory       |        Module        | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +--------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |results_U           |DigitRec_results      |        1|  0|   0|    0|  2000|    4|     2|        16000|
+    |training_set_V_0_U  |DigitRec_trainingg8j  |       29|  0|   0|    0|  1800|  256|     2|       921600|
+    |training_set_V_1_U  |DigitRec_trainingg8j  |       29|  0|   0|    0|  1800|  256|     2|       921600|
+    |training_set_V_2_U  |DigitRec_trainingg8j  |       29|  0|   0|    0|  1800|  256|     2|       921600|
+    |training_set_V_3_U  |DigitRec_trainingg8j  |       29|  0|   0|    0|  1800|  256|     2|       921600|
+    |training_set_V_4_U  |DigitRec_trainingg8j  |       29|  0|   0|    0|  1800|  256|     2|       921600|
+    |training_set_V_5_U  |DigitRec_trainingg8j  |       29|  0|   0|    0|  1800|  256|     2|       921600|
+    |training_set_V_6_U  |DigitRec_trainingg8j  |       29|  0|   0|    0|  1800|  256|     2|       921600|
+    |training_set_V_7_U  |DigitRec_trainingg8j  |       29|  0|   0|    0|  1800|  256|     2|       921600|
+    |training_set_V_8_U  |DigitRec_trainingg8j  |       29|  0|   0|    0|  1800|  256|     2|       921600|
+    |training_set_V_9_U  |DigitRec_trainingg8j  |       29|  0|   0|    0|  1800|  256|     2|       921600|
+    +--------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total               |                      |      291|  0|   0|    0| 20000| 2564|    22|      9232000|
+    +--------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    +-------------------+---------+-----+----+-----+------+-----+---------+
+    |        Name       | BRAM_18K|  FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +-------------------+---------+-----+----+-----+------+-----+---------+
+    |num_test_c1108_U   |        0|    5|   0|    -|     3|   32|       96|
+    |num_test_c1109_U   |        0|    5|   0|    -|     2|   32|       64|
+    |num_test_c2_U      |        0|    5|   0|    -|     2|   32|       64|
+    |num_test_c_U       |        0|    5|   0|    -|     2|   32|       64|
+    |num_training_c1_U  |        0|    5|   0|    -|     2|   32|       64|
+    |num_training_c_U   |        0|    5|   0|    -|     3|   32|       96|
+    |test_set_V_U       |       29|  293|   0|    -|  2000|  256|   512000|
+    +-------------------+---------+-----+----+-----+------+-----+---------+
+    |Total              |       29|  323|   0|    0|  2014|  448|   512448|
+    +-------------------+---------+-----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +----------------------------------------+----------+-------+---+----+------------+------------+
+    |              Variable Name             | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------------+----------+-------+---+----+------------+------------+
+    |DigitRec_entry3_U0_ap_ready_count       |     +    |      0|  0|   9|           2|           1|
+    |Loop_1_proc_U0_ap_ready_count           |     +    |      0|  0|   9|           2|           1|
+    |Loop_2_proc_U0_ap_ready_count           |     +    |      0|  0|   9|           2|           1|
+    |DigitRec_entry3_U0_ap_start             |    and   |      0|  0|   2|           1|           1|
+    |Loop_1_proc_U0_ap_continue              |    and   |      0|  0|   2|           1|           1|
+    |Loop_1_proc_U0_ap_start                 |    and   |      0|  0|   2|           1|           1|
+    |Loop_2_proc_U0_ap_start                 |    and   |      0|  0|   2|           1|           1|
+    |Loop_TEST_LOOP_proc2_U0_ap_start        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_training_set_V_0        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_training_set_V_1        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_training_set_V_2        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_training_set_V_3        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_training_set_V_4        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_training_set_V_5        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_training_set_V_6        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_training_set_V_7        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_training_set_V_8        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_training_set_V_9        |    and   |      0|  0|   2|           1|           1|
+    |ap_idle                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_ready                           |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_DigitRec_entry3_U0_ap_ready     |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_Loop_1_proc_U0_ap_ready         |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_Loop_2_proc_U0_ap_ready         |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_training_set_V_0  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_training_set_V_1  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_training_set_V_2  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_training_set_V_3  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_training_set_V_4  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_training_set_V_5  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_training_set_V_6  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_training_set_V_7  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_training_set_V_8  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_training_set_V_9  |    or    |      0|  0|   2|           1|           1|
+    +----------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                   |          |      0|  0|  87|          36|          33|
+    +----------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------------+----+-----------+-----+-----------+
+    |                    Name                    | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------------+----+-----------+-----+-----------+
+    |DigitRec_entry3_U0_ap_ready_count           |   9|          2|    2|          4|
+    |Loop_1_proc_U0_ap_ready_count               |   9|          2|    2|          4|
+    |Loop_2_proc_U0_ap_ready_count               |   9|          2|    2|          4|
+    |ap_sync_reg_DigitRec_entry3_U0_ap_ready     |   9|          2|    1|          2|
+    |ap_sync_reg_Loop_1_proc_U0_ap_ready         |   9|          2|    1|          2|
+    |ap_sync_reg_Loop_2_proc_U0_ap_ready         |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_training_set_V_0  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_training_set_V_1  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_training_set_V_2  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_training_set_V_3  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_training_set_V_4  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_training_set_V_5  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_training_set_V_6  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_training_set_V_7  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_training_set_V_8  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_training_set_V_9  |   9|          2|    1|          2|
+    +--------------------------------------------+----+-----------+-----+-----------+
+    |Total                                       | 144|         32|   19|         38|
+    +--------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------------------+---+----+-----+-----------+
+    |                    Name                    | FF| LUT| Bits| Const Bits|
+    +--------------------------------------------+---+----+-----+-----------+
+    |DigitRec_entry3_U0_ap_ready_count           |  2|   0|    2|          0|
+    |Loop_1_proc_U0_ap_ready_count               |  2|   0|    2|          0|
+    |Loop_2_proc_U0_ap_ready_count               |  2|   0|    2|          0|
+    |ap_sync_reg_DigitRec_entry3_U0_ap_ready     |  1|   0|    1|          0|
+    |ap_sync_reg_Loop_1_proc_U0_ap_ready         |  1|   0|    1|          0|
+    |ap_sync_reg_Loop_2_proc_U0_ap_ready         |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_training_set_V_0  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_training_set_V_1  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_training_set_V_2  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_training_set_V_3  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_training_set_V_4  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_training_set_V_5  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_training_set_V_6  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_training_set_V_7  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_training_set_V_8  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_training_set_V_9  |  1|   0|    1|          0|
+    +--------------------------------------------+---+----+-----+-----------+
+    |Total                                       | 19|   0|   19|          0|
+    +--------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------+-----+-----+------------+-----------------------+--------------+
+|            RTL Ports           | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++--------------------------------+-----+-----+------------+-----------------------+--------------+
+|global_training_set_V_address0  | out |   15|  ap_memory | global_training_set_V |     array    |
+|global_training_set_V_ce0       | out |    1|  ap_memory | global_training_set_V |     array    |
+|global_training_set_V_d0        | out |  256|  ap_memory | global_training_set_V |     array    |
+|global_training_set_V_q0        |  in |  256|  ap_memory | global_training_set_V |     array    |
+|global_training_set_V_we0       | out |    1|  ap_memory | global_training_set_V |     array    |
+|global_training_set_V_address1  | out |   15|  ap_memory | global_training_set_V |     array    |
+|global_training_set_V_ce1       | out |    1|  ap_memory | global_training_set_V |     array    |
+|global_training_set_V_d1        | out |  256|  ap_memory | global_training_set_V |     array    |
+|global_training_set_V_q1        |  in |  256|  ap_memory | global_training_set_V |     array    |
+|global_training_set_V_we1       | out |    1|  ap_memory | global_training_set_V |     array    |
+|global_test_set_V_address0      | out |   11|  ap_memory |   global_test_set_V   |     array    |
+|global_test_set_V_ce0           | out |    1|  ap_memory |   global_test_set_V   |     array    |
+|global_test_set_V_d0            | out |  256|  ap_memory |   global_test_set_V   |     array    |
+|global_test_set_V_q0            |  in |  256|  ap_memory |   global_test_set_V   |     array    |
+|global_test_set_V_we0           | out |    1|  ap_memory |   global_test_set_V   |     array    |
+|global_test_set_V_address1      | out |   11|  ap_memory |   global_test_set_V   |     array    |
+|global_test_set_V_ce1           | out |    1|  ap_memory |   global_test_set_V   |     array    |
+|global_test_set_V_d1            | out |  256|  ap_memory |   global_test_set_V   |     array    |
+|global_test_set_V_q1            |  in |  256|  ap_memory |   global_test_set_V   |     array    |
+|global_test_set_V_we1           | out |    1|  ap_memory |   global_test_set_V   |     array    |
+|global_results_address0         | out |   11|  ap_memory |     global_results    |     array    |
+|global_results_ce0              | out |    1|  ap_memory |     global_results    |     array    |
+|global_results_d0               | out |    8|  ap_memory |     global_results    |     array    |
+|global_results_q0               |  in |    8|  ap_memory |     global_results    |     array    |
+|global_results_we0              | out |    1|  ap_memory |     global_results    |     array    |
+|global_results_address1         | out |   11|  ap_memory |     global_results    |     array    |
+|global_results_ce1              | out |    1|  ap_memory |     global_results    |     array    |
+|global_results_d1               | out |    8|  ap_memory |     global_results    |     array    |
+|global_results_q1               |  in |    8|  ap_memory |     global_results    |     array    |
+|global_results_we1              | out |    1|  ap_memory |     global_results    |     array    |
+|num_training                    |  in |   32|   ap_none  |      num_training     |    scalar    |
+|num_test                        |  in |   32|   ap_none  |        num_test       |    scalar    |
+|ap_clk                          |  in |    1| ap_ctrl_hs |        DigitRec       | return value |
+|ap_rst                          |  in |    1| ap_ctrl_hs |        DigitRec       | return value |
+|ap_start                        |  in |    1| ap_ctrl_hs |        DigitRec       | return value |
+|ap_done                         | out |    1| ap_ctrl_hs |        DigitRec       | return value |
+|ap_ready                        | out |    1| ap_ctrl_hs |        DigitRec       | return value |
+|ap_idle                         | out |    1| ap_ctrl_hs |        DigitRec       | return value |
++--------------------------------+-----+-----+------------+-----------------------+--------------+
+

@@ -1,0 +1,7 @@
+   Build using "C:/Xilinx/Vivado/2019.1/msys64/mingw64/bin/g++"
+   Compiling apatb_DigitRec.cpp
+   Compiling digitrec.cpp_pre.cpp.tb.cpp
+   Compiling digit_recognition.cpp_pre.cpp.tb.cpp
+   Compiling check_result.cpp_pre.cpp.tb.cpp
+   Compiling utils.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

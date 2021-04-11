@@ -1,0 +1,1395 @@
+
+
+================================================================
+== Vivado HLS Report for 'DigitRec'
+================================================================
+* Date:           Sat Apr 10 19:07:35 2021
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        digit_t1
+* Solution:       latency
+* Product family: kintexuplus
+* Target device:  xcku5p-ffvb676-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.663|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-------+----------+-------+----------+----------+
+    |      Latency     |     Interval     | Pipeline |
+    |  min  |    max   |  min  |    max   |   Type   |
+    +-------+----------+-------+----------+----------+
+    |  18007|  72148007|  18003|  72128002| dataflow |
+    +-------+----------+-------+----------+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------+----------------------+-------+----------+-------+----------+---------+
+        |                         |                      |      Latency     |     Interval     | Pipeline|
+        |         Instance        |        Module        |  min  |    max   |  min  |    max   |   Type  |
+        +-------------------------+----------------------+-------+----------+-------+----------+---------+
+        |Loop_TEST_LOOP_proc2_U0  |Loop_TEST_LOOP_proc2  |      1|  72128001|      1|  72128001|   none  |
+        |Loop_1_proc_U0           |Loop_1_proc           |  18002|     18002|  18002|     18002|   none  |
+        |Loop_4_proc_U0           |Loop_4_proc           |      2|      2002|      2|      2002|   none  |
+        |Loop_2_proc_U0           |Loop_2_proc           |      2|      2002|      2|      2002|   none  |
+        |DigitRec_entry28_U0      |DigitRec_entry28      |      0|         0|      0|         0|   none  |
+        |DigitRec_entry3_U0       |DigitRec_entry3       |      0|         0|      0|         0|   none  |
+        +-------------------------+----------------------+-------+----------+-------+----------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      -|       0|      87|    -|
+|FIFO             |       29|      -|     323|     755|    -|
+|Instance         |        -|      4|    9070|   11790|    -|
+|Memory           |      291|      -|       0|       0|    0|
+|Multiplexer      |        -|      -|       -|     144|    -|
+|Register         |        -|      -|      19|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |      320|      4|    9412|   12776|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |      960|   1824|  433920|  216960|   64|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |       33|   ~0  |       2|       5|    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+-------+------+-------+-----+
+    |         Instance        |        Module        | BRAM_18K| DSP48E|  FF  |  LUT  | URAM|
+    +-------------------------+----------------------+---------+-------+------+-------+-----+
+    |DigitRec_entry28_U0      |DigitRec_entry28      |        0|      0|     2|     56|    0|
+    |DigitRec_entry3_U0       |DigitRec_entry3       |        0|      0|     3|     38|    0|
+    |Loop_1_proc_U0           |Loop_1_proc           |        0|      0|    71|    200|    0|
+    |Loop_2_proc_U0           |Loop_2_proc           |        0|      0|    70|    140|    0|
+    |Loop_4_proc_U0           |Loop_4_proc           |        0|      0|   101|    127|    0|
+    |Loop_TEST_LOOP_proc2_U0  |Loop_TEST_LOOP_proc2  |        0|      4|  8823|  11229|    0|
+    +-------------------------+----------------------+---------+-------+------+-------+-----+
+    |Total                    |                      |        0|      4|  9070|  11790|    0|
+    +-------------------------+----------------------+---------+-------+------+-------+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    +--------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |       Memory       |        Module        | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +--------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |results_U           |DigitRec_results      |        1|  0|   0|    0|  2000|    4|     2|        16000|
+    |training_set_V_0_U  |DigitRec_trainingg8j  |       29|  0|   0|    0|  1800|  256|     2|       921600|
+    |training_set_V_1_U  |DigitRec_trainingg8j  |       29|  0|   0|    0|  1800|  256|     2|       921600|
+    |training_set_V_2_U  |DigitRec_trainingg8j  |       29|  0|   0|    0|  1800|  256|     2|       921600|
+    |training_set_V_3_U  |DigitRec_trainingg8j  |       29|  0|   0|    0|  1800|  256|     2|       921600|
+    |training_set_V_4_U  |DigitRec_trainingg8j  |       29|  0|   0|    0|  1800|  256|     2|       921600|
+    |training_set_V_5_U  |DigitRec_trainingg8j  |       29|  0|   0|    0|  1800|  256|     2|       921600|
+    |training_set_V_6_U  |DigitRec_trainingg8j  |       29|  0|   0|    0|  1800|  256|     2|       921600|
+    |training_set_V_7_U  |DigitRec_trainingg8j  |       29|  0|   0|    0|  1800|  256|     2|       921600|
+    |training_set_V_8_U  |DigitRec_trainingg8j  |       29|  0|   0|    0|  1800|  256|     2|       921600|
+    |training_set_V_9_U  |DigitRec_trainingg8j  |       29|  0|   0|    0|  1800|  256|     2|       921600|
+    +--------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total               |                      |      291|  0|   0|    0| 20000| 2564|    22|      9232000|
+    +--------------------+----------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    +-------------------+---------+-----+----+-----+------+-----+---------+
+    |        Name       | BRAM_18K|  FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +-------------------+---------+-----+----+-----+------+-----+---------+
+    |num_test_c1108_U   |        0|    5|   0|    -|     3|   32|       96|
+    |num_test_c1109_U   |        0|    5|   0|    -|     2|   32|       64|
+    |num_test_c2_U      |        0|    5|   0|    -|     2|   32|       64|
+    |num_test_c_U       |        0|    5|   0|    -|     2|   32|       64|
+    |num_training_c1_U  |        0|    5|   0|    -|     2|   32|       64|
+    |num_training_c_U   |        0|    5|   0|    -|     3|   32|       96|
+    |test_set_V_U       |       29|  293|   0|    -|  2000|  256|   512000|
+    +-------------------+---------+-----+----+-----+------+-----+---------+
+    |Total              |       29|  323|   0|    0|  2014|  448|   512448|
+    +-------------------+---------+-----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +----------------------------------------+----------+-------+---+----+------------+------------+
+    |              Variable Name             | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------------+----------+-------+---+----+------------+------------+
+    |DigitRec_entry3_U0_ap_ready_count       |     +    |      0|  0|   9|           2|           1|
+    |Loop_1_proc_U0_ap_ready_count           |     +    |      0|  0|   9|           2|           1|
+    |Loop_2_proc_U0_ap_ready_count           |     +    |      0|  0|   9|           2|           1|
+    |DigitRec_entry3_U0_ap_start             |    and   |      0|  0|   2|           1|           1|
+    |Loop_1_proc_U0_ap_continue              |    and   |      0|  0|   2|           1|           1|
+    |Loop_1_proc_U0_ap_start                 |    and   |      0|  0|   2|           1|           1|
+    |Loop_2_proc_U0_ap_start                 |    and   |      0|  0|   2|           1|           1|
+    |Loop_TEST_LOOP_proc2_U0_ap_start        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_training_set_V_0        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_training_set_V_1        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_training_set_V_2        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_training_set_V_3        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_training_set_V_4        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_training_set_V_5        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_training_set_V_6        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_training_set_V_7        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_training_set_V_8        |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_training_set_V_9        |    and   |      0|  0|   2|           1|           1|
+    |ap_idle                                 |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_ready                           |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_DigitRec_entry3_U0_ap_ready     |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_Loop_1_proc_U0_ap_ready         |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_Loop_2_proc_U0_ap_ready         |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_training_set_V_0  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_training_set_V_1  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_training_set_V_2  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_training_set_V_3  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_training_set_V_4  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_training_set_V_5  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_training_set_V_6  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_training_set_V_7  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_training_set_V_8  |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_training_set_V_9  |    or    |      0|  0|   2|           1|           1|
+    +----------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                   |          |      0|  0|  87|          36|          33|
+    +----------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------------+----+-----------+-----+-----------+
+    |                    Name                    | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------------+----+-----------+-----+-----------+
+    |DigitRec_entry3_U0_ap_ready_count           |   9|          2|    2|          4|
+    |Loop_1_proc_U0_ap_ready_count               |   9|          2|    2|          4|
+    |Loop_2_proc_U0_ap_ready_count               |   9|          2|    2|          4|
+    |ap_sync_reg_DigitRec_entry3_U0_ap_ready     |   9|          2|    1|          2|
+    |ap_sync_reg_Loop_1_proc_U0_ap_ready         |   9|          2|    1|          2|
+    |ap_sync_reg_Loop_2_proc_U0_ap_ready         |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_training_set_V_0  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_training_set_V_1  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_training_set_V_2  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_training_set_V_3  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_training_set_V_4  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_training_set_V_5  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_training_set_V_6  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_training_set_V_7  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_training_set_V_8  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_training_set_V_9  |   9|          2|    1|          2|
+    +--------------------------------------------+----+-----------+-----+-----------+
+    |Total                                       | 144|         32|   19|         38|
+    +--------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------------------+---+----+-----+-----------+
+    |                    Name                    | FF| LUT| Bits| Const Bits|
+    +--------------------------------------------+---+----+-----+-----------+
+    |DigitRec_entry3_U0_ap_ready_count           |  2|   0|    2|          0|
+    |Loop_1_proc_U0_ap_ready_count               |  2|   0|    2|          0|
+    |Loop_2_proc_U0_ap_ready_count               |  2|   0|    2|          0|
+    |ap_sync_reg_DigitRec_entry3_U0_ap_ready     |  1|   0|    1|          0|
+    |ap_sync_reg_Loop_1_proc_U0_ap_ready         |  1|   0|    1|          0|
+    |ap_sync_reg_Loop_2_proc_U0_ap_ready         |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_training_set_V_0  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_training_set_V_1  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_training_set_V_2  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_training_set_V_3  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_training_set_V_4  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_training_set_V_5  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_training_set_V_6  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_training_set_V_7  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_training_set_V_8  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_training_set_V_9  |  1|   0|    1|          0|
+    +--------------------------------------------+---+----+-----+-----------+
+    |Total                                       | 19|   0|   19|          0|
+    +--------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------------+-----+-----+------------+-----------------------+--------------+
+|            RTL Ports           | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++--------------------------------+-----+-----+------------+-----------------------+--------------+
+|global_training_set_V_address0  | out |   15|  ap_memory | global_training_set_V |     array    |
+|global_training_set_V_ce0       | out |    1|  ap_memory | global_training_set_V |     array    |
+|global_training_set_V_d0        | out |  256|  ap_memory | global_training_set_V |     array    |
+|global_training_set_V_q0        |  in |  256|  ap_memory | global_training_set_V |     array    |
+|global_training_set_V_we0       | out |    1|  ap_memory | global_training_set_V |     array    |
+|global_training_set_V_address1  | out |   15|  ap_memory | global_training_set_V |     array    |
+|global_training_set_V_ce1       | out |    1|  ap_memory | global_training_set_V |     array    |
+|global_training_set_V_d1        | out |  256|  ap_memory | global_training_set_V |     array    |
+|global_training_set_V_q1        |  in |  256|  ap_memory | global_training_set_V |     array    |
+|global_training_set_V_we1       | out |    1|  ap_memory | global_training_set_V |     array    |
+|global_test_set_V_address0      | out |   11|  ap_memory |   global_test_set_V   |     array    |
+|global_test_set_V_ce0           | out |    1|  ap_memory |   global_test_set_V   |     array    |
+|global_test_set_V_d0            | out |  256|  ap_memory |   global_test_set_V   |     array    |
+|global_test_set_V_q0            |  in |  256|  ap_memory |   global_test_set_V   |     array    |
+|global_test_set_V_we0           | out |    1|  ap_memory |   global_test_set_V   |     array    |
+|global_test_set_V_address1      | out |   11|  ap_memory |   global_test_set_V   |     array    |
+|global_test_set_V_ce1           | out |    1|  ap_memory |   global_test_set_V   |     array    |
+|global_test_set_V_d1            | out |  256|  ap_memory |   global_test_set_V   |     array    |
+|global_test_set_V_q1            |  in |  256|  ap_memory |   global_test_set_V   |     array    |
+|global_test_set_V_we1           | out |    1|  ap_memory |   global_test_set_V   |     array    |
+|global_results_address0         | out |   11|  ap_memory |     global_results    |     array    |
+|global_results_ce0              | out |    1|  ap_memory |     global_results    |     array    |
+|global_results_d0               | out |    8|  ap_memory |     global_results    |     array    |
+|global_results_q0               |  in |    8|  ap_memory |     global_results    |     array    |
+|global_results_we0              | out |    1|  ap_memory |     global_results    |     array    |
+|global_results_address1         | out |   11|  ap_memory |     global_results    |     array    |
+|global_results_ce1              | out |    1|  ap_memory |     global_results    |     array    |
+|global_results_d1               | out |    8|  ap_memory |     global_results    |     array    |
+|global_results_q1               |  in |    8|  ap_memory |     global_results    |     array    |
+|global_results_we1              | out |    1|  ap_memory |     global_results    |     array    |
+|num_training                    |  in |   32|   ap_none  |      num_training     |    scalar    |
+|num_test                        |  in |   32|   ap_none  |        num_test       |    scalar    |
+|ap_clk                          |  in |    1| ap_ctrl_hs |        DigitRec       | return value |
+|ap_rst                          |  in |    1| ap_ctrl_hs |        DigitRec       | return value |
+|ap_start                        |  in |    1| ap_ctrl_hs |        DigitRec       | return value |
+|ap_done                         | out |    1| ap_ctrl_hs |        DigitRec       | return value |
+|ap_ready                        | out |    1| ap_ctrl_hs |        DigitRec       | return value |
+|ap_idle                         | out |    1| ap_ctrl_hs |        DigitRec       | return value |
++--------------------------------+-----+-----+------------+-----------------------+--------------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 2
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 8, States = { 1 2 3 4 5 6 7 8 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.83>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%num_test_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %num_test)" [digitrec.cpp:144]   --->   Operation 9 'read' 'num_test_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%num_training_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %num_training)" [digitrec.cpp:144]   --->   Operation 10 'read' 'num_training_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%num_test_c2 = alloca i32, align 4" [digitrec.cpp:144]   --->   Operation 11 'alloca' 'num_test_c2' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%num_training_c1 = alloca i32, align 4" [digitrec.cpp:143]   --->   Operation 12 'alloca' 'num_training_c1' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%num_test_c1109 = alloca i32, align 4" [digitrec.cpp:144]   --->   Operation 13 'alloca' 'num_test_c1109' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%num_test_c1108 = alloca i32, align 4" [digitrec.cpp:144]   --->   Operation 14 'alloca' 'num_test_c1108' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%num_test_c = alloca i32, align 4" [digitrec.cpp:144]   --->   Operation 15 'alloca' 'num_test_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%num_training_c = alloca i32, align 4" [digitrec.cpp:143]   --->   Operation 16 'alloca' 'num_training_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 17 [1/1] (1.83ns)   --->   "call void @DigitRec.entry3(i32 %num_training_read, i32 %num_test_read, i32* %num_training_c1, i32* %num_test_c2)" [digitrec.cpp:144]   --->   Operation 17 'call' <Predicate = true> <Delay = 1.83> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "call fastcc void @DigitRec.entry28(i32* nocapture %num_training_c1, i32* nocapture %num_test_c2, i32* %num_training_c, i32* %num_test_c, i32* %num_test_c1108)" [digitrec.cpp:145]   --->   Operation 18 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 19 [2/2] (0.00ns)   --->   "call fastcc void @Loop_1_proc([18000 x i256]* %global_training_set_V, [1800 x i256]* @training_set_V_0, [1800 x i256]* @training_set_V_1, [1800 x i256]* @training_set_V_2, [1800 x i256]* @training_set_V_3, [1800 x i256]* @training_set_V_4, [1800 x i256]* @training_set_V_5, [1800 x i256]* @training_set_V_6, [1800 x i256]* @training_set_V_7, [1800 x i256]* @training_set_V_8, [1800 x i256]* @training_set_V_9)"   --->   Operation 19 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 20 [2/2] (0.00ns)   --->   "call fastcc void @Loop_2_proc(i32* %num_test_c, [2000 x i256]* %global_test_set_V)" [digitrec.cpp:144]   --->   Operation 20 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 21 [1/2] (0.00ns)   --->   "call fastcc void @Loop_1_proc([18000 x i256]* %global_training_set_V, [1800 x i256]* @training_set_V_0, [1800 x i256]* @training_set_V_1, [1800 x i256]* @training_set_V_2, [1800 x i256]* @training_set_V_3, [1800 x i256]* @training_set_V_4, [1800 x i256]* @training_set_V_5, [1800 x i256]* @training_set_V_6, [1800 x i256]* @training_set_V_7, [1800 x i256]* @training_set_V_8, [1800 x i256]* @training_set_V_9)"   --->   Operation 21 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 22 [1/2] (0.00ns)   --->   "call fastcc void @Loop_2_proc(i32* %num_test_c, [2000 x i256]* %global_test_set_V)" [digitrec.cpp:144]   --->   Operation 22 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 23 [2/2] (0.00ns)   --->   "call fastcc void @Loop_TEST_LOOP_proc2(i32* %num_training_c, i32* %num_test_c1108, i32* %num_test_c1109)" [digitrec.cpp:143]   --->   Operation 23 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 24 [1/2] (0.00ns)   --->   "call fastcc void @Loop_TEST_LOOP_proc2(i32* %num_training_c, i32* %num_test_c1108, i32* %num_test_c1109)" [digitrec.cpp:143]   --->   Operation 24 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 25 [2/2] (0.00ns)   --->   "call fastcc void @Loop_4_proc(i32* nocapture %num_test_c1109, [2000 x i8]* %global_results, [2000 x i4]* @results)" [digitrec.cpp:144]   --->   Operation 25 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 26 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecChannel([13 x i8]* @test_set_OC_V34_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2000, i32 2000, i256* @test_set_V, i256* @test_set_V)"   --->   Operation 26 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 27 [1/1] (0.00ns)   --->   "%empty_41 = call i32 (...)* @_ssdm_op_SpecInterface(i256* @test_set_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 27 'specinterface' 'empty_41' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str2) nounwind" [digitrec.cpp:145]   --->   Operation 28 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([18000 x i256]* %global_training_set_V), !map !48"   --->   Operation 29 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([2000 x i256]* %global_test_set_V), !map !54"   --->   Operation 30 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([2000 x i8]* %global_results), !map !60"   --->   Operation 31 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %num_training), !map !64"   --->   Operation 32 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %num_test), !map !70"   --->   Operation 33 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @DigitRec_str) nounwind"   --->   Operation 34 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 35 [1/1] (0.00ns)   --->   "%empty_42 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @num_training_c_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 3, i32 0, i32* %num_training_c, i32* %num_training_c)" [digitrec.cpp:143]   --->   Operation 35 'specchannel' 'empty_42' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 36 [1/1] (0.00ns)   --->   "%empty_43 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %num_training_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [digitrec.cpp:143]   --->   Operation 36 'specinterface' 'empty_43' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 37 [1/1] (0.00ns)   --->   "%empty_44 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @num_test_c_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %num_test_c, i32* %num_test_c)" [digitrec.cpp:144]   --->   Operation 37 'specchannel' 'empty_44' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 38 [1/1] (0.00ns)   --->   "%empty_45 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %num_test_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [digitrec.cpp:144]   --->   Operation 38 'specinterface' 'empty_45' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 39 [1/1] (0.00ns)   --->   "%empty_46 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @num_test_c1108_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 3, i32 0, i32* %num_test_c1108, i32* %num_test_c1108)" [digitrec.cpp:144]   --->   Operation 39 'specchannel' 'empty_46' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 40 [1/1] (0.00ns)   --->   "%empty_47 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %num_test_c1108, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [digitrec.cpp:144]   --->   Operation 40 'specinterface' 'empty_47' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 41 [1/1] (0.00ns)   --->   "%empty_48 = call i32 (...)* @_ssdm_op_SpecChannel([16 x i8]* @num_training_c1_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %num_training_c1, i32* %num_training_c1)" [digitrec.cpp:143]   --->   Operation 41 'specchannel' 'empty_48' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 42 [1/1] (0.00ns)   --->   "%empty_49 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %num_training_c1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [digitrec.cpp:143]   --->   Operation 42 'specinterface' 'empty_49' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 43 [1/1] (0.00ns)   --->   "%empty_50 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @num_test_c2_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %num_test_c2, i32* %num_test_c2)" [digitrec.cpp:144]   --->   Operation 43 'specchannel' 'empty_50' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 44 [1/1] (0.00ns)   --->   "%empty_51 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %num_test_c2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [digitrec.cpp:144]   --->   Operation 44 'specinterface' 'empty_51' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 45 [1/1] (0.00ns)   --->   "%empty_52 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @num_test_c1109_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %num_test_c1109, i32* %num_test_c1109)" [digitrec.cpp:144]   --->   Operation 45 'specchannel' 'empty_52' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 46 [1/1] (0.00ns)   --->   "%empty_53 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %num_test_c1109, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [digitrec.cpp:144]   --->   Operation 46 'specinterface' 'empty_53' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 47 [1/2] (0.00ns)   --->   "call fastcc void @Loop_4_proc(i32* nocapture %num_test_c1109, [2000 x i8]* %global_results, [2000 x i4]* @results)" [digitrec.cpp:144]   --->   Operation 47 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 48 [1/1] (0.00ns)   --->   "ret void" [digitrec.cpp:221]   --->   Operation 48 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+STG Binding: 
+---------------- STG Properties BEGIN ----------------
+- Is combinational: 0
+- Is one-state seq: 0
+- Is datapath-only: 0
+- Is pipelined: 0
+- Is top level: 1
+Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
+Port [ global_training_set_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ global_test_set_V]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=1; pingpong=0; private_global=0; MemPort=[13]; IO mode=ap_memory:ce=0
+Port [ global_results]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern=0; dir=1; type=1; pingpong=0; private_global=0; MemPort=[03]; IO mode=ap_memory:ce=0
+Port [ num_training]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ num_test]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ training_set_V_0]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ training_set_V_1]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ training_set_V_2]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ training_set_V_3]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ training_set_V_4]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ training_set_V_5]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ training_set_V_6]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ training_set_V_7]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ training_set_V_8]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ training_set_V_9]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[23]; IO mode=ap_memory:ce=0
+Port [ test_set_V]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=3; pingpong=0; private_global=1; linkage=7; visibility=0; IO mode=ap_fifo:ce=0
+Port [ results]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=2; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[23]; IO mode=ap_memory:ce=0
+---------------- STG Properties END ------------------
+
+---------------- Datapath Model BEGIN ----------------
+
+<LifeTime>
+<method=bitvector/>
+num_test_read              (read                ) [ 000000000]
+num_training_read          (read                ) [ 000000000]
+num_test_c2                (alloca              ) [ 011111111]
+num_training_c1            (alloca              ) [ 011111111]
+num_test_c1109             (alloca              ) [ 001111111]
+num_test_c1108             (alloca              ) [ 001111111]
+num_test_c                 (alloca              ) [ 001111111]
+num_training_c             (alloca              ) [ 001111111]
+call_ln144                 (call                ) [ 000000000]
+call_ln145                 (call                ) [ 000000000]
+call_ln0                   (call                ) [ 000000000]
+call_ln144                 (call                ) [ 000000000]
+call_ln143                 (call                ) [ 000000000]
+empty                      (specchannel         ) [ 000000000]
+empty_41                   (specinterface       ) [ 000000000]
+specdataflowpipeline_ln145 (specdataflowpipeline) [ 000000000]
+specbitsmap_ln0            (specbitsmap         ) [ 000000000]
+specbitsmap_ln0            (specbitsmap         ) [ 000000000]
+specbitsmap_ln0            (specbitsmap         ) [ 000000000]
+specbitsmap_ln0            (specbitsmap         ) [ 000000000]
+specbitsmap_ln0            (specbitsmap         ) [ 000000000]
+spectopmodule_ln0          (spectopmodule       ) [ 000000000]
+empty_42                   (specchannel         ) [ 000000000]
+empty_43                   (specinterface       ) [ 000000000]
+empty_44                   (specchannel         ) [ 000000000]
+empty_45                   (specinterface       ) [ 000000000]
+empty_46                   (specchannel         ) [ 000000000]
+empty_47                   (specinterface       ) [ 000000000]
+empty_48                   (specchannel         ) [ 000000000]
+empty_49                   (specinterface       ) [ 000000000]
+empty_50                   (specchannel         ) [ 000000000]
+empty_51                   (specinterface       ) [ 000000000]
+empty_52                   (specchannel         ) [ 000000000]
+empty_53                   (specinterface       ) [ 000000000]
+call_ln144                 (call                ) [ 000000000]
+ret_ln221                  (ret                 ) [ 000000000]
+</LifeTime>
+
+<model>
+
+<comp_list>
+<comp id="0" class="1000" name="global_training_set_V">
+<pin_list>
+<pin id="1" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="global_training_set_V"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="2" class="1000" name="global_test_set_V">
+<pin_list>
+<pin id="3" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="global_test_set_V"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="4" class="1000" name="global_results">
+<pin_list>
+<pin id="5" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="global_results"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="6" class="1000" name="num_training">
+<pin_list>
+<pin id="7" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="num_training"/></StgValue>
+</bind>
+</comp>
+
+<comp id="8" class="1000" name="num_test">
+<pin_list>
+<pin id="9" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="num_test"/></StgValue>
+</bind>
+</comp>
+
+<comp id="10" class="1000" name="training_set_V_0">
+<pin_list>
+<pin id="11" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="training_set_V_0"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="12" class="1000" name="training_set_V_1">
+<pin_list>
+<pin id="13" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="training_set_V_1"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="14" class="1000" name="training_set_V_2">
+<pin_list>
+<pin id="15" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="training_set_V_2"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="16" class="1000" name="training_set_V_3">
+<pin_list>
+<pin id="17" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="training_set_V_3"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="18" class="1000" name="training_set_V_4">
+<pin_list>
+<pin id="19" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="training_set_V_4"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="20" class="1000" name="training_set_V_5">
+<pin_list>
+<pin id="21" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="training_set_V_5"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="22" class="1000" name="training_set_V_6">
+<pin_list>
+<pin id="23" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="training_set_V_6"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="24" class="1000" name="training_set_V_7">
+<pin_list>
+<pin id="25" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="training_set_V_7"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="26" class="1000" name="training_set_V_8">
+<pin_list>
+<pin id="27" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="training_set_V_8"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="28" class="1000" name="training_set_V_9">
+<pin_list>
+<pin id="29" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="training_set_V_9"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="30" class="1000" name="test_set_V">
+<pin_list>
+<pin id="31" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="test_set_V"/></StgValue>
+</bind>
+</comp>
+
+<comp id="32" class="1000" name="results">
+<pin_list>
+<pin id="33" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="results"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</bind>
+</comp>
+
+<comp id="34" class="1001" name="const_34">
+<pin_list>
+<pin id="35" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_Read.ap_auto.i32"/></StgValue>
+</bind>
+</comp>
+
+<comp id="36" class="1001" name="const_36">
+<pin_list>
+<pin id="37" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="38" class="1001" name="const_38">
+<pin_list>
+<pin id="39" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="DigitRec.entry3"/></StgValue>
+</bind>
+</comp>
+
+<comp id="40" class="1001" name="const_40">
+<pin_list>
+<pin id="41" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="DigitRec.entry28"/></StgValue>
+</bind>
+</comp>
+
+<comp id="42" class="1001" name="const_42">
+<pin_list>
+<pin id="43" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Loop_1_proc"/></StgValue>
+</bind>
+</comp>
+
+<comp id="44" class="1001" name="const_44">
+<pin_list>
+<pin id="45" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Loop_2_proc"/></StgValue>
+</bind>
+</comp>
+
+<comp id="46" class="1001" name="const_46">
+<pin_list>
+<pin id="47" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Loop_TEST_LOOP_proc2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="48" class="1001" name="const_48">
+<pin_list>
+<pin id="49" dir="1" index="0" bw="1" slack="0"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="Loop_4_proc"/></StgValue>
+</bind>
+</comp>
+
+<comp id="50" class="1001" name="const_50">
+<pin_list>
+<pin id="51" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecChannel"/></StgValue>
+</bind>
+</comp>
+
+<comp id="52" class="1001" name="const_52">
+<pin_list>
+<pin id="53" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="test_set_OC_V34_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="54" class="1001" name="const_54">
+<pin_list>
+<pin id="55" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="56" class="1001" name="const_56">
+<pin_list>
+<pin id="57" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="58" class="1001" name="const_58">
+<pin_list>
+<pin id="59" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="60" class="1001" name="const_60">
+<pin_list>
+<pin id="61" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecInterface"/></StgValue>
+</bind>
+</comp>
+
+<comp id="62" class="1001" name="const_62">
+<pin_list>
+<pin id="63" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="ap_fifo_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="64" class="1001" name="const_64">
+<pin_list>
+<pin id="65" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="66" class="1001" name="const_66">
+<pin_list>
+<pin id="67" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="68" class="1001" name="const_68">
+<pin_list>
+<pin id="69" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="70" class="1001" name="const_70">
+<pin_list>
+<pin id="71" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecDataflowPipeline"/></StgValue>
+</bind>
+</comp>
+
+<comp id="72" class="1001" name="const_72">
+<pin_list>
+<pin id="73" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="74" class="1001" name="const_74">
+<pin_list>
+<pin id="75" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="p_str2"/></StgValue>
+</bind>
+</comp>
+
+<comp id="76" class="1001" name="const_76">
+<pin_list>
+<pin id="77" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecBitsMap"/></StgValue>
+</bind>
+</comp>
+
+<comp id="78" class="1001" name="const_78">
+<pin_list>
+<pin id="79" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="_ssdm_op_SpecTopModule"/></StgValue>
+</bind>
+</comp>
+
+<comp id="80" class="1001" name="const_80">
+<pin_list>
+<pin id="81" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="DigitRec_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="82" class="1001" name="const_82">
+<pin_list>
+<pin id="83" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="num_training_c_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="84" class="1001" name="const_84">
+<pin_list>
+<pin id="85" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name=""/></StgValue>
+</bind>
+</comp>
+
+<comp id="86" class="1001" name="const_86">
+<pin_list>
+<pin id="87" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="num_test_c_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="88" class="1001" name="const_88">
+<pin_list>
+<pin id="89" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="num_test_c1108_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="90" class="1001" name="const_90">
+<pin_list>
+<pin id="91" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="num_training_c1_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="92" class="1001" name="const_92">
+<pin_list>
+<pin id="93" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="num_test_c2_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="94" class="1001" name="const_94">
+<pin_list>
+<pin id="95" dir="1" index="0" bw="1" slack="2147483647"/>
+</pin_list>
+<bind>
+<StgValue><ssdm name="num_test_c1109_str"/></StgValue>
+</bind>
+</comp>
+
+<comp id="96" class="1004" name="num_test_c2_fu_96">
+<pin_list>
+<pin id="97" dir="0" index="0" bw="1" slack="0"/>
+<pin id="98" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="num_test_c2/1 "/>
+</bind>
+</comp>
+
+<comp id="100" class="1004" name="num_training_c1_fu_100">
+<pin_list>
+<pin id="101" dir="0" index="0" bw="1" slack="0"/>
+<pin id="102" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="num_training_c1/1 "/>
+</bind>
+</comp>
+
+<comp id="104" class="1004" name="num_test_c1109_fu_104">
+<pin_list>
+<pin id="105" dir="0" index="0" bw="1" slack="0"/>
+<pin id="106" dir="1" index="1" bw="32" slack="4"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="num_test_c1109/1 "/>
+</bind>
+</comp>
+
+<comp id="108" class="1004" name="num_test_c1108_fu_108">
+<pin_list>
+<pin id="109" dir="0" index="0" bw="1" slack="0"/>
+<pin id="110" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="num_test_c1108/1 "/>
+</bind>
+</comp>
+
+<comp id="112" class="1004" name="num_test_c_fu_112">
+<pin_list>
+<pin id="113" dir="0" index="0" bw="1" slack="0"/>
+<pin id="114" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="num_test_c/1 "/>
+</bind>
+</comp>
+
+<comp id="116" class="1004" name="num_training_c_fu_116">
+<pin_list>
+<pin id="117" dir="0" index="0" bw="1" slack="0"/>
+<pin id="118" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opcode="alloca(26) " fcode="alloca"/>
+<opset="num_training_c/1 "/>
+</bind>
+</comp>
+
+<comp id="120" class="1004" name="num_test_read_read_fu_120">
+<pin_list>
+<pin id="121" dir="0" index="0" bw="32" slack="0"/>
+<pin id="122" dir="0" index="1" bw="32" slack="0"/>
+<pin id="123" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="num_test_read/1 "/>
+</bind>
+</comp>
+
+<comp id="126" class="1004" name="num_training_read_read_fu_126">
+<pin_list>
+<pin id="127" dir="0" index="0" bw="32" slack="0"/>
+<pin id="128" dir="0" index="1" bw="32" slack="0"/>
+<pin id="129" dir="1" index="2" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opcode="read(1150) " fcode="read"/>
+<opset="num_training_read/1 "/>
+</bind>
+</comp>
+
+<comp id="132" class="1004" name="grp_Loop_TEST_LOOP_proc2_fu_132">
+<pin_list>
+<pin id="133" dir="0" index="0" bw="0" slack="0"/>
+<pin id="134" dir="0" index="1" bw="32" slack="4"/>
+<pin id="135" dir="0" index="2" bw="32" slack="4"/>
+<pin id="136" dir="0" index="3" bw="32" slack="4"/>
+<pin id="137" dir="0" index="4" bw="4" slack="0"/>
+<pin id="138" dir="0" index="5" bw="256" slack="0"/>
+<pin id="139" dir="0" index="6" bw="256" slack="0"/>
+<pin id="140" dir="0" index="7" bw="256" slack="0"/>
+<pin id="141" dir="0" index="8" bw="256" slack="0"/>
+<pin id="142" dir="0" index="9" bw="256" slack="0"/>
+<pin id="143" dir="0" index="10" bw="256" slack="0"/>
+<pin id="144" dir="0" index="11" bw="256" slack="0"/>
+<pin id="145" dir="0" index="12" bw="256" slack="0"/>
+<pin id="146" dir="0" index="13" bw="256" slack="0"/>
+<pin id="147" dir="0" index="14" bw="256" slack="0"/>
+<pin id="148" dir="0" index="15" bw="256" slack="0"/>
+<pin id="149" dir="1" index="16" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln143/5 "/>
+</bind>
+</comp>
+
+<comp id="163" class="1004" name="grp_Loop_1_proc_fu_163">
+<pin_list>
+<pin id="164" dir="0" index="0" bw="0" slack="0"/>
+<pin id="165" dir="0" index="1" bw="256" slack="0"/>
+<pin id="166" dir="0" index="2" bw="256" slack="0"/>
+<pin id="167" dir="0" index="3" bw="256" slack="0"/>
+<pin id="168" dir="0" index="4" bw="256" slack="0"/>
+<pin id="169" dir="0" index="5" bw="256" slack="0"/>
+<pin id="170" dir="0" index="6" bw="256" slack="0"/>
+<pin id="171" dir="0" index="7" bw="256" slack="0"/>
+<pin id="172" dir="0" index="8" bw="256" slack="0"/>
+<pin id="173" dir="0" index="9" bw="256" slack="0"/>
+<pin id="174" dir="0" index="10" bw="256" slack="0"/>
+<pin id="175" dir="0" index="11" bw="256" slack="0"/>
+<pin id="176" dir="1" index="12" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln0/3 "/>
+</bind>
+</comp>
+
+<comp id="189" class="1004" name="grp_Loop_4_proc_fu_189">
+<pin_list>
+<pin id="190" dir="0" index="0" bw="0" slack="0"/>
+<pin id="191" dir="0" index="1" bw="32" slack="6"/>
+<pin id="192" dir="0" index="2" bw="8" slack="0"/>
+<pin id="193" dir="0" index="3" bw="4" slack="0"/>
+<pin id="194" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln144/7 "/>
+</bind>
+</comp>
+
+<comp id="198" class="1004" name="grp_Loop_2_proc_fu_198">
+<pin_list>
+<pin id="199" dir="0" index="0" bw="0" slack="0"/>
+<pin id="200" dir="0" index="1" bw="32" slack="2"/>
+<pin id="201" dir="0" index="2" bw="256" slack="0"/>
+<pin id="202" dir="0" index="3" bw="256" slack="0"/>
+<pin id="203" dir="1" index="4" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln144/3 "/>
+</bind>
+</comp>
+
+<comp id="207" class="1004" name="call_ln145_DigitRec_entry28_fu_207">
+<pin_list>
+<pin id="208" dir="0" index="0" bw="0" slack="0"/>
+<pin id="209" dir="0" index="1" bw="32" slack="1"/>
+<pin id="210" dir="0" index="2" bw="32" slack="1"/>
+<pin id="211" dir="0" index="3" bw="32" slack="1"/>
+<pin id="212" dir="0" index="4" bw="32" slack="1"/>
+<pin id="213" dir="0" index="5" bw="32" slack="1"/>
+<pin id="214" dir="1" index="6" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln145/2 "/>
+</bind>
+</comp>
+
+<comp id="216" class="1004" name="call_ln144_DigitRec_entry3_fu_216">
+<pin_list>
+<pin id="217" dir="0" index="0" bw="0" slack="0"/>
+<pin id="218" dir="0" index="1" bw="32" slack="0"/>
+<pin id="219" dir="0" index="2" bw="32" slack="0"/>
+<pin id="220" dir="0" index="3" bw="32" slack="0"/>
+<pin id="221" dir="0" index="4" bw="32" slack="0"/>
+<pin id="222" dir="1" index="5" bw="0" slack="2147483647"/>
+</pin_list>
+<bind>
+<opcode="call(48) " fcode="call"/>
+<opset="call_ln144/1 "/>
+</bind>
+</comp>
+
+<comp id="226" class="1005" name="num_test_c2_reg_226">
+<pin_list>
+<pin id="227" dir="0" index="0" bw="32" slack="0"/>
+<pin id="228" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opset="num_test_c2 "/>
+</bind>
+</comp>
+
+<comp id="232" class="1005" name="num_training_c1_reg_232">
+<pin_list>
+<pin id="233" dir="0" index="0" bw="32" slack="0"/>
+<pin id="234" dir="1" index="1" bw="32" slack="0"/>
+</pin_list>
+<bind>
+<opset="num_training_c1 "/>
+</bind>
+</comp>
+
+<comp id="238" class="1005" name="num_test_c1109_reg_238">
+<pin_list>
+<pin id="239" dir="0" index="0" bw="32" slack="4"/>
+<pin id="240" dir="1" index="1" bw="32" slack="4"/>
+</pin_list>
+<bind>
+<opset="num_test_c1109 "/>
+</bind>
+</comp>
+
+<comp id="244" class="1005" name="num_test_c1108_reg_244">
+<pin_list>
+<pin id="245" dir="0" index="0" bw="32" slack="1"/>
+<pin id="246" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="num_test_c1108 "/>
+</bind>
+</comp>
+
+<comp id="250" class="1005" name="num_test_c_reg_250">
+<pin_list>
+<pin id="251" dir="0" index="0" bw="32" slack="1"/>
+<pin id="252" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="num_test_c "/>
+</bind>
+</comp>
+
+<comp id="256" class="1005" name="num_training_c_reg_256">
+<pin_list>
+<pin id="257" dir="0" index="0" bw="32" slack="1"/>
+<pin id="258" dir="1" index="1" bw="32" slack="1"/>
+</pin_list>
+<bind>
+<opset="num_training_c "/>
+</bind>
+</comp>
+
+</comp_list>
+
+<net_list>
+<net id="99"><net_src comp="36" pin="0"/><net_sink comp="96" pin=0"/></net>
+
+<net id="103"><net_src comp="36" pin="0"/><net_sink comp="100" pin=0"/></net>
+
+<net id="107"><net_src comp="36" pin="0"/><net_sink comp="104" pin=0"/></net>
+
+<net id="111"><net_src comp="36" pin="0"/><net_sink comp="108" pin=0"/></net>
+
+<net id="115"><net_src comp="36" pin="0"/><net_sink comp="112" pin=0"/></net>
+
+<net id="119"><net_src comp="36" pin="0"/><net_sink comp="116" pin=0"/></net>
+
+<net id="124"><net_src comp="34" pin="0"/><net_sink comp="120" pin=0"/></net>
+
+<net id="125"><net_src comp="8" pin="0"/><net_sink comp="120" pin=1"/></net>
+
+<net id="130"><net_src comp="34" pin="0"/><net_sink comp="126" pin=0"/></net>
+
+<net id="131"><net_src comp="6" pin="0"/><net_sink comp="126" pin=1"/></net>
+
+<net id="150"><net_src comp="46" pin="0"/><net_sink comp="132" pin=0"/></net>
+
+<net id="151"><net_src comp="32" pin="0"/><net_sink comp="132" pin=4"/></net>
+
+<net id="152"><net_src comp="10" pin="0"/><net_sink comp="132" pin=5"/></net>
+
+<net id="153"><net_src comp="12" pin="0"/><net_sink comp="132" pin=6"/></net>
+
+<net id="154"><net_src comp="14" pin="0"/><net_sink comp="132" pin=7"/></net>
+
+<net id="155"><net_src comp="16" pin="0"/><net_sink comp="132" pin=8"/></net>
+
+<net id="156"><net_src comp="18" pin="0"/><net_sink comp="132" pin=9"/></net>
+
+<net id="157"><net_src comp="20" pin="0"/><net_sink comp="132" pin=10"/></net>
+
+<net id="158"><net_src comp="22" pin="0"/><net_sink comp="132" pin=11"/></net>
+
+<net id="159"><net_src comp="24" pin="0"/><net_sink comp="132" pin=12"/></net>
+
+<net id="160"><net_src comp="26" pin="0"/><net_sink comp="132" pin=13"/></net>
+
+<net id="161"><net_src comp="28" pin="0"/><net_sink comp="132" pin=14"/></net>
+
+<net id="162"><net_src comp="30" pin="0"/><net_sink comp="132" pin=15"/></net>
+
+<net id="177"><net_src comp="42" pin="0"/><net_sink comp="163" pin=0"/></net>
+
+<net id="178"><net_src comp="0" pin="0"/><net_sink comp="163" pin=1"/></net>
+
+<net id="179"><net_src comp="10" pin="0"/><net_sink comp="163" pin=2"/></net>
+
+<net id="180"><net_src comp="12" pin="0"/><net_sink comp="163" pin=3"/></net>
+
+<net id="181"><net_src comp="14" pin="0"/><net_sink comp="163" pin=4"/></net>
+
+<net id="182"><net_src comp="16" pin="0"/><net_sink comp="163" pin=5"/></net>
+
+<net id="183"><net_src comp="18" pin="0"/><net_sink comp="163" pin=6"/></net>
+
+<net id="184"><net_src comp="20" pin="0"/><net_sink comp="163" pin=7"/></net>
+
+<net id="185"><net_src comp="22" pin="0"/><net_sink comp="163" pin=8"/></net>
+
+<net id="186"><net_src comp="24" pin="0"/><net_sink comp="163" pin=9"/></net>
+
+<net id="187"><net_src comp="26" pin="0"/><net_sink comp="163" pin=10"/></net>
+
+<net id="188"><net_src comp="28" pin="0"/><net_sink comp="163" pin=11"/></net>
+
+<net id="195"><net_src comp="48" pin="0"/><net_sink comp="189" pin=0"/></net>
+
+<net id="196"><net_src comp="4" pin="0"/><net_sink comp="189" pin=2"/></net>
+
+<net id="197"><net_src comp="32" pin="0"/><net_sink comp="189" pin=3"/></net>
+
+<net id="204"><net_src comp="44" pin="0"/><net_sink comp="198" pin=0"/></net>
+
+<net id="205"><net_src comp="2" pin="0"/><net_sink comp="198" pin=2"/></net>
+
+<net id="206"><net_src comp="30" pin="0"/><net_sink comp="198" pin=3"/></net>
+
+<net id="215"><net_src comp="40" pin="0"/><net_sink comp="207" pin=0"/></net>
+
+<net id="223"><net_src comp="38" pin="0"/><net_sink comp="216" pin=0"/></net>
+
+<net id="224"><net_src comp="126" pin="2"/><net_sink comp="216" pin=1"/></net>
+
+<net id="225"><net_src comp="120" pin="2"/><net_sink comp="216" pin=2"/></net>
+
+<net id="229"><net_src comp="96" pin="1"/><net_sink comp="226" pin=0"/></net>
+
+<net id="230"><net_src comp="226" pin="1"/><net_sink comp="216" pin=4"/></net>
+
+<net id="231"><net_src comp="226" pin="1"/><net_sink comp="207" pin=2"/></net>
+
+<net id="235"><net_src comp="100" pin="1"/><net_sink comp="232" pin=0"/></net>
+
+<net id="236"><net_src comp="232" pin="1"/><net_sink comp="216" pin=3"/></net>
+
+<net id="237"><net_src comp="232" pin="1"/><net_sink comp="207" pin=1"/></net>
+
+<net id="241"><net_src comp="104" pin="1"/><net_sink comp="238" pin=0"/></net>
+
+<net id="242"><net_src comp="238" pin="1"/><net_sink comp="132" pin=3"/></net>
+
+<net id="243"><net_src comp="238" pin="1"/><net_sink comp="189" pin=1"/></net>
+
+<net id="247"><net_src comp="108" pin="1"/><net_sink comp="244" pin=0"/></net>
+
+<net id="248"><net_src comp="244" pin="1"/><net_sink comp="207" pin=5"/></net>
+
+<net id="249"><net_src comp="244" pin="1"/><net_sink comp="132" pin=2"/></net>
+
+<net id="253"><net_src comp="112" pin="1"/><net_sink comp="250" pin=0"/></net>
+
+<net id="254"><net_src comp="250" pin="1"/><net_sink comp="207" pin=4"/></net>
+
+<net id="255"><net_src comp="250" pin="1"/><net_sink comp="198" pin=1"/></net>
+
+<net id="259"><net_src comp="116" pin="1"/><net_sink comp="256" pin=0"/></net>
+
+<net id="260"><net_src comp="256" pin="1"/><net_sink comp="207" pin=3"/></net>
+
+<net id="261"><net_src comp="256" pin="1"/><net_sink comp="132" pin=1"/></net>
+
+</net_list>
+
+</model> 
+---------------- Datapath Model END ------------------
+
+* FSMD analyzer results:
+  - Output states:
+	Port: global_results | {7 8 }
+	Port: training_set_V_0 | {3 4 }
+	Port: training_set_V_1 | {3 4 }
+	Port: training_set_V_2 | {3 4 }
+	Port: training_set_V_3 | {3 4 }
+	Port: training_set_V_4 | {3 4 }
+	Port: training_set_V_5 | {3 4 }
+	Port: training_set_V_6 | {3 4 }
+	Port: training_set_V_7 | {3 4 }
+	Port: training_set_V_8 | {3 4 }
+	Port: training_set_V_9 | {3 4 }
+	Port: test_set_V | {3 4 }
+	Port: results | {5 6 }
+ - Input state : 
+	Port: DigitRec : global_training_set_V | {3 4 }
+	Port: DigitRec : global_test_set_V | {3 4 }
+	Port: DigitRec : num_training | {1 }
+	Port: DigitRec : num_test | {1 }
+	Port: DigitRec : training_set_V_0 | {5 6 }
+	Port: DigitRec : training_set_V_1 | {5 6 }
+	Port: DigitRec : training_set_V_2 | {5 6 }
+	Port: DigitRec : training_set_V_3 | {5 6 }
+	Port: DigitRec : training_set_V_4 | {5 6 }
+	Port: DigitRec : training_set_V_5 | {5 6 }
+	Port: DigitRec : training_set_V_6 | {5 6 }
+	Port: DigitRec : training_set_V_7 | {5 6 }
+	Port: DigitRec : training_set_V_8 | {5 6 }
+	Port: DigitRec : training_set_V_9 | {5 6 }
+	Port: DigitRec : test_set_V | {5 6 }
+	Port: DigitRec : results | {7 8 }
+  - Chain level:
+	State 1
+		call_ln144 : 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+
+* Functional unit list:
+|----------|------------------------------------|---------|---------|---------|---------|
+| Operation|           Functional Unit          |  DSP48E |  Delay  |    FF   |   LUT   |
+|----------|------------------------------------|---------|---------|---------|---------|
+|          |   grp_Loop_TEST_LOOP_proc2_fu_132  |    4    | 69.9988 |  11214  |   9257  |
+|          |       grp_Loop_1_proc_fu_163       |    0    |  1.312  |   140   |   140   |
+|   call   |       grp_Loop_4_proc_fu_189       |    0    |  0.656  |   170   |    67   |
+|          |       grp_Loop_2_proc_fu_198       |    0    |  0.656  |   106   |    67   |
+|          | call_ln145_DigitRec_entry28_fu_207 |    0    |    0    |    0    |    0    |
+|          |  call_ln144_DigitRec_entry3_fu_216 |    0    |    0    |    0    |    0    |
+|----------|------------------------------------|---------|---------|---------|---------|
+|   read   |      num_test_read_read_fu_120     |    0    |    0    |    0    |    0    |
+|          |    num_training_read_read_fu_126   |    0    |    0    |    0    |    0    |
+|----------|------------------------------------|---------|---------|---------|---------|
+|   Total  |                                    |    4    | 72.6228 |  11630  |   9531  |
+|----------|------------------------------------|---------|---------|---------|---------|
+
+Memories:
++----------------+--------+--------+--------+--------+
+|                |  BRAM  |   FF   |   LUT  |  URAM  |
++----------------+--------+--------+--------+--------+
+|     results    |    1   |    0   |    0   |    0   |
+|training_set_V_0|   29   |    0   |    0   |    0   |
+|training_set_V_1|   29   |    0   |    0   |    0   |
+|training_set_V_2|   29   |    0   |    0   |    0   |
+|training_set_V_3|   29   |    0   |    0   |    0   |
+|training_set_V_4|   29   |    0   |    0   |    0   |
+|training_set_V_5|   29   |    0   |    0   |    0   |
+|training_set_V_6|   29   |    0   |    0   |    0   |
+|training_set_V_7|   29   |    0   |    0   |    0   |
+|training_set_V_8|   29   |    0   |    0   |    0   |
+|training_set_V_9|   29   |    0   |    0   |    0   |
++----------------+--------+--------+--------+--------+
+|      Total     |   291  |    0   |    0   |    0   |
++----------------+--------+--------+--------+--------+
+
+* Register list:
++-----------------------+--------+
+|                       |   FF   |
++-----------------------+--------+
+| num_test_c1108_reg_244|   32   |
+| num_test_c1109_reg_238|   32   |
+|  num_test_c2_reg_226  |   32   |
+|   num_test_c_reg_250  |   32   |
+|num_training_c1_reg_232|   32   |
+| num_training_c_reg_256|   32   |
++-----------------------+--------+
+|         Total         |   192  |
++-----------------------+--------+
+
+* Multiplexer (MUX) list: 
+|--------|------|------|------|--------|
+|  Comp  |  Pin | Size |  BW  | S x BW |
+|--------|------|------|------|--------|
+|  Total |      |      |      |    0   |
+|--------|------|------|------|--------|
+
+
+
+* Summary:
++-----------+--------+--------+--------+--------+--------+--------+
+|           |  BRAM  | DSP48E |  Delay |   FF   |   LUT  |  URAM  |
++-----------+--------+--------+--------+--------+--------+--------+
+|  Function |    -   |    4   |   72   |  11630 |  9531  |    -   |
+|   Memory  |   291  |    -   |    -   |    0   |    0   |    0   |
+|Multiplexer|    -   |    -   |    -   |    -   |    -   |    -   |
+|  Register |    -   |    -   |    -   |   192  |    -   |    -   |
++-----------+--------+--------+--------+--------+--------+--------+
+|   Total   |   291  |    4   |   72   |  11822 |  9531  |    0   |
++-----------+--------+--------+--------+--------+--------+--------+

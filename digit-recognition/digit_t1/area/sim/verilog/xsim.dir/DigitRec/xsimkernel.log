@@ -1,0 +1,7 @@
+Running: xsim.dir/DigitRec/xsimk.exe -simmode gui -wdb DigitRec.wdb -simrunnum 0 -socket 63927
+Design successfully loaded
+Design Loading Memory Usage: 7864 KB (Peak: 7864 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 9496 KB (Peak: 9496 KB)
+Simulation CPU Usage: 311921 ms

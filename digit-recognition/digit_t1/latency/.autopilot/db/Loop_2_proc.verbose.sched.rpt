@@ -1,0 +1,158 @@
+
+
+================================================================
+== Vivado HLS Report for 'Loop_2_proc'
+================================================================
+* Date:           Sat Apr 10 19:07:24 2021
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        digit_t1
+* Solution:       latency
+* Product family: kintexuplus
+* Target device:  xcku5p-ffvb676-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     3.075|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+------+-----+------+---------+
+    |   Latency  |  Interval  | Pipeline|
+    | min |  max | min |  max |   Type  |
+    +-----+------+-----+------+---------+
+    |    2|  2002|    2|  2002|   none  |
+    +-----+------+-----+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-----+------+----------+-----------+-----------+----------+----------+
+        |          |   Latency  | Iteration|  Initiation Interval  |   Trip   |          |
+        | Loop Name| min |  max |  Latency |  achieved |   target  |   Count  | Pipelined|
+        +----------+-----+------+----------+-----------+-----------+----------+----------+
+        |- Loop 1  |    0|  2000|         2|          1|          1| 0 ~ 2000 |    yes   |
+        +----------+-----+------+----------+-----------+-----------+----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 4 3 
+3 --> 2 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.83>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecInterface(i256* @test_set_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 5 'specinterface' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%empty_31 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %num_test, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [11 x i8]* @ScalarProp_str)"   --->   Operation 6 'specinterface' 'empty_31' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (1.83ns)   --->   "%num_test_read = call i32 @_ssdm_op_Read.ap_fifo.i32P(i32* %num_test)" [digitrec.cpp:172]   --->   Operation 7 'read' 'num_test_read' <Predicate = true> <Delay = 1.83> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 8 [1/1] (0.65ns)   --->   "br label %.preheader18.i.i"   --->   Operation 8 'br' <Predicate = true> <Delay = 0.65>
+
+State 2 <SV = 1> <Delay = 1.27>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%i1_0_i_i = phi i31 [ %i, %hls_label_1 ], [ 0, %entry ]"   --->   Operation 9 'phi' 'i1_0_i_i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "%zext_ln172 = zext i31 %i1_0_i_i to i32" [digitrec.cpp:172->digitrec.cpp:144]   --->   Operation 10 'zext' 'zext_ln172' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.99ns)   --->   "%icmp_ln172 = icmp slt i32 %zext_ln172, %num_test_read" [digitrec.cpp:172->digitrec.cpp:144]   --->   Operation 11 'icmp' 'icmp_ln172' <Predicate = true> <Delay = 0.99> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 12 [1/1] (1.00ns)   --->   "%i = add i31 %i1_0_i_i, 1" [digitrec.cpp:172->digitrec.cpp:144]   --->   Operation 12 'add' 'i' <Predicate = true> <Delay = 1.00> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.00> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "br i1 %icmp_ln172, label %hls_label_1, label %.exit" [digitrec.cpp:172->digitrec.cpp:144]   --->   Operation 13 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%zext_ln175 = zext i31 %i1_0_i_i to i64" [digitrec.cpp:175->digitrec.cpp:144]   --->   Operation 14 'zext' 'zext_ln175' <Predicate = (icmp_ln172)> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "%global_test_set_V_ad = getelementptr [2000 x i256]* %global_test_set_V, i64 0, i64 %zext_ln175" [digitrec.cpp:175->digitrec.cpp:144]   --->   Operation 15 'getelementptr' 'global_test_set_V_ad' <Predicate = (icmp_ln172)> <Delay = 0.00>
+ST_2 : Operation 16 [2/2] (1.23ns)   --->   "%global_test_set_V_lo = load i256* %global_test_set_V_ad, align 32" [digitrec.cpp:175->digitrec.cpp:144]   --->   Operation 16 'load' 'global_test_set_V_lo' <Predicate = (icmp_ln172)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 2000> <RAM>
+
+State 3 <SV = 2> <Delay = 3.07>
+ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%tmp_8_i_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str13)" [digitrec.cpp:172->digitrec.cpp:144]   --->   Operation 17 'specregionbegin' 'tmp_8_i_i' <Predicate = (icmp_ln172)> <Delay = 0.00>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i32 0, i32 2000, i32 1000, [1 x i8]* @p_str2) nounwind" [digitrec.cpp:173->digitrec.cpp:144]   --->   Operation 18 'speclooptripcount' <Predicate = (icmp_ln172)> <Delay = 0.00>
+ST_3 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind" [digitrec.cpp:174->digitrec.cpp:144]   --->   Operation 19 'specpipeline' <Predicate = (icmp_ln172)> <Delay = 0.00>
+ST_3 : Operation 20 [1/2] (1.23ns)   --->   "%global_test_set_V_lo = load i256* %global_test_set_V_ad, align 32" [digitrec.cpp:175->digitrec.cpp:144]   --->   Operation 20 'load' 'global_test_set_V_lo' <Predicate = (icmp_ln172)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 2000> <RAM>
+ST_3 : Operation 21 [1/1] (1.83ns)   --->   "call void @_ssdm_op_Write.ap_fifo.volatile.i256P(i256* @test_set_V, i256 %global_test_set_V_lo)" [digitrec.cpp:175->digitrec.cpp:144]   --->   Operation 21 'write' <Predicate = (icmp_ln172)> <Delay = 1.83> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%empty_32 = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str13, i32 %tmp_8_i_i)" [digitrec.cpp:176->digitrec.cpp:144]   --->   Operation 22 'specregionend' 'empty_32' <Predicate = (icmp_ln172)> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "br label %.preheader18.i.i" [digitrec.cpp:172->digitrec.cpp:144]   --->   Operation 23 'br' <Predicate = (icmp_ln172)> <Delay = 0.00>
+
+State 4 <SV = 2> <Delay = 0.00>
+ST_4 : Operation 24 [1/1] (0.00ns)   --->   "ret void" [digitrec.cpp:144]   --->   Operation 24 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.84ns
+The critical path consists of the following:
+	fifo read on port 'num_test' (digitrec.cpp:172) [6]  (1.84 ns)
+
+ <State 2>: 1.27ns
+The critical path consists of the following:
+	'icmp' operation ('icmp_ln172', digitrec.cpp:172->digitrec.cpp:144) [11]  (0.991 ns)
+	blocking operation 0.282 ns on control path)
+
+ <State 3>: 3.08ns
+The critical path consists of the following:
+	'load' operation ('global_test_set_V_lo', digitrec.cpp:175->digitrec.cpp:144) on array 'global_test_set_V' [20]  (1.24 ns)
+	fifo write on port 'test_set_V' (digitrec.cpp:175->digitrec.cpp:144) [21]  (1.84 ns)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

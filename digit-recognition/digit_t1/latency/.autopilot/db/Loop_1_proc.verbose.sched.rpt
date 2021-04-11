@@ -1,0 +1,203 @@
+
+
+================================================================
+== Vivado HLS Report for 'Loop_1_proc'
+================================================================
+* Date:           Sat Apr 10 19:07:24 2021
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        digit_t1
+* Solution:       latency
+* Product family: kintexuplus
+* Target device:  xcku5p-ffvb676-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     2.474|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-------+-------+-------+-------+---------+
+    |    Latency    |    Interval   | Pipeline|
+    |  min  |  max  |  min  |  max  |   Type  |
+    +-------+-------+-------+-------+---------+
+    |  18002|  18002|  18002|  18002|   none  |
+    +-------+-------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+-------+-------+----------+-----------+-----------+-------+----------+
+        |          |    Latency    | Iteration|  Initiation Interval  |  Trip |          |
+        | Loop Name|  min  |  max  |  Latency |  achieved |   target  | Count | Pipelined|
+        +----------+-------+-------+----------+-----------+-----------+-------+----------+
+        |- Loop 1  |  18000|  18000|         2|          1|          1|  18000|    yes   |
+        +----------+-------+-------+----------+-----------+-----------+-------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 4 3 
+3 --> 2 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.65>
+ST_1 : Operation 5 [1/1] (0.65ns)   --->   "br label %0" [digitrec.cpp:165]   --->   Operation 5 'br' <Predicate = true> <Delay = 0.65>
+
+State 2 <SV = 1> <Delay = 1.23>
+ST_2 : Operation 6 [1/1] (0.00ns)   --->   "%i_0_i = phi i15 [ 0, %entry ], [ %i, %hls_label_0_end ]"   --->   Operation 6 'phi' 'i_0_i' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%phi_mul = phi i30 [ 0, %entry ], [ %add_ln321, %hls_label_0_end ]" [digitrec.cpp:168]   --->   Operation 7 'phi' 'phi_mul' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%phi_urem = phi i15 [ 0, %entry ], [ %select_ln169, %hls_label_0_end ]" [digitrec.cpp:169]   --->   Operation 8 'phi' 'phi_urem' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (1.07ns)   --->   "%icmp_ln165 = icmp eq i15 %i_0_i, -14768" [digitrec.cpp:165]   --->   Operation 9 'icmp' 'icmp_ln165' <Predicate = true> <Delay = 1.07> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.07> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i64 18000, i64 18000, i64 18000)"   --->   Operation 10 'speclooptripcount' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.84ns)   --->   "%i = add i15 %i_0_i, 1" [digitrec.cpp:165]   --->   Operation 11 'add' 'i' <Predicate = true> <Delay = 0.84> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "br i1 %icmp_ln165, label %Loop_1_proc.exit, label %hls_label_0_begin" [digitrec.cpp:165]   --->   Operation 12 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "%zext_ln168 = zext i15 %i_0_i to i64" [digitrec.cpp:168]   --->   Operation 13 'zext' 'zext_ln168' <Predicate = (!icmp_ln165)> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "%global_training_set_s = getelementptr [18000 x i256]* %global_training_set_V, i64 0, i64 %zext_ln168" [digitrec.cpp:168]   --->   Operation 14 'getelementptr' 'global_training_set_s' <Predicate = (!icmp_ln165)> <Delay = 0.00>
+ST_2 : Operation 15 [2/2] (1.23ns)   --->   "%global_training_set_1 = load i256* %global_training_set_s, align 32" [digitrec.cpp:168]   --->   Operation 15 'load' 'global_training_set_1' <Predicate = (!icmp_ln165)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 1800> <RAM>
+ST_2 : Operation 16 [1/1] (0.99ns)   --->   "%add_ln321 = add i30 %phi_mul, 37283" [digitrec.cpp:168]   --->   Operation 16 'add' 'add_ln321' <Predicate = (!icmp_ln165)> <Delay = 0.99> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%tmp = call i4 @_ssdm_op_PartSelect.i4.i30.i32.i32(i30 %phi_mul, i32 26, i32 29)" [digitrec.cpp:168]   --->   Operation 17 'partselect' 'tmp' <Predicate = (!icmp_ln165)> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.75ns)   --->   "switch i4 %tmp, label %branch9.i [
+    i4 0, label %branch0.i
+    i4 1, label %branch1.i
+    i4 2, label %branch2.i
+    i4 3, label %branch3.i
+    i4 4, label %branch4.i
+    i4 5, label %branch5.i
+    i4 6, label %branch6.i
+    i4 7, label %branch7.i
+    i4 -8, label %branch8.i
+  ]" [digitrec.cpp:168]   --->   Operation 18 'switch' <Predicate = (!icmp_ln165)> <Delay = 0.75>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "br label %hls_label_0_end" [digitrec.cpp:168]   --->   Operation 19 'br' <Predicate = (!icmp_ln165 & tmp == 8)> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "br label %hls_label_0_end" [digitrec.cpp:168]   --->   Operation 20 'br' <Predicate = (!icmp_ln165 & tmp == 7)> <Delay = 0.00>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "br label %hls_label_0_end" [digitrec.cpp:168]   --->   Operation 21 'br' <Predicate = (!icmp_ln165 & tmp == 6)> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "br label %hls_label_0_end" [digitrec.cpp:168]   --->   Operation 22 'br' <Predicate = (!icmp_ln165 & tmp == 5)> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "br label %hls_label_0_end" [digitrec.cpp:168]   --->   Operation 23 'br' <Predicate = (!icmp_ln165 & tmp == 4)> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "br label %hls_label_0_end" [digitrec.cpp:168]   --->   Operation 24 'br' <Predicate = (!icmp_ln165 & tmp == 3)> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "br label %hls_label_0_end" [digitrec.cpp:168]   --->   Operation 25 'br' <Predicate = (!icmp_ln165 & tmp == 2)> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "br label %hls_label_0_end" [digitrec.cpp:168]   --->   Operation 26 'br' <Predicate = (!icmp_ln165 & tmp == 1)> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "br label %hls_label_0_end" [digitrec.cpp:168]   --->   Operation 27 'br' <Predicate = (!icmp_ln165 & tmp == 0)> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "br label %hls_label_0_end" [digitrec.cpp:168]   --->   Operation 28 'br' <Predicate = (!icmp_ln165 & tmp != 0 & tmp != 1 & tmp != 2 & tmp != 3 & tmp != 4 & tmp != 5 & tmp != 6 & tmp != 7 & tmp != 8)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 2.47>
+ST_3 : Operation 29 [1/1] (0.00ns)   --->   "%tmp_i = call i32 (...)* @_ssdm_op_SpecRegionBegin([12 x i8]* @p_str12)" [digitrec.cpp:165]   --->   Operation 29 'specregionbegin' 'tmp_i' <Predicate = (!icmp_ln165)> <Delay = 0.00>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind" [digitrec.cpp:167]   --->   Operation 30 'specpipeline' <Predicate = (!icmp_ln165)> <Delay = 0.00>
+ST_3 : Operation 31 [1/2] (1.23ns)   --->   "%global_training_set_1 = load i256* %global_training_set_s, align 32" [digitrec.cpp:168]   --->   Operation 31 'load' 'global_training_set_1' <Predicate = (!icmp_ln165)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 1800> <RAM>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%zext_ln321 = zext i15 %phi_urem to i64" [digitrec.cpp:168]   --->   Operation 32 'zext' 'zext_ln321' <Predicate = (!icmp_ln165)> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%training_set_V_0_add = getelementptr [1800 x i256]* %training_set_V_0, i64 0, i64 %zext_ln321" [digitrec.cpp:168]   --->   Operation 33 'getelementptr' 'training_set_V_0_add' <Predicate = (!icmp_ln165)> <Delay = 0.00>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%training_set_V_1_add = getelementptr [1800 x i256]* %training_set_V_1, i64 0, i64 %zext_ln321" [digitrec.cpp:168]   --->   Operation 34 'getelementptr' 'training_set_V_1_add' <Predicate = (!icmp_ln165)> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%training_set_V_2_add = getelementptr [1800 x i256]* %training_set_V_2, i64 0, i64 %zext_ln321" [digitrec.cpp:168]   --->   Operation 35 'getelementptr' 'training_set_V_2_add' <Predicate = (!icmp_ln165)> <Delay = 0.00>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%training_set_V_3_add = getelementptr [1800 x i256]* %training_set_V_3, i64 0, i64 %zext_ln321" [digitrec.cpp:168]   --->   Operation 36 'getelementptr' 'training_set_V_3_add' <Predicate = (!icmp_ln165)> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%training_set_V_4_add = getelementptr [1800 x i256]* %training_set_V_4, i64 0, i64 %zext_ln321" [digitrec.cpp:168]   --->   Operation 37 'getelementptr' 'training_set_V_4_add' <Predicate = (!icmp_ln165)> <Delay = 0.00>
+ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%training_set_V_5_add = getelementptr [1800 x i256]* %training_set_V_5, i64 0, i64 %zext_ln321" [digitrec.cpp:168]   --->   Operation 38 'getelementptr' 'training_set_V_5_add' <Predicate = (!icmp_ln165)> <Delay = 0.00>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%training_set_V_6_add = getelementptr [1800 x i256]* %training_set_V_6, i64 0, i64 %zext_ln321" [digitrec.cpp:168]   --->   Operation 39 'getelementptr' 'training_set_V_6_add' <Predicate = (!icmp_ln165)> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%training_set_V_7_add = getelementptr [1800 x i256]* %training_set_V_7, i64 0, i64 %zext_ln321" [digitrec.cpp:168]   --->   Operation 40 'getelementptr' 'training_set_V_7_add' <Predicate = (!icmp_ln165)> <Delay = 0.00>
+ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%training_set_V_8_add = getelementptr [1800 x i256]* %training_set_V_8, i64 0, i64 %zext_ln321" [digitrec.cpp:168]   --->   Operation 41 'getelementptr' 'training_set_V_8_add' <Predicate = (!icmp_ln165)> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%training_set_V_9_add = getelementptr [1800 x i256]* %training_set_V_9, i64 0, i64 %zext_ln321" [digitrec.cpp:168]   --->   Operation 42 'getelementptr' 'training_set_V_9_add' <Predicate = (!icmp_ln165)> <Delay = 0.00>
+ST_3 : Operation 43 [1/1] (1.23ns)   --->   "store i256 %global_training_set_1, i256* %training_set_V_8_add, align 32" [digitrec.cpp:168]   --->   Operation 43 'store' <Predicate = (tmp == 8)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 1800> <RAM>
+ST_3 : Operation 44 [1/1] (1.23ns)   --->   "store i256 %global_training_set_1, i256* %training_set_V_7_add, align 32" [digitrec.cpp:168]   --->   Operation 44 'store' <Predicate = (tmp == 7)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 1800> <RAM>
+ST_3 : Operation 45 [1/1] (1.23ns)   --->   "store i256 %global_training_set_1, i256* %training_set_V_6_add, align 32" [digitrec.cpp:168]   --->   Operation 45 'store' <Predicate = (tmp == 6)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 1800> <RAM>
+ST_3 : Operation 46 [1/1] (1.23ns)   --->   "store i256 %global_training_set_1, i256* %training_set_V_5_add, align 32" [digitrec.cpp:168]   --->   Operation 46 'store' <Predicate = (tmp == 5)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 1800> <RAM>
+ST_3 : Operation 47 [1/1] (1.23ns)   --->   "store i256 %global_training_set_1, i256* %training_set_V_4_add, align 32" [digitrec.cpp:168]   --->   Operation 47 'store' <Predicate = (tmp == 4)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 1800> <RAM>
+ST_3 : Operation 48 [1/1] (1.23ns)   --->   "store i256 %global_training_set_1, i256* %training_set_V_3_add, align 32" [digitrec.cpp:168]   --->   Operation 48 'store' <Predicate = (tmp == 3)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 1800> <RAM>
+ST_3 : Operation 49 [1/1] (1.23ns)   --->   "store i256 %global_training_set_1, i256* %training_set_V_2_add, align 32" [digitrec.cpp:168]   --->   Operation 49 'store' <Predicate = (tmp == 2)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 1800> <RAM>
+ST_3 : Operation 50 [1/1] (1.23ns)   --->   "store i256 %global_training_set_1, i256* %training_set_V_1_add, align 32" [digitrec.cpp:168]   --->   Operation 50 'store' <Predicate = (tmp == 1)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 1800> <RAM>
+ST_3 : Operation 51 [1/1] (1.23ns)   --->   "store i256 %global_training_set_1, i256* %training_set_V_0_add, align 32" [digitrec.cpp:168]   --->   Operation 51 'store' <Predicate = (tmp == 0)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 1800> <RAM>
+ST_3 : Operation 52 [1/1] (1.23ns)   --->   "store i256 %global_training_set_1, i256* %training_set_V_9_add, align 32" [digitrec.cpp:168]   --->   Operation 52 'store' <Predicate = (tmp == 15) | (tmp == 14) | (tmp == 13) | (tmp == 12) | (tmp == 11) | (tmp == 10) | (tmp == 9)> <Delay = 1.23> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 1.23> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 256> <Depth = 1800> <RAM>
+ST_3 : Operation 53 [1/1] (0.84ns)   --->   "%add_ln169 = add i15 %phi_urem, 1" [digitrec.cpp:169]   --->   Operation 53 'add' 'add_ln169' <Predicate = (!icmp_ln165)> <Delay = 0.84> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 0.84> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 54 [1/1] (1.07ns)   --->   "%icmp_ln169 = icmp ult i15 %add_ln169, 1800" [digitrec.cpp:169]   --->   Operation 54 'icmp' 'icmp_ln169' <Predicate = (!icmp_ln165)> <Delay = 1.07> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.07> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 55 [1/1] (0.39ns)   --->   "%select_ln169 = select i1 %icmp_ln169, i15 %add_ln169, i15 0" [digitrec.cpp:169]   --->   Operation 55 'select' 'select_ln169' <Predicate = (!icmp_ln165)> <Delay = 0.39> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 56 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecRegionEnd([12 x i8]* @p_str12, i32 %tmp_i)" [digitrec.cpp:169]   --->   Operation 56 'specregionend' 'empty' <Predicate = (!icmp_ln165)> <Delay = 0.00>
+ST_3 : Operation 57 [1/1] (0.00ns)   --->   "br label %0" [digitrec.cpp:165]   --->   Operation 57 'br' <Predicate = (!icmp_ln165)> <Delay = 0.00>
+
+State 4 <SV = 2> <Delay = 0.00>
+ST_4 : Operation 58 [1/1] (0.00ns)   --->   "ret void" [digitrec.cpp:165]   --->   Operation 58 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0.656ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', digitrec.cpp:165) [14]  (0.656 ns)
+
+ <State 2>: 1.24ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', digitrec.cpp:165) [14]  (0 ns)
+	'getelementptr' operation ('global_training_set_s', digitrec.cpp:168) [25]  (0 ns)
+	'load' operation ('global_training_set_1', digitrec.cpp:168) on array 'global_training_set_V' [26]  (1.24 ns)
+
+ <State 3>: 2.47ns
+The critical path consists of the following:
+	'load' operation ('global_training_set_1', digitrec.cpp:168) on array 'global_training_set_V' [26]  (1.24 ns)
+	'store' operation ('store_ln168', digitrec.cpp:168) of variable 'global_training_set_1', digitrec.cpp:168 on array 'training_set_V_8' [42]  (1.24 ns)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

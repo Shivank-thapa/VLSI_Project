@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 18000 for loop 'Loop-0' (digitrec.cpp:166:1) in function 'DigitRec'." projectName="digit_t1" solutionName="area" date="2021-04-10T19:08:50.955+0530" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] digitrec.cpp:18: variable-indexed range selection may cause suboptimal QoR." projectName="digit_t1" solutionName="area" date="2021-04-10T19:08:49.637+0530" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'Loop_TEST_LOOP_proc2' (Loop: TRAINING_LOOP): Unable to enforce a carried dependence constraint (II = 19, distance = 1, offset = 1)&#xD;&#xA;   between 'call' operation ('call_ret9', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn' and 'call' operation ('call_ret', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn'." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:27.062+0530" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'Loop_TEST_LOOP_proc2' (Loop: TRAINING_LOOP): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)&#xD;&#xA;   between 'call' operation ('call_ret9', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn' and 'call' operation ('call_ret', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn'." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:27.012+0530" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'Loop_TEST_LOOP_proc2' (Loop: TRAINING_LOOP): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)&#xD;&#xA;   between 'call' operation ('call_ret9', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn' and 'call' operation ('call_ret', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn'." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:26.972+0530" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'Loop_TEST_LOOP_proc2' (Loop: TRAINING_LOOP): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)&#xD;&#xA;   between 'call' operation ('call_ret9', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn' and 'call' operation ('call_ret', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn'." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:26.962+0530" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-68] The II Violation in module 'Loop_TEST_LOOP_proc2' (Loop: TRAINING_LOOP): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)&#xD;&#xA;   between 'call' operation ('call_ret9', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn' and 'call' operation ('call_ret', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn'." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:26.954+0530" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'DigitRec.entry28' to 'DigitRec_entry28'." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:23.757+0530" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'DigitRec.entry3' to 'DigitRec_entry3'." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:23.742+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'Loop_TEST_LOOP_proc27' to 'Loop_TEST_LOOP_proc2' (digitrec.cpp:144:61)" projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:23.723+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'TEST_LOOP' (digitrec.cpp:181:49) in function 'Loop_TEST_LOOP_proc27' : &#xD;&#xA;&#xD;&#xA;the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:21.828+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'global_results' should be updated in process function 'Loop_4_proc', otherwise it may not be synthesized correctly." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:17.537+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'results'  should be updated in process function 'Loop_TEST_LOOP_proc27', otherwise it may not be synthesized correctly." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:17.522+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'test_set.V'  should be updated in process function 'Loop_2_proc', otherwise it may not be synthesized correctly." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:17.512+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] Argument 'global_test_set.V' has read operations in process function 'Loop_2_proc'." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:17.502+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] Reading dataflow channel 'global_test_set.V' in the middle of dataflow may stall the dataflow pipeline:" projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:17.497+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.9'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:17.492+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.8'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:17.482+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.7'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:17.472+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.6'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:17.467+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.5'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:17.462+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.4'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:17.452+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.3'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:17.442+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.2'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:17.437+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.1'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:17.432+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.0'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:17.422+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] Argument 'global_training_set.V' has read operations in process function 'Loop_1_proc'." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:17.412+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-713] Reading dataflow channel 'global_training_set.V' in the middle of dataflow may stall the dataflow pipeline:" projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:17.412+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 18000 for loop 'Loop-0' (digitrec.cpp:166:1) in function 'DigitRec'." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:15.308+0530" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] digitrec.cpp:18: variable-indexed range selection may cause suboptimal QoR." projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:13.582+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file digitrec.cpp" projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:12.962+0530" type="Warning"/>
+        <logs message="WARNING: [HLS 214-111] Static variables and non-static stream cannot be used inside a dataflow region: digitrec.cpp:151:24" projectName="digit_t1" solutionName="latency" date="2021-04-10T19:07:08.822+0530" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 18000 for loop 'Loop-0' (digitrec.cpp:170:1) in function 'DigitRec'." projectName="digit_t1" solutionName="base" date="2021-04-10T17:38:22.833+0530" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] digitrec.cpp:18: variable-indexed range selection may cause suboptimal QoR." projectName="digit_t1" solutionName="base" date="2021-04-10T17:38:21.577+0530" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,862 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcku5p-ffvb676-2-e'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'digitrec.cpp' ... 
+WARNING: [HLS 214-111] Static variables and non-static stream cannot be used inside a dataflow region: digitrec.cpp:162:24
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file digitrec.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 174.914 ; gain = 84.926
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 174.914 ; gain = 84.926
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'update_knn' into 'DigitRec' (digitrec.cpp:210).
+INFO: [XFORM 203-603] Inlining function 'knn_vote' into 'DigitRec' (digitrec.cpp:216).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 174.914 ; gain = 84.926
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] digitrec.cpp:18: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 174.914 ; gain = 84.926
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'popcount' (digitrec.cpp:17:28).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'TRAINING_LOOP' (digitrec.cpp:201) in function 'DigitRec' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'INSERTION_SORT_OUTER' (digitrec.cpp:99) in function 'DigitRec' for pipelining.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 18000 for loop 'Loop-0' (digitrec.cpp:171:1) in function 'DigitRec'.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (digitrec.cpp:17) in function 'popcount' completely with a factor of 256.
+INFO: [HLS 200-489] Unrolling loop 'SET_KNN_SET' (digitrec.cpp:194) in function 'DigitRec' completely with a factor of 30.
+INFO: [HLS 200-489] Unrolling loop 'LANES' (digitrec.cpp:204) in function 'DigitRec' completely with a factor of 10.
+INFO: [HLS 200-489] Unrolling loop 'FIND_MAX_DIST' (digitrec.cpp:43) in function 'DigitRec' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'INIT_1' (digitrec.cpp:82) in function 'DigitRec' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'INIT_2' (digitrec.cpp:89) in function 'DigitRec' completely with a factor of 10.
+INFO: [HLS 200-489] Unrolling loop 'INSERTION_SORT_INNER' (digitrec.cpp:103) in function 'DigitRec' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'INSERT' (digitrec.cpp:109) in function 'DigitRec' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VOTE' (digitrec.cpp:137) in function 'DigitRec' completely with a factor of 10.
+INFO: [XFORM 203-101] Partitioning array 'knn_set' (digitrec.cpp:159) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'training_set.V'  in dimension 1 with a block factor 10.
+INFO: [XFORM 203-101] Partitioning array 'min_distance_list' (digitrec.cpp:69) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'label_list' (digitrec.cpp:72) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'vote_list' (digitrec.cpp:75) in dimension 1 completely.
+INFO: [XFORM 203-721] Change variable 'test_set.V' to FIFO automatically.
+INFO: [XFORM 203-721] Changing loop 'Loop_1_proc' (digitrec.cpp:170) to a process function for dataflow in function 'DigitRec'.
+INFO: [XFORM 203-721] Changing loop 'Loop_2_proc' (digitrec.cpp:177) to a process function for dataflow in function 'DigitRec'.
+INFO: [XFORM 203-721] Changing loop 'Loop_TEST_LOOP_proc' (digitrec.cpp:187) to a process function for dataflow in function 'DigitRec'.
+INFO: [XFORM 203-721] Changing loop 'Loop_4_proc' (digitrec.cpp:222) to a process function for dataflow in function 'DigitRec'.
+WARNING: [XFORM 203-713] Reading dataflow channel 'global_training_set.V' in the middle of dataflow may stall the dataflow pipeline:
+WARNING: [XFORM 203-713] Argument 'global_training_set.V' has read operations in process function 'Loop_1_proc'.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.0'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.1'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.2'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.3'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.4'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.5'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.6'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.7'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.8'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.9'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] Reading dataflow channel 'global_test_set.V' in the middle of dataflow may stall the dataflow pipeline:
+WARNING: [XFORM 203-713] Argument 'global_test_set.V' has read operations in process function 'Loop_2_proc'.
+WARNING: [XFORM 203-713] All the elements of global array 'test_set.V'  should be updated in process function 'Loop_2_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'results'  should be updated in process function 'Loop_TEST_LOOP_proc17', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'global_results' should be updated in process function 'Loop_4_proc', otherwise it may not be synthesized correctly.
+INFO: [XFORM 203-712] Applying dataflow to function 'DigitRec', detected/extracted 5 process function(s): 
+	 'DigitRec.entry18'
+	 'Loop_1_proc'
+	 'Loop_2_proc'
+	 'Loop_TEST_LOOP_proc17'
+	 'Loop_4_proc'.
+WARNING: [XFORM 203-124] Array  'test_set.V' : may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (digitrec.cpp:201:6) to (digitrec.cpp:212:7) in function 'Loop_TEST_LOOP_proc17'... converting 79 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (digitrec.cpp:99:6) to (digitrec.cpp:98:50) in function 'Loop_TEST_LOOP_proc17'... converting 15 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'popcount' (digitrec.cpp:18:17)...252 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:16 . Memory (MB): peak = 174.914 ; gain = 84.926
+INFO: [XFORM 203-541] Flattening a loop nest 'LANES' (digitrec.cpp:97:4) in function 'Loop_TEST_LOOP_proc17'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'TEST_LOOP' (digitrec.cpp:187:4) in function 'Loop_TEST_LOOP_proc17' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-631] Renaming function 'Loop_TEST_LOOP_proc17' to 'Loop_TEST_LOOP_proc1' (digitrec.cpp:31:2)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 233.801 ; gain = 143.813
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'DigitRec' ...
+WARNING: [SYN 201-103] Legalizing function name 'DigitRec.entry3' to 'DigitRec_entry3'.
+WARNING: [SYN 201-103] Legalizing function name 'DigitRec.entry18' to 'DigitRec_entry18'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DigitRec_entry3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 20.007 seconds; current allocated memory: 181.510 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.058 seconds; current allocated memory: 181.571 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DigitRec_entry18' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.167 seconds; current allocated memory: 181.611 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.048 seconds; current allocated memory: 181.701 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_1_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.074 seconds; current allocated memory: 181.916 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.068 seconds; current allocated memory: 182.159 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_2_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.149 seconds; current allocated memory: 182.221 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.056 seconds; current allocated memory: 182.313 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'popcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'popcount'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.294 seconds; current allocated memory: 184.413 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.395 seconds; current allocated memory: 186.798 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_TEST_LOOP_proc1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'TRAINING_LOOP'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 13.
+INFO: [SCHED 204-61] Pipelining loop 'LANES_INSERTION_SORT_OUTER'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'INCREMENT'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.651 seconds; current allocated memory: 188.650 MB.
+INFO: [HLS 200-434] Only 3 loops out of a total 4 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.789 seconds; current allocated memory: 192.164 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_4_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.747 seconds; current allocated memory: 194.683 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.067 seconds; current allocated memory: 194.811 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DigitRec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.074 seconds; current allocated memory: 194.902 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.575 seconds; current allocated memory: 197.461 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DigitRec_entry3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DigitRec_entry3'.
+INFO: [HLS 200-111]  Elapsed time: 1.514 seconds; current allocated memory: 200.006 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DigitRec_entry18' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DigitRec_entry18'.
+INFO: [HLS 200-111]  Elapsed time: 0.072 seconds; current allocated memory: 200.190 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_1_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_1_proc'.
+INFO: [HLS 200-111]  Elapsed time: 0.086 seconds; current allocated memory: 200.606 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_2_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_2_proc'.
+INFO: [HLS 200-111]  Elapsed time: 0.176 seconds; current allocated memory: 200.865 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'popcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'popcount'.
+INFO: [HLS 200-111]  Elapsed time: 0.209 seconds; current allocated memory: 205.565 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_TEST_LOOP_proc1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'DigitRec_mux_305_32_1_1' to 'DigitRec_mux_305_bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_mux_32_32_1_1' to 'DigitRec_mux_32_3cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_mux_104_32_1_1' to 'DigitRec_mux_104_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_mux_164_32_1_1' to 'DigitRec_mux_164_eOg' due to the length limit 20
+INFO: [RTGEN 206-104] Estimated max fanout for 'Loop_TEST_LOOP_proc1' is 7380 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
+INFO: [RTGEN 206-100] Generating core module 'DigitRec_mux_104_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DigitRec_mux_164_eOg': 7 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DigitRec_mux_305_bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DigitRec_mux_32_3cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_TEST_LOOP_proc1'.
+INFO: [HLS 200-111]  Elapsed time: 2.289 seconds; current allocated memory: 211.264 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_4_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_4_proc'.
+INFO: [HLS 200-111]  Elapsed time: 2.948 seconds; current allocated memory: 215.337 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DigitRec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'DigitRec/global_training_set_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'DigitRec/global_test_set_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'DigitRec/global_results' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'DigitRec/num_training' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'DigitRec/num_test' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'DigitRec' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_0' to 'DigitRec_trainingfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_1' to 'DigitRec_trainingg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_2' to 'DigitRec_traininghbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_3' to 'DigitRec_trainingibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_4' to 'DigitRec_trainingjbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_5' to 'DigitRec_trainingkbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_6' to 'DigitRec_traininglbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_7' to 'DigitRec_trainingmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_8' to 'DigitRec_trainingncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_9' to 'DigitRec_trainingocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_DigitRec_entry18_U0' to 'start_for_DigitRepcA' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DigitRec'.
+INFO: [HLS 200-111]  Elapsed time: 0.363 seconds; current allocated memory: 217.035 MB.
+INFO: [RTMG 210-278] Implementing memory 'DigitRec_trainingfYi_memcore_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'DigitRec_results_memcore_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-285] Implementing FIFO 'num_training_c1_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'num_test_c2_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'num_training_c_U(fifo_w32_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'num_test_c_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'num_test_c1801_U(fifo_w32_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'test_set_V_U(fifo_w256_d2000_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'num_test_c1802_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_DigitRepcA_U(start_for_DigitRepcA)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:25 ; elapsed = 00:00:39 . Memory (MB): peak = 391.930 ; gain = 301.941
+INFO: [VHDL 208-304] Generating VHDL RTL for DigitRec.
+INFO: [VLOG 209-307] Generating Verilog RTL for DigitRec.
+INFO: [HLS 200-112] Total elapsed time: 38.794 seconds; peak allocated memory: 217.035 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcku5p-ffvb676-2-e'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'digitrec.cpp' ... 
+WARNING: [HLS 214-111] Static variables and non-static stream cannot be used inside a dataflow region: digitrec.cpp:147:24
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file digitrec.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 174.941 ; gain = 83.406
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 174.941 ; gain = 83.406
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'update_knn' into 'DigitRec' (digitrec.cpp:192).
+INFO: [XFORM 203-603] Inlining function 'knn_vote' into 'DigitRec' (digitrec.cpp:199).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 174.941 ; gain = 83.406
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] digitrec.cpp:17: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 174.941 ; gain = 83.406
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'popcount' (digitrec.cpp:16:27).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'TRAINING_LOOP' (digitrec.cpp:183) in function 'DigitRec' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'INSERTION_SORT_OUTER' (digitrec.cpp:91) in function 'DigitRec' for pipelining.
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 18000 for loop 'Loop-0' (digitrec.cpp:156:1) in function 'DigitRec'.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (digitrec.cpp:16) in function 'popcount' completely with a factor of 256.
+INFO: [HLS 200-489] Unrolling loop 'SET_KNN_SET' (digitrec.cpp:177) in function 'DigitRec' completely with a factor of 30.
+INFO: [HLS 200-489] Unrolling loop 'LANES' (digitrec.cpp:185) in function 'DigitRec' completely with a factor of 10.
+INFO: [HLS 200-489] Unrolling loop 'FIND_MAX_DIST' (digitrec.cpp:41) in function 'DigitRec' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'INIT_1' (digitrec.cpp:77) in function 'DigitRec' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'INIT_2' (digitrec.cpp:83) in function 'DigitRec' completely with a factor of 10.
+INFO: [HLS 200-489] Unrolling loop 'INSERTION_SORT_INNER' (digitrec.cpp:94) in function 'DigitRec' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'INSERT' (digitrec.cpp:100) in function 'DigitRec' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VOTE' (digitrec.cpp:123) in function 'DigitRec' completely with a factor of 10.
+INFO: [XFORM 203-101] Partitioning array 'knn_set' (digitrec.cpp:144) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'training_set.V'  in dimension 1 with a block factor 10.
+INFO: [XFORM 203-101] Partitioning array 'min_distance_list' (digitrec.cpp:65) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'label_list' (digitrec.cpp:68) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'vote_list' (digitrec.cpp:71) in dimension 1 completely.
+INFO: [XFORM 203-721] Change variable 'test_set.V' to FIFO automatically.
+INFO: [XFORM 203-721] Changing loop 'Loop_1_proc' (digitrec.cpp:155) to a process function for dataflow in function 'DigitRec'.
+INFO: [XFORM 203-721] Changing loop 'Loop_2_proc' (digitrec.cpp:162) to a process function for dataflow in function 'DigitRec'.
+INFO: [XFORM 203-721] Changing loop 'Loop_TEST_LOOP_proc' (digitrec.cpp:171) to a process function for dataflow in function 'DigitRec'.
+INFO: [XFORM 203-721] Changing loop 'Loop_4_proc' (digitrec.cpp:205) to a process function for dataflow in function 'DigitRec'.
+WARNING: [XFORM 203-713] Reading dataflow channel 'global_training_set.V' in the middle of dataflow may stall the dataflow pipeline:
+WARNING: [XFORM 203-713] Argument 'global_training_set.V' has read operations in process function 'Loop_1_proc'.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.0'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.1'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.2'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.3'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.4'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.5'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.6'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.7'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.8'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.9'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] Reading dataflow channel 'global_test_set.V' in the middle of dataflow may stall the dataflow pipeline:
+WARNING: [XFORM 203-713] Argument 'global_test_set.V' has read operations in process function 'Loop_2_proc'.
+WARNING: [XFORM 203-713] All the elements of global array 'test_set.V'  should be updated in process function 'Loop_2_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'results'  should be updated in process function 'Loop_TEST_LOOP_proc17', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'global_results' should be updated in process function 'Loop_4_proc', otherwise it may not be synthesized correctly.
+INFO: [XFORM 203-712] Applying dataflow to function 'DigitRec', detected/extracted 5 process function(s): 
+	 'DigitRec.entry18'
+	 'Loop_1_proc'
+	 'Loop_2_proc'
+	 'Loop_TEST_LOOP_proc17'
+	 'Loop_4_proc'.
+WARNING: [XFORM 203-124] Array  'test_set.V' : may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (digitrec.cpp:183:67) to (digitrec.cpp:195:4) in function 'Loop_TEST_LOOP_proc17'... converting 79 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (digitrec.cpp:91:54) to (digitrec.cpp:91:48) in function 'Loop_TEST_LOOP_proc17'... converting 15 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'popcount' (digitrec.cpp:17:15)...252 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 174.941 ; gain = 83.406
+INFO: [XFORM 203-541] Flattening a loop nest 'LANES' (digitrec.cpp:90:39) in function 'Loop_TEST_LOOP_proc17'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'TEST_LOOP' (digitrec.cpp:171:49) in function 'Loop_TEST_LOOP_proc17' : 
+
+more than one sub loop.
+WARNING: [XFORM 203-631] Renaming function 'Loop_TEST_LOOP_proc17' to 'Loop_TEST_LOOP_proc1' (digitrec.cpp:30:2)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 233.844 ; gain = 142.309
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'DigitRec' ...
+WARNING: [SYN 201-103] Legalizing function name 'DigitRec.entry3' to 'DigitRec_entry3'.
+WARNING: [SYN 201-103] Legalizing function name 'DigitRec.entry18' to 'DigitRec_entry18'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DigitRec_entry3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 20.82 seconds; current allocated memory: 181.525 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.048 seconds; current allocated memory: 181.587 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DigitRec_entry18' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.179 seconds; current allocated memory: 181.627 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 181.716 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_1_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.077 seconds; current allocated memory: 181.916 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.068 seconds; current allocated memory: 182.159 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_2_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.135 seconds; current allocated memory: 182.206 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.059 seconds; current allocated memory: 182.297 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'popcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'popcount'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.293 seconds; current allocated memory: 184.413 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.409 seconds; current allocated memory: 186.798 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_TEST_LOOP_proc1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'TRAINING_LOOP'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 13.
+INFO: [SCHED 204-61] Pipelining loop 'LANES_INSERTION_SORT_OUTER'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'INCREMENT'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.668 seconds; current allocated memory: 188.666 MB.
+INFO: [HLS 200-434] Only 3 loops out of a total 4 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.781 seconds; current allocated memory: 192.164 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_4_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 1.745 seconds; current allocated memory: 194.668 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.141 seconds; current allocated memory: 194.795 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DigitRec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.111 seconds; current allocated memory: 194.886 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 1.586 seconds; current allocated memory: 197.446 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DigitRec_entry3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DigitRec_entry3'.
+INFO: [HLS 200-111]  Elapsed time: 1.541 seconds; current allocated memory: 199.975 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DigitRec_entry18' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DigitRec_entry18'.
+INFO: [HLS 200-111]  Elapsed time: 0.071 seconds; current allocated memory: 200.205 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_1_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_1_proc'.
+INFO: [HLS 200-111]  Elapsed time: 0.087 seconds; current allocated memory: 200.621 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_2_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_2_proc'.
+INFO: [HLS 200-111]  Elapsed time: 0.208 seconds; current allocated memory: 200.865 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'popcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'popcount'.
+INFO: [HLS 200-111]  Elapsed time: 0.218 seconds; current allocated memory: 205.565 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_TEST_LOOP_proc1' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'DigitRec_mux_305_32_1_1' to 'DigitRec_mux_305_bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_mux_32_32_1_1' to 'DigitRec_mux_32_3cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_mux_104_32_1_1' to 'DigitRec_mux_104_dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_mux_164_32_1_1' to 'DigitRec_mux_164_eOg' due to the length limit 20
+INFO: [RTGEN 206-104] Estimated max fanout for 'Loop_TEST_LOOP_proc1' is 7380 from HDL expression: (1'b0 == ap_block_pp0_stage0_11001)
+INFO: [RTGEN 206-100] Generating core module 'DigitRec_mux_104_dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DigitRec_mux_164_eOg': 7 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DigitRec_mux_305_bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DigitRec_mux_32_3cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_TEST_LOOP_proc1'.
+INFO: [HLS 200-111]  Elapsed time: 2.305 seconds; current allocated memory: 211.280 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_4_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_4_proc'.
+INFO: [HLS 200-111]  Elapsed time: 2.981 seconds; current allocated memory: 215.336 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DigitRec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'DigitRec/global_training_set_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'DigitRec/global_test_set_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'DigitRec/global_results' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'DigitRec/num_training' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'DigitRec/num_test' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'DigitRec' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_0' to 'DigitRec_trainingfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_1' to 'DigitRec_trainingg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_2' to 'DigitRec_traininghbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_3' to 'DigitRec_trainingibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_4' to 'DigitRec_trainingjbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_5' to 'DigitRec_trainingkbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_6' to 'DigitRec_traininglbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_7' to 'DigitRec_trainingmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_8' to 'DigitRec_trainingncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_9' to 'DigitRec_trainingocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_DigitRec_entry18_U0' to 'start_for_DigitRepcA' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DigitRec'.
+INFO: [HLS 200-111]  Elapsed time: 0.348 seconds; current allocated memory: 217.020 MB.
+INFO: [RTMG 210-278] Implementing memory 'DigitRec_trainingfYi_memcore_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'DigitRec_results_memcore_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-285] Implementing FIFO 'num_training_c1_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'num_test_c2_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'num_training_c_U(fifo_w32_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'num_test_c_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'num_test_c1801_U(fifo_w32_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'test_set_V_U(fifo_w256_d2000_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'num_test_c1802_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_DigitRepcA_U(start_for_DigitRepcA)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:26 ; elapsed = 00:00:40 . Memory (MB): peak = 390.859 ; gain = 299.324
+INFO: [VHDL 208-304] Generating VHDL RTL for DigitRec.
+INFO: [VLOG 209-307] Generating Verilog RTL for DigitRec.
+INFO: [HLS 200-112] Total elapsed time: 39.951 seconds; peak allocated memory: 217.020 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xcku5p-ffvb676-2-e'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'digitrec.cpp' ... 
+WARNING: [HLS 214-111] Static variables and non-static stream cannot be used inside a dataflow region: digitrec.cpp:151:24
+WARNING: [HLS 200-471] Dataflow form checks found 1 issue(s) in file digitrec.cpp
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 175.246 ; gain = 83.723
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 175.246 ; gain = 83.723
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 175.246 ; gain = 83.723
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'popcount' into 'update_knn' (digitrec.cpp:35) automatically.
+WARNING: [SYNCHK 200-23] digitrec.cpp:18: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 175.246 ; gain = 83.723
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'popcount' (digitrec.cpp:17:27).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'TRAINING_LOOP' (digitrec.cpp:193) in function 'DigitRec' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'INSERTION_SORT_OUTER' (digitrec.cpp:95) in function 'knn_vote' for pipelining.
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'update_knn' (digitrec.cpp:27).
+WARNING: [XFORM 203-561] Updating loop lower bound from 0 to 18000 for loop 'Loop-0' (digitrec.cpp:166:1) in function 'DigitRec'.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (digitrec.cpp:17) in function 'popcount' completely with a factor of 256.
+INFO: [HLS 200-489] Unrolling loop 'SET_KNN_SET' (digitrec.cpp:187) in function 'DigitRec' completely with a factor of 30.
+INFO: [HLS 200-489] Unrolling loop 'LANES' (digitrec.cpp:195) in function 'DigitRec' completely with a factor of 10.
+INFO: [HLS 200-489] Unrolling loop 'INIT_1' (digitrec.cpp:81) in function 'knn_vote' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'INIT_2' (digitrec.cpp:87) in function 'knn_vote' completely with a factor of 10.
+INFO: [HLS 200-489] Unrolling loop 'INSERTION_SORT_INNER' (digitrec.cpp:98) in function 'knn_vote' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'INSERT' (digitrec.cpp:104) in function 'knn_vote' completely with a factor of 3.
+INFO: [HLS 200-489] Unrolling loop 'VOTE' (digitrec.cpp:127) in function 'knn_vote' completely with a factor of 10.
+INFO: [HLS 200-489] Unrolling loop 'FIND_MAX_DIST' (digitrec.cpp:42) in function 'update_knn' completely with a factor of 3.
+INFO: [XFORM 203-101] Partitioning array 'knn_set' (digitrec.cpp:148) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'training_set.V'  in dimension 1 with a block factor 10.
+INFO: [XFORM 203-101] Partitioning array 'min_distance_list' (digitrec.cpp:65) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'label_list' (digitrec.cpp:68) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'vote_list' (digitrec.cpp:71) in dimension 1 completely.
+INFO: [XFORM 203-721] Change variable 'test_set.V' to FIFO automatically.
+INFO: [XFORM 203-721] Changing loop 'Loop_1_proc' (digitrec.cpp:165) to a process function for dataflow in function 'DigitRec'.
+INFO: [XFORM 203-721] Changing loop 'Loop_2_proc' (digitrec.cpp:172) to a process function for dataflow in function 'DigitRec'.
+INFO: [XFORM 203-721] Changing loop 'Loop_TEST_LOOP_proc' (digitrec.cpp:181) to a process function for dataflow in function 'DigitRec'.
+INFO: [XFORM 203-721] Changing loop 'Loop_4_proc' (digitrec.cpp:215) to a process function for dataflow in function 'DigitRec'.
+WARNING: [XFORM 203-713] Reading dataflow channel 'global_training_set.V' in the middle of dataflow may stall the dataflow pipeline:
+WARNING: [XFORM 203-713] Argument 'global_training_set.V' has read operations in process function 'Loop_1_proc'.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.0'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.1'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.2'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.3'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.4'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.5'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.6'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.7'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.8'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'training_set.V.9'  should be updated in process function 'Loop_1_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] Reading dataflow channel 'global_test_set.V' in the middle of dataflow may stall the dataflow pipeline:
+WARNING: [XFORM 203-713] Argument 'global_test_set.V' has read operations in process function 'Loop_2_proc'.
+WARNING: [XFORM 203-713] All the elements of global array 'test_set.V'  should be updated in process function 'Loop_2_proc', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'results'  should be updated in process function 'Loop_TEST_LOOP_proc27', otherwise it may not be synthesized correctly.
+WARNING: [XFORM 203-713] All the elements of global array 'global_results' should be updated in process function 'Loop_4_proc', otherwise it may not be synthesized correctly.
+INFO: [XFORM 203-712] Applying dataflow to function 'DigitRec', detected/extracted 5 process function(s): 
+	 'DigitRec.entry28'
+	 'Loop_1_proc'
+	 'Loop_2_proc'
+	 'Loop_TEST_LOOP_proc27'
+	 'Loop_4_proc'.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (digitrec.cpp:95:54) to (digitrec.cpp:95:48) in function 'knn_vote'... converting 15 basic blocks.
+INFO: [XFORM 203-11] Balancing expressions in function 'popcount' (digitrec.cpp:18:15)...252 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 175.246 ; gain = 83.723
+INFO: [XFORM 203-541] Flattening a loop nest 'LANES' (digitrec.cpp:94:39) in function 'knn_vote'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'TEST_LOOP' (digitrec.cpp:181:49) in function 'Loop_TEST_LOOP_proc27' : 
+
+the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+WARNING: [XFORM 203-631] Renaming function 'Loop_TEST_LOOP_proc27' to 'Loop_TEST_LOOP_proc2' (digitrec.cpp:144:61)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:00:20 . Memory (MB): peak = 256.523 ; gain = 165.000
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'DigitRec' ...
+WARNING: [SYN 201-103] Legalizing function name 'DigitRec.entry3' to 'DigitRec_entry3'.
+WARNING: [SYN 201-103] Legalizing function name 'DigitRec.entry28' to 'DigitRec_entry28'.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DigitRec_entry3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 19.691 seconds; current allocated memory: 204.258 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.071 seconds; current allocated memory: 204.319 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DigitRec_entry28' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.167 seconds; current allocated memory: 204.360 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.052 seconds; current allocated memory: 204.449 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_1_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.078 seconds; current allocated memory: 204.648 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.072 seconds; current allocated memory: 204.892 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_2_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.139 seconds; current allocated memory: 204.954 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 205.046 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'popcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'popcount'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.299 seconds; current allocated memory: 207.109 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.455 seconds; current allocated memory: 209.532 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'update_knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'update_knn'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.571 seconds; current allocated memory: 210.332 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.21 seconds; current allocated memory: 211.864 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'knn_vote' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'LANES_INSERTION_SORT_OUTER'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'INCREMENT'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.411 seconds; current allocated memory: 212.659 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.148 seconds; current allocated memory: 213.608 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_TEST_LOOP_proc2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'TRAINING_LOOP'.
+WARNING: [SCHED 204-68] The II Violation in module 'Loop_TEST_LOOP_proc2' (Loop: TRAINING_LOOP): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 1)
+   between 'call' operation ('call_ret9', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn' and 'call' operation ('call_ret', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn'.
+WARNING: [SCHED 204-68] The II Violation in module 'Loop_TEST_LOOP_proc2' (Loop: TRAINING_LOOP): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 1)
+   between 'call' operation ('call_ret9', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn' and 'call' operation ('call_ret', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn'.
+WARNING: [SCHED 204-68] The II Violation in module 'Loop_TEST_LOOP_proc2' (Loop: TRAINING_LOOP): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 1)
+   between 'call' operation ('call_ret9', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn' and 'call' operation ('call_ret', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn'.
+WARNING: [SCHED 204-68] The II Violation in module 'Loop_TEST_LOOP_proc2' (Loop: TRAINING_LOOP): Unable to enforce a carried dependence constraint (II = 4, distance = 1, offset = 1)
+   between 'call' operation ('call_ret9', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn' and 'call' operation ('call_ret', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn'.
+WARNING: [SCHED 204-68] The II Violation in module 'Loop_TEST_LOOP_proc2' (Loop: TRAINING_LOOP): Unable to enforce a carried dependence constraint (II = 19, distance = 1, offset = 1)
+   between 'call' operation ('call_ret9', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn' and 'call' operation ('call_ret', digitrec.cpp:202->digitrec.cpp:144) to 'update_knn'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 20, Depth = 22.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.541 seconds; current allocated memory: 214.757 MB.
+INFO: [HLS 200-434] Only 1 loops out of a total 2 loops have been pipelined in this design.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.552 seconds; current allocated memory: 216.747 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'Loop_4_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.481 seconds; current allocated memory: 217.190 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.074 seconds; current allocated memory: 217.281 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'DigitRec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.078 seconds; current allocated memory: 217.357 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.348 seconds; current allocated memory: 217.896 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DigitRec_entry3' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DigitRec_entry3'.
+INFO: [HLS 200-111]  Elapsed time: 0.328 seconds; current allocated memory: 218.383 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DigitRec_entry28' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DigitRec_entry28'.
+INFO: [HLS 200-111]  Elapsed time: 0.085 seconds; current allocated memory: 218.552 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_1_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_1_proc'.
+INFO: [HLS 200-111]  Elapsed time: 0.094 seconds; current allocated memory: 218.969 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_2_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_2_proc'.
+INFO: [HLS 200-111]  Elapsed time: 0.179 seconds; current allocated memory: 219.229 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'popcount' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'popcount'.
+INFO: [HLS 200-111]  Elapsed time: 0.218 seconds; current allocated memory: 223.955 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'update_knn' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'DigitRec_mux_305_32_1_0' to 'DigitRec_mux_305_bkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_mux_325_1_1_0' to 'DigitRec_mux_325_cud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'DigitRec_mux_305_bkb': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DigitRec_mux_325_cud': 30 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'update_knn'.
+INFO: [HLS 200-111]  Elapsed time: 2.199 seconds; current allocated memory: 230.550 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'knn_vote' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SYN 201-210] Renamed object name 'DigitRec_mux_32_32_1_1' to 'DigitRec_mux_32_3dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_mux_104_32_1_1' to 'DigitRec_mux_104_eOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_mux_164_32_1_1' to 'DigitRec_mux_164_fYi' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'DigitRec_mux_104_eOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DigitRec_mux_164_fYi': 7 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DigitRec_mux_305_bkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'DigitRec_mux_32_3dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'knn_vote'.
+INFO: [HLS 200-111]  Elapsed time: 0.85 seconds; current allocated memory: 232.657 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_TEST_LOOP_proc2' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_TEST_LOOP_proc2'.
+INFO: [HLS 200-111]  Elapsed time: 0.811 seconds; current allocated memory: 236.259 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'Loop_4_proc' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'Loop_4_proc'.
+INFO: [HLS 200-111]  Elapsed time: 1.125 seconds; current allocated memory: 237.126 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'DigitRec' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'DigitRec/global_training_set_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'DigitRec/global_test_set_V' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'DigitRec/global_results' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'DigitRec/num_training' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'DigitRec/num_test' to 'ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'DigitRec' to 'ap_ctrl_hs'.
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_0' to 'DigitRec_trainingg8j' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_1' to 'DigitRec_traininghbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_2' to 'DigitRec_trainingibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_3' to 'DigitRec_trainingjbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_4' to 'DigitRec_trainingkbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_5' to 'DigitRec_traininglbW' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_6' to 'DigitRec_trainingmb6' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_7' to 'DigitRec_trainingncg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_8' to 'DigitRec_trainingocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'DigitRec_training_set_V_9' to 'DigitRec_trainingpcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'start_for_DigitRec_entry28_U0' to 'start_for_DigitReqcK' due to the length limit 20
+INFO: [RTGEN 206-100] Finished creating RTL model for 'DigitRec'.
+INFO: [HLS 200-111]  Elapsed time: 0.358 seconds; current allocated memory: 238.814 MB.
+INFO: [RTMG 210-278] Implementing memory 'DigitRec_trainingg8j_memcore_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-278] Implementing memory 'DigitRec_results_memcore_ram (RAM)' using block RAMs with power-on initialization.
+INFO: [RTMG 210-285] Implementing FIFO 'num_training_c1_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'num_test_c2_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'num_training_c_U(fifo_w32_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'num_test_c_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'num_test_c1108_U(fifo_w32_d3_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'test_set_V_U(fifo_w256_d2000_A)' using Block RAMs.
+INFO: [RTMG 210-285] Implementing FIFO 'num_test_c1109_U(fifo_w32_d2_A)' using Shift Registers.
+INFO: [RTMG 210-285] Implementing FIFO 'start_for_DigitReqcK_U(start_for_DigitReqcK)' using Shift Registers.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 336.508 ; gain = 244.984
+INFO: [VHDL 208-304] Generating VHDL RTL for DigitRec.
+INFO: [VLOG 209-307] Generating Verilog RTL for DigitRec.
+INFO: [HLS 200-112] Total elapsed time: 34.775 seconds; peak allocated memory: 238.814 MB.

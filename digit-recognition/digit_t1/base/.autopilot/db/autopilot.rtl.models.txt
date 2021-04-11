@@ -1,0 +1,8 @@
+DigitRec_mux_32_3bkb
+knn_vote_vote_list
+DigitRec_trainingcud
+DigitRec_test_set_V
+DigitRec_results
+DigitRec_knn_set
+knn_vote
+DigitRec

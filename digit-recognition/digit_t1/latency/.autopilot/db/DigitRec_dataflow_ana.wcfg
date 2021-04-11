@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="DigitRec.wdb" id="1">
+         <top_modules>
+            <top_module name="apa_DigitRec_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0ns"></ZoomStartTime>
+      <ZoomEndTime time="2000ns"></ZoomEndTime>
+      <Cursor1Time time="0ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="257"></NameColumnWidth>
+      <ValueColumnWidth column_width="84"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject type="group" fp_name="HLS Process Summary Group">
+      <obj_property name="label">HLS Process Summary</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="group" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec//AESL_inst_DigitRec_activity">
+         <obj_property name="label">AESL_inst_DigitRec_activity</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="UseFullPath">true</obj_property>
+         <obj_property name="ElementShortName">AESL_inst_DigitRec_activity</obj_property>
+         <obj_property name="ObjectShortName">AESL_inst_DigitRec_activity</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+         <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="CustomSignalColor">turquoise</obj_property>
+         <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+         <obj_property name="Render_Data">/apatb_DigitRec_top/AESL_inst_DigitRec//AESL_inst_DigitRec_activity.dataflowTxWaveData.Cycles</obj_property>
+         <obj_property name="Value_Data">/apatb_DigitRec_top/AESL_inst_DigitRec//AESL_inst_DigitRec_activity.dataflowTxWaveData.OutStanding</obj_property>
+         <obj_property name="Detail_Data">/apatb_DigitRec_top/AESL_inst_DigitRec//AESL_inst_DigitRec_activity.dataflowTxTooltipData</obj_property>
+         <wvobject type="group" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry3_U0/DigitRec_entry3_U0_activity">
+            <obj_property name="label">DigitRec_entry3_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">DigitRec_entry3_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">DigitRec_entry3_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry3_U0/DigitRec_entry3_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry3_U0/DigitRec_entry3_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry3_U0/DigitRec_entry3_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/DigitRec_entry28_U0_activity">
+            <obj_property name="label">DigitRec_entry28_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">DigitRec_entry28_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">DigitRec_entry28_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/DigitRec_entry28_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/DigitRec_entry28_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/DigitRec_entry28_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/Loop_1_proc_U0_activity">
+            <obj_property name="label">Loop_1_proc_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">Loop_1_proc_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Loop_1_proc_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/Loop_1_proc_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/Loop_1_proc_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/Loop_1_proc_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_2_proc_U0/Loop_2_proc_U0_activity">
+            <obj_property name="label">Loop_2_proc_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">Loop_2_proc_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Loop_2_proc_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_2_proc_U0/Loop_2_proc_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_2_proc_U0/Loop_2_proc_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_2_proc_U0/Loop_2_proc_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/Loop_TEST_LOOP_proc2_U0_activity">
+            <obj_property name="label">Loop_TEST_LOOP_proc2_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">Loop_TEST_LOOP_proc2_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Loop_TEST_LOOP_proc2_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/Loop_TEST_LOOP_proc2_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/Loop_TEST_LOOP_proc2_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/Loop_TEST_LOOP_proc2_U0_activity.dataflowTxTooltipData</obj_property>
+            <wvobject type="group" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/grp_knn_vote_fu_1155/grp_knn_vote_fu_1155_activity">
+               <obj_property name="label">grp_knn_vote_fu_1155_activity</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <obj_property name="UseFullPath">true</obj_property>
+               <obj_property name="ElementShortName">grp_knn_vote_fu_1155_activity</obj_property>
+               <obj_property name="ObjectShortName">grp_knn_vote_fu_1155_activity</obj_property>
+               <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+               <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+               <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="CustomSignalColor">turquoise</obj_property>
+               <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+               <obj_property name="Render_Data">/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/grp_knn_vote_fu_1155/grp_knn_vote_fu_1155_activity.dataflowTxWaveData.Cycles</obj_property>
+               <obj_property name="Value_Data">/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/grp_knn_vote_fu_1155/grp_knn_vote_fu_1155_activity.dataflowTxWaveData.OutStanding</obj_property>
+               <obj_property name="Detail_Data">/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/grp_knn_vote_fu_1155/grp_knn_vote_fu_1155_activity.dataflowTxTooltipData</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/Loop_4_proc_U0_activity">
+            <obj_property name="label">Loop_4_proc_U0_activity</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <obj_property name="UseFullPath">true</obj_property>
+            <obj_property name="ElementShortName">Loop_4_proc_U0_activity</obj_property>
+            <obj_property name="ObjectShortName">Loop_4_proc_U0_activity</obj_property>
+            <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+            <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+            <obj_property name="EnumTransactionColorTable">0=blank ffff=blank 0bad=#FF0000</obj_property>
+            <obj_property name="UseCustomSignalColor">true</obj_property>
+            <obj_property name="CustomSignalColor">turquoise</obj_property>
+            <obj_property name="EnumTransactionValueTable">65535=blank</obj_property>
+            <obj_property name="Render_Data">/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/Loop_4_proc_U0_activity.dataflowTxWaveData.Cycles</obj_property>
+            <obj_property name="Value_Data">/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/Loop_4_proc_U0_activity.dataflowTxWaveData.OutStanding</obj_property>
+            <obj_property name="Detail_Data">/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/Loop_4_proc_U0_activity.dataflowTxTooltipData</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject type="protoinst" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec//AESL_inst_DigitRec_activity">
+      <obj_property name="ElementShortName">AESL_inst_DigitRec_activity</obj_property>
+      <obj_property name="ObjectShortName">AESL_inst_DigitRec_activity</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="AESL_inst_DigitRec_group">
+      <obj_property name="label">AESL_inst_DigitRec</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="protoinst" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry3_U0/DigitRec_entry3_U0_activity">
+         <obj_property name="ElementShortName">DigitRec_entry3_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">DigitRec_entry3_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/DigitRec_entry28_U0_activity">
+         <obj_property name="ElementShortName">DigitRec_entry28_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">DigitRec_entry28_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/Loop_1_proc_U0_activity">
+         <obj_property name="ElementShortName">Loop_1_proc_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Loop_1_proc_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_2_proc_U0/Loop_2_proc_U0_activity">
+         <obj_property name="ElementShortName">Loop_2_proc_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Loop_2_proc_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/Loop_TEST_LOOP_proc2_U0_activity">
+         <obj_property name="ElementShortName">Loop_TEST_LOOP_proc2_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Loop_TEST_LOOP_proc2_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="protoinst" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/Loop_4_proc_U0_activity">
+         <obj_property name="ElementShortName">Loop_4_proc_U0_activity</obj_property>
+         <obj_property name="ObjectShortName">Loop_4_proc_U0_activity</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="AESL_inst_DigitRec_Handshake_group">
+         <obj_property name="label">Block-level handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/ap_start">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/ap_ready">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/ap_done">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="DigitRec_entry3_U0_group">
+         <obj_property name="label">DigitRec_entry3_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="DigitRec_entry3_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="DigitRec_entry3_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry3_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry3_U0/real_start">
+               <obj_property name="ElementShortName">real_start</obj_property>
+               <obj_property name="ObjectShortName">real_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry3_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry3_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry3_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="DigitRec_entry3_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="num_training_out_group">
+               <obj_property name="label">num_training_out(num_training_c1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry3_U0/num_training_out_blk_n">
+                  <obj_property name="ElementShortName">num_training_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">num_training_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry3_U0/num_training_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry3_U0/num_training_out_full_n">
+                  <obj_property name="ElementShortName">num_training_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">num_training_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry3_U0/num_training_out_write">
+                  <obj_property name="ElementShortName">num_training_out_write</obj_property>
+                  <obj_property name="ObjectShortName">num_training_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="num_test_out_group">
+               <obj_property name="label">num_test_out(num_test_c2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry3_U0/num_test_out_blk_n">
+                  <obj_property name="ElementShortName">num_test_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">num_test_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry3_U0/num_test_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry3_U0/num_test_out_full_n">
+                  <obj_property name="ElementShortName">num_test_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">num_test_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry3_U0/num_test_out_write">
+                  <obj_property name="ElementShortName">num_test_out_write</obj_property>
+                  <obj_property name="ObjectShortName">num_test_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="DigitRec_entry28_U0_group">
+         <obj_property name="label">DigitRec_entry28_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="DigitRec_entry28_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="num_training_group">
+               <obj_property name="label">num_training(num_training_c1_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/num_training_blk_n">
+                  <obj_property name="ElementShortName">num_training_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">num_training_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/num_training_dout">
+                  <obj_property name="ElementShortName">num_training_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">num_training_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/num_training_empty_n">
+                  <obj_property name="ElementShortName">num_training_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">num_training_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/num_training_read">
+                  <obj_property name="ElementShortName">num_training_read</obj_property>
+                  <obj_property name="ObjectShortName">num_training_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="num_test_group">
+               <obj_property name="label">num_test(num_test_c2_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/num_test_blk_n">
+                  <obj_property name="ElementShortName">num_test_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">num_test_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/num_test_dout">
+                  <obj_property name="ElementShortName">num_test_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">num_test_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/num_test_empty_n">
+                  <obj_property name="ElementShortName">num_test_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">num_test_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/num_test_read">
+                  <obj_property name="ElementShortName">num_test_read</obj_property>
+                  <obj_property name="ObjectShortName">num_test_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="DigitRec_entry28_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="DigitRec_entry28_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="num_training_out_group">
+               <obj_property name="label">num_training_out(num_training_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/num_training_out_blk_n">
+                  <obj_property name="ElementShortName">num_training_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">num_training_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/num_training_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/num_training_out_full_n">
+                  <obj_property name="ElementShortName">num_training_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">num_training_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/num_training_out_write">
+                  <obj_property name="ElementShortName">num_training_out_write</obj_property>
+                  <obj_property name="ObjectShortName">num_training_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="num_test_out_group">
+               <obj_property name="label">num_test_out(num_test_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/num_test_out_blk_n">
+                  <obj_property name="ElementShortName">num_test_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">num_test_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/num_test_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/num_test_out_full_n">
+                  <obj_property name="ElementShortName">num_test_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">num_test_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/num_test_out_write">
+                  <obj_property name="ElementShortName">num_test_out_write</obj_property>
+                  <obj_property name="ObjectShortName">num_test_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="num_test_out1_group">
+               <obj_property name="label">num_test_out1(num_test_c1108_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/num_test_out1_blk_n">
+                  <obj_property name="ElementShortName">num_test_out1_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">num_test_out1_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/num_test_out1_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/num_test_out1_full_n">
+                  <obj_property name="ElementShortName">num_test_out1_full_n</obj_property>
+                  <obj_property name="ObjectShortName">num_test_out1_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/DigitRec_entry28_U0/num_test_out1_write">
+                  <obj_property name="ElementShortName">num_test_out1_write</obj_property>
+                  <obj_property name="ObjectShortName">num_test_out1_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Loop_1_proc_U0_group">
+         <obj_property name="label">Loop_1_proc_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Loop_1_proc_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="global_training_set_V_group">
+               <obj_property name="label">global_training_set_V(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/global_training_set_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/global_training_set_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/global_training_set_V_ce0">
+                  <obj_property name="ElementShortName">global_training_set_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">global_training_set_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_1_proc_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_1_proc_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="training_set_V_0_group">
+               <obj_property name="label">training_set_V_0(training_set_V_0_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_0_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_0_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_0_ce0">
+                  <obj_property name="ElementShortName">training_set_V_0_ce0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_0_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_0_we0">
+                  <obj_property name="ElementShortName">training_set_V_0_we0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_0_we0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="training_set_V_1_group">
+               <obj_property name="label">training_set_V_1(training_set_V_1_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_1_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_1_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_1_ce0">
+                  <obj_property name="ElementShortName">training_set_V_1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_1_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_1_we0">
+                  <obj_property name="ElementShortName">training_set_V_1_we0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_1_we0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="training_set_V_2_group">
+               <obj_property name="label">training_set_V_2(training_set_V_2_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_2_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_2_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_2_ce0">
+                  <obj_property name="ElementShortName">training_set_V_2_ce0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_2_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_2_we0">
+                  <obj_property name="ElementShortName">training_set_V_2_we0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_2_we0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="training_set_V_3_group">
+               <obj_property name="label">training_set_V_3(training_set_V_3_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_3_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_3_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_3_ce0">
+                  <obj_property name="ElementShortName">training_set_V_3_ce0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_3_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_3_we0">
+                  <obj_property name="ElementShortName">training_set_V_3_we0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_3_we0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="training_set_V_4_group">
+               <obj_property name="label">training_set_V_4(training_set_V_4_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_4_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_4_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_4_ce0">
+                  <obj_property name="ElementShortName">training_set_V_4_ce0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_4_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_4_we0">
+                  <obj_property name="ElementShortName">training_set_V_4_we0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_4_we0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="training_set_V_5_group">
+               <obj_property name="label">training_set_V_5(training_set_V_5_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_5_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_5_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_5_ce0">
+                  <obj_property name="ElementShortName">training_set_V_5_ce0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_5_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_5_we0">
+                  <obj_property name="ElementShortName">training_set_V_5_we0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_5_we0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="training_set_V_6_group">
+               <obj_property name="label">training_set_V_6(training_set_V_6_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_6_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_6_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_6_ce0">
+                  <obj_property name="ElementShortName">training_set_V_6_ce0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_6_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_6_we0">
+                  <obj_property name="ElementShortName">training_set_V_6_we0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_6_we0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="training_set_V_7_group">
+               <obj_property name="label">training_set_V_7(training_set_V_7_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_7_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_7_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_7_ce0">
+                  <obj_property name="ElementShortName">training_set_V_7_ce0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_7_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_7_we0">
+                  <obj_property name="ElementShortName">training_set_V_7_we0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_7_we0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="training_set_V_8_group">
+               <obj_property name="label">training_set_V_8(training_set_V_8_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_8_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_8_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_8_ce0">
+                  <obj_property name="ElementShortName">training_set_V_8_ce0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_8_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_8_we0">
+                  <obj_property name="ElementShortName">training_set_V_8_we0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_8_we0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="training_set_V_9_group">
+               <obj_property name="label">training_set_V_9(training_set_V_9_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_9_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_9_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_9_ce0">
+                  <obj_property name="ElementShortName">training_set_V_9_ce0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_9_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/training_set_V_9_we0">
+                  <obj_property name="ElementShortName">training_set_V_9_we0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_9_we0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_1_proc_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Loop_2_proc_U0_group">
+         <obj_property name="label">Loop_2_proc_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Loop_2_proc_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="num_test_group">
+               <obj_property name="label">num_test(num_test_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_2_proc_U0/num_test_blk_n">
+                  <obj_property name="ElementShortName">num_test_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">num_test_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_2_proc_U0/num_test_dout">
+                  <obj_property name="ElementShortName">num_test_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">num_test_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_2_proc_U0/num_test_empty_n">
+                  <obj_property name="ElementShortName">num_test_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">num_test_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_2_proc_U0/num_test_read">
+                  <obj_property name="ElementShortName">num_test_read</obj_property>
+                  <obj_property name="ObjectShortName">num_test_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="global_test_set_V_group">
+               <obj_property name="label">global_test_set_V(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_2_proc_U0/global_test_set_V_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_2_proc_U0/global_test_set_V_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_2_proc_U0/global_test_set_V_ce0">
+                  <obj_property name="ElementShortName">global_test_set_V_ce0</obj_property>
+                  <obj_property name="ObjectShortName">global_test_set_V_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_2_proc_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_2_proc_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_2_proc_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_2_proc_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_2_proc_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_2_proc_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_2_proc_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="test_set_V_group">
+               <obj_property name="label">test_set_V(test_set_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_2_proc_U0/test_set_V_blk_n">
+                  <obj_property name="ElementShortName">test_set_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">test_set_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_2_proc_U0/test_set_V_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_2_proc_U0/test_set_V_full_n">
+                  <obj_property name="ElementShortName">test_set_V_full_n</obj_property>
+                  <obj_property name="ObjectShortName">test_set_V_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_2_proc_U0/test_set_V_write">
+                  <obj_property name="ElementShortName">test_set_V_write</obj_property>
+                  <obj_property name="ObjectShortName">test_set_V_write</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Loop_TEST_LOOP_proc2_U0_group">
+         <obj_property name="label">Loop_TEST_LOOP_proc2_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="protoinst" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/grp_knn_vote_fu_1155/grp_knn_vote_fu_1155_activity">
+            <obj_property name="ElementShortName">grp_knn_vote_fu_1155_activity</obj_property>
+            <obj_property name="ObjectShortName">grp_knn_vote_fu_1155_activity</obj_property>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_TEST_LOOP_proc2_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="num_training_group">
+               <obj_property name="label">num_training(num_training_c_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/num_training_blk_n">
+                  <obj_property name="ElementShortName">num_training_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">num_training_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/num_training_dout">
+                  <obj_property name="ElementShortName">num_training_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">num_training_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/num_training_empty_n">
+                  <obj_property name="ElementShortName">num_training_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">num_training_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/num_training_read">
+                  <obj_property name="ElementShortName">num_training_read</obj_property>
+                  <obj_property name="ObjectShortName">num_training_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="num_test_group">
+               <obj_property name="label">num_test(num_test_c1108_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/num_test_blk_n">
+                  <obj_property name="ElementShortName">num_test_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">num_test_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/num_test_dout">
+                  <obj_property name="ElementShortName">num_test_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">num_test_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/num_test_empty_n">
+                  <obj_property name="ElementShortName">num_test_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">num_test_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/num_test_read">
+                  <obj_property name="ElementShortName">num_test_read</obj_property>
+                  <obj_property name="ObjectShortName">num_test_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="training_set_V_0_group">
+               <obj_property name="label">training_set_V_0(training_set_V_0_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_0_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_0_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_0_ce0">
+                  <obj_property name="ElementShortName">training_set_V_0_ce0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_0_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="training_set_V_1_group">
+               <obj_property name="label">training_set_V_1(training_set_V_1_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_1_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_1_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_1_ce0">
+                  <obj_property name="ElementShortName">training_set_V_1_ce0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_1_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="training_set_V_2_group">
+               <obj_property name="label">training_set_V_2(training_set_V_2_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_2_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_2_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_2_ce0">
+                  <obj_property name="ElementShortName">training_set_V_2_ce0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_2_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="training_set_V_3_group">
+               <obj_property name="label">training_set_V_3(training_set_V_3_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_3_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_3_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_3_ce0">
+                  <obj_property name="ElementShortName">training_set_V_3_ce0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_3_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="training_set_V_4_group">
+               <obj_property name="label">training_set_V_4(training_set_V_4_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_4_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_4_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_4_ce0">
+                  <obj_property name="ElementShortName">training_set_V_4_ce0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_4_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="training_set_V_5_group">
+               <obj_property name="label">training_set_V_5(training_set_V_5_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_5_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_5_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_5_ce0">
+                  <obj_property name="ElementShortName">training_set_V_5_ce0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_5_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="training_set_V_6_group">
+               <obj_property name="label">training_set_V_6(training_set_V_6_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_6_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_6_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_6_ce0">
+                  <obj_property name="ElementShortName">training_set_V_6_ce0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_6_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="training_set_V_7_group">
+               <obj_property name="label">training_set_V_7(training_set_V_7_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_7_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_7_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_7_ce0">
+                  <obj_property name="ElementShortName">training_set_V_7_ce0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_7_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="training_set_V_8_group">
+               <obj_property name="label">training_set_V_8(training_set_V_8_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_8_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_8_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_8_ce0">
+                  <obj_property name="ElementShortName">training_set_V_8_ce0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_8_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="training_set_V_9_group">
+               <obj_property name="label">training_set_V_9(training_set_V_9_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_9_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_9_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/training_set_V_9_ce0">
+                  <obj_property name="ElementShortName">training_set_V_9_ce0</obj_property>
+                  <obj_property name="ObjectShortName">training_set_V_9_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="test_set_V_group">
+               <obj_property name="label">test_set_V(test_set_V_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/test_set_V_blk_n">
+                  <obj_property name="ElementShortName">test_set_V_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">test_set_V_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/test_set_V_dout">
+                  <obj_property name="ElementShortName">test_set_V_dout[255:0]</obj_property>
+                  <obj_property name="ObjectShortName">test_set_V_dout[255:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/test_set_V_empty_n">
+                  <obj_property name="ElementShortName">test_set_V_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">test_set_V_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/test_set_V_read">
+                  <obj_property name="ElementShortName">test_set_V_read</obj_property>
+                  <obj_property name="ObjectShortName">test_set_V_read</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_TEST_LOOP_proc2_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_TEST_LOOP_proc2_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="num_test_out_group">
+               <obj_property name="label">num_test_out(num_test_c1109_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/num_test_out_blk_n">
+                  <obj_property name="ElementShortName">num_test_out_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">num_test_out_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/num_test_out_din">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/num_test_out_full_n">
+                  <obj_property name="ElementShortName">num_test_out_full_n</obj_property>
+                  <obj_property name="ObjectShortName">num_test_out_full_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/num_test_out_write">
+                  <obj_property name="ElementShortName">num_test_out_write</obj_property>
+                  <obj_property name="ObjectShortName">num_test_out_write</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="results_group">
+               <obj_property name="label">results(results_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/results_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/results_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/results_ce0">
+                  <obj_property name="ElementShortName">results_ce0</obj_property>
+                  <obj_property name="ObjectShortName">results_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/results_we0">
+                  <obj_property name="ElementShortName">results_we0</obj_property>
+                  <obj_property name="ObjectShortName">results_we0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="grp_knn_vote_fu_1155_group">
+            <obj_property name="label">grp_knn_vote_fu_1155</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="grp_knn_vote_fu_1155_Handshake_group">
+               <obj_property name="label">Block-level handshake</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/grp_knn_vote_fu_1155/ap_start">
+                  <obj_property name="ElementShortName">ap_start</obj_property>
+                  <obj_property name="ObjectShortName">ap_start</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/grp_knn_vote_fu_1155/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_TEST_LOOP_proc2_U0/grp_knn_vote_fu_1155/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="Loop_4_proc_U0_group">
+         <obj_property name="label">Loop_4_proc_U0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="group" fp_name="Loop_4_proc_U0_Input_group">
+            <obj_property name="label">Input Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="num_test_group">
+               <obj_property name="label">num_test(num_test_c1109_U, FIFO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/num_test_blk_n">
+                  <obj_property name="ElementShortName">num_test_blk_n</obj_property>
+                  <obj_property name="ObjectShortName">num_test_blk_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/num_test_dout">
+                  <obj_property name="ElementShortName">num_test_dout[31:0]</obj_property>
+                  <obj_property name="ObjectShortName">num_test_dout[31:0]</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/num_test_empty_n">
+                  <obj_property name="ElementShortName">num_test_empty_n</obj_property>
+                  <obj_property name="ObjectShortName">num_test_empty_n</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/num_test_read">
+                  <obj_property name="ElementShortName">num_test_read</obj_property>
+                  <obj_property name="ObjectShortName">num_test_read</obj_property>
+               </wvobject>
+            </wvobject>
+            <wvobject type="group" fp_name="results_group">
+               <obj_property name="label">results(results_U, PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/results_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/results_q0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/results_ce0">
+                  <obj_property name="ElementShortName">results_ce0</obj_property>
+                  <obj_property name="ObjectShortName">results_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/ap_ready">
+                  <obj_property name="ElementShortName">ap_ready</obj_property>
+                  <obj_property name="ObjectShortName">ap_ready</obj_property>
+                  <obj_property name="label">ap_ready(t_read)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_4_proc_U0_Handshake_group">
+            <obj_property name="label">Block-level handshake</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/ap_start">
+               <obj_property name="ElementShortName">ap_start</obj_property>
+               <obj_property name="ObjectShortName">ap_start</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/ap_ready">
+               <obj_property name="ElementShortName">ap_ready</obj_property>
+               <obj_property name="ObjectShortName">ap_ready</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/ap_done">
+               <obj_property name="ElementShortName">ap_done</obj_property>
+               <obj_property name="ObjectShortName">ap_done</obj_property>
+            </wvobject>
+            <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/ap_continue">
+               <obj_property name="ElementShortName">ap_continue</obj_property>
+               <obj_property name="ObjectShortName">ap_continue</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject type="group" fp_name="Loop_4_proc_U0_Output_group">
+            <obj_property name="label">Output Channels</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject type="group" fp_name="global_results_group">
+               <obj_property name="label">global_results(PIPO)</obj_property>
+               <obj_property name="DisplayName">label</obj_property>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/global_results_address0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/global_results_d0">
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/global_results_ce0">
+                  <obj_property name="ElementShortName">global_results_ce0</obj_property>
+                  <obj_property name="ObjectShortName">global_results_ce0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/global_results_we0">
+                  <obj_property name="ElementShortName">global_results_we0</obj_property>
+                  <obj_property name="ObjectShortName">global_results_we0</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/ap_done">
+                  <obj_property name="ElementShortName">ap_done</obj_property>
+                  <obj_property name="ObjectShortName">ap_done</obj_property>
+                  <obj_property name="label">ap_done(i_write)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+               <wvobject type="logic" fp_name="/apatb_DigitRec_top/AESL_inst_DigitRec/Loop_4_proc_U0/ap_continue">
+                  <obj_property name="ElementShortName">ap_continue</obj_property>
+                  <obj_property name="ObjectShortName">ap_continue</obj_property>
+                  <obj_property name="label">ap_continue(i_full_n)</obj_property>
+                  <obj_property name="DisplayName">label</obj_property>
+               </wvobject>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

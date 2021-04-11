@@ -1,0 +1,6 @@
+DigitRec_trainingbkb
+DigitRec_test_set_V
+DigitRec_results
+DigitRec_array3
+DigitRec_knn_set
+DigitRec

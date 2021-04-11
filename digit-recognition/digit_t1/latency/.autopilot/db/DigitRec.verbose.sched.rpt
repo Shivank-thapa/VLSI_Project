@@ -1,0 +1,195 @@
+
+
+================================================================
+== Vivado HLS Report for 'DigitRec'
+================================================================
+* Date:           Sat Apr 10 19:07:28 2021
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        digit_t1
+* Solution:       latency
+* Product family: kintexuplus
+* Target device:  xcku5p-ffvb676-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     8.663|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-------+----------+-------+----------+----------+
+    |      Latency     |     Interval     | Pipeline |
+    |  min  |    max   |  min  |    max   |   Type   |
+    +-------+----------+-------+----------+----------+
+    |  18007|  72148007|  18003|  72128002| dataflow |
+    +-------+----------+-------+----------+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 8
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 8, States = { 1 2 3 4 5 6 7 8 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.83>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%num_test_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %num_test)" [digitrec.cpp:144]   --->   Operation 9 'read' 'num_test_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%num_training_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %num_training)" [digitrec.cpp:144]   --->   Operation 10 'read' 'num_training_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%num_test_c2 = alloca i32, align 4" [digitrec.cpp:144]   --->   Operation 11 'alloca' 'num_test_c2' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%num_training_c1 = alloca i32, align 4" [digitrec.cpp:143]   --->   Operation 12 'alloca' 'num_training_c1' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%num_test_c1109 = alloca i32, align 4" [digitrec.cpp:144]   --->   Operation 13 'alloca' 'num_test_c1109' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%num_test_c1108 = alloca i32, align 4" [digitrec.cpp:144]   --->   Operation 14 'alloca' 'num_test_c1108' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%num_test_c = alloca i32, align 4" [digitrec.cpp:144]   --->   Operation 15 'alloca' 'num_test_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%num_training_c = alloca i32, align 4" [digitrec.cpp:143]   --->   Operation 16 'alloca' 'num_training_c' <Predicate = true> <Delay = 0.00> <Core = "FIFO">   --->   Core 32 'FIFO' <Latency = 0> <II = 1> <Delay = 1.83> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 32> <Depth = 2> <FIFO>
+ST_1 : Operation 17 [1/1] (1.83ns)   --->   "call void @DigitRec.entry3(i32 %num_training_read, i32 %num_test_read, i32* %num_training_c1, i32* %num_test_c2)" [digitrec.cpp:144]   --->   Operation 17 'call' <Predicate = true> <Delay = 1.83> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "call fastcc void @DigitRec.entry28(i32* nocapture %num_training_c1, i32* nocapture %num_test_c2, i32* %num_training_c, i32* %num_test_c, i32* %num_test_c1108)" [digitrec.cpp:145]   --->   Operation 18 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 19 [2/2] (0.00ns)   --->   "call fastcc void @Loop_1_proc([18000 x i256]* %global_training_set_V, [1800 x i256]* @training_set_V_0, [1800 x i256]* @training_set_V_1, [1800 x i256]* @training_set_V_2, [1800 x i256]* @training_set_V_3, [1800 x i256]* @training_set_V_4, [1800 x i256]* @training_set_V_5, [1800 x i256]* @training_set_V_6, [1800 x i256]* @training_set_V_7, [1800 x i256]* @training_set_V_8, [1800 x i256]* @training_set_V_9)"   --->   Operation 19 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_3 : Operation 20 [2/2] (0.00ns)   --->   "call fastcc void @Loop_2_proc(i32* %num_test_c, [2000 x i256]* %global_test_set_V)" [digitrec.cpp:144]   --->   Operation 20 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 21 [1/2] (0.00ns)   --->   "call fastcc void @Loop_1_proc([18000 x i256]* %global_training_set_V, [1800 x i256]* @training_set_V_0, [1800 x i256]* @training_set_V_1, [1800 x i256]* @training_set_V_2, [1800 x i256]* @training_set_V_3, [1800 x i256]* @training_set_V_4, [1800 x i256]* @training_set_V_5, [1800 x i256]* @training_set_V_6, [1800 x i256]* @training_set_V_7, [1800 x i256]* @training_set_V_8, [1800 x i256]* @training_set_V_9)"   --->   Operation 21 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 22 [1/2] (0.00ns)   --->   "call fastcc void @Loop_2_proc(i32* %num_test_c, [2000 x i256]* %global_test_set_V)" [digitrec.cpp:144]   --->   Operation 22 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 23 [2/2] (0.00ns)   --->   "call fastcc void @Loop_TEST_LOOP_proc2(i32* %num_training_c, i32* %num_test_c1108, i32* %num_test_c1109)" [digitrec.cpp:143]   --->   Operation 23 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 24 [1/2] (0.00ns)   --->   "call fastcc void @Loop_TEST_LOOP_proc2(i32* %num_training_c, i32* %num_test_c1108, i32* %num_test_c1109)" [digitrec.cpp:143]   --->   Operation 24 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 7 <SV = 6> <Delay = 0.00>
+ST_7 : Operation 25 [2/2] (0.00ns)   --->   "call fastcc void @Loop_4_proc(i32* nocapture %num_test_c1109, [2000 x i8]* %global_results, [2000 x i4]* @results)" [digitrec.cpp:144]   --->   Operation 25 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 8 <SV = 7> <Delay = 0.00>
+ST_8 : Operation 26 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecChannel([13 x i8]* @test_set_OC_V34_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2000, i32 2000, i256* @test_set_V, i256* @test_set_V)"   --->   Operation 26 'specchannel' 'empty' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 27 [1/1] (0.00ns)   --->   "%empty_41 = call i32 (...)* @_ssdm_op_SpecInterface(i256* @test_set_V, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)"   --->   Operation 27 'specinterface' 'empty_41' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str2) nounwind" [digitrec.cpp:145]   --->   Operation 28 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 29 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([18000 x i256]* %global_training_set_V), !map !48"   --->   Operation 29 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 30 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([2000 x i256]* %global_test_set_V), !map !54"   --->   Operation 30 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 31 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([2000 x i8]* %global_results), !map !60"   --->   Operation 31 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 32 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %num_training), !map !64"   --->   Operation 32 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 33 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %num_test), !map !70"   --->   Operation 33 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 34 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([9 x i8]* @DigitRec_str) nounwind"   --->   Operation 34 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 35 [1/1] (0.00ns)   --->   "%empty_42 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @num_training_c_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 3, i32 0, i32* %num_training_c, i32* %num_training_c)" [digitrec.cpp:143]   --->   Operation 35 'specchannel' 'empty_42' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 36 [1/1] (0.00ns)   --->   "%empty_43 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %num_training_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [digitrec.cpp:143]   --->   Operation 36 'specinterface' 'empty_43' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 37 [1/1] (0.00ns)   --->   "%empty_44 = call i32 (...)* @_ssdm_op_SpecChannel([11 x i8]* @num_test_c_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %num_test_c, i32* %num_test_c)" [digitrec.cpp:144]   --->   Operation 37 'specchannel' 'empty_44' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 38 [1/1] (0.00ns)   --->   "%empty_45 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %num_test_c, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [digitrec.cpp:144]   --->   Operation 38 'specinterface' 'empty_45' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 39 [1/1] (0.00ns)   --->   "%empty_46 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @num_test_c1108_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 3, i32 0, i32* %num_test_c1108, i32* %num_test_c1108)" [digitrec.cpp:144]   --->   Operation 39 'specchannel' 'empty_46' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 40 [1/1] (0.00ns)   --->   "%empty_47 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %num_test_c1108, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [digitrec.cpp:144]   --->   Operation 40 'specinterface' 'empty_47' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 41 [1/1] (0.00ns)   --->   "%empty_48 = call i32 (...)* @_ssdm_op_SpecChannel([16 x i8]* @num_training_c1_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %num_training_c1, i32* %num_training_c1)" [digitrec.cpp:143]   --->   Operation 41 'specchannel' 'empty_48' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 42 [1/1] (0.00ns)   --->   "%empty_49 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %num_training_c1, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [digitrec.cpp:143]   --->   Operation 42 'specinterface' 'empty_49' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 43 [1/1] (0.00ns)   --->   "%empty_50 = call i32 (...)* @_ssdm_op_SpecChannel([12 x i8]* @num_test_c2_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %num_test_c2, i32* %num_test_c2)" [digitrec.cpp:144]   --->   Operation 43 'specchannel' 'empty_50' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 44 [1/1] (0.00ns)   --->   "%empty_51 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %num_test_c2, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [digitrec.cpp:144]   --->   Operation 44 'specinterface' 'empty_51' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 45 [1/1] (0.00ns)   --->   "%empty_52 = call i32 (...)* @_ssdm_op_SpecChannel([15 x i8]* @num_test_c1109_str, i32 1, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 0, i32* %num_test_c1109, i32* %num_test_c1109)" [digitrec.cpp:144]   --->   Operation 45 'specchannel' 'empty_52' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 46 [1/1] (0.00ns)   --->   "%empty_53 = call i32 (...)* @_ssdm_op_SpecInterface(i32* %num_test_c1109, [8 x i8]* @ap_fifo_str, i32 0, i32 0, [1 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str, [1 x i8]* @p_str, [1 x i8]* @p_str, i32 2, i32 2, i32 16, i32 16, [1 x i8]* @p_str, [1 x i8]* @p_str)" [digitrec.cpp:144]   --->   Operation 46 'specinterface' 'empty_53' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 47 [1/2] (0.00ns)   --->   "call fastcc void @Loop_4_proc(i32* nocapture %num_test_c1109, [2000 x i8]* %global_results, [2000 x i4]* @results)" [digitrec.cpp:144]   --->   Operation 47 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_8 : Operation 48 [1/1] (0.00ns)   --->   "ret void" [digitrec.cpp:221]   --->   Operation 48 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.84ns
+The critical path consists of the following:
+	wire read on port 'num_test' (digitrec.cpp:144) [18]  (0 ns)
+	'call' operation ('call_ln144', digitrec.cpp:144) to 'DigitRec.entry3' [45]  (1.84 ns)
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+ <State 6>: 0ns
+The critical path consists of the following:
+
+ <State 7>: 0ns
+The critical path consists of the following:
+
+ <State 8>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

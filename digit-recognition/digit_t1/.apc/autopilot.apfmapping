@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="digitrec.cpp" path="C:\Users\Shivank\Downloads\Sem2\VLSI\digit-recognition\digitrec.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="196data" path="C:\Users\Shivank\Downloads\Sem2\VLSI\digit-recognition\196data"/>
+    <originFiles name="utils.cpp" path="C:\Users\Shivank\Downloads\Sem2\VLSI\digit-recognition\utils.cpp"/>
+    <originFiles name="digit_recognition.cpp" path="C:\Users\Shivank\Downloads\Sem2\VLSI\digit-recognition\digit_recognition.cpp"/>
+    <originFiles name="check_result.cpp" path="C:\Users\Shivank\Downloads\Sem2\VLSI\digit-recognition\check_result.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

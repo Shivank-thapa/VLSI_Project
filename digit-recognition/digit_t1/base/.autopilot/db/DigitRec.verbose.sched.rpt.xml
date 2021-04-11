@@ -1,0 +1,54 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'DigitRec'" level="0">
+<item name = "Date">Sat Apr 10 17:38:23 2021
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">digit_t1</item>
+<item name = "Solution">base</item>
+<item name = "Product family">kintexuplus</item>
+<item name = "Target device">xcku5p-ffvb676-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 6.474, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">36004, 9584046004, 36004, 9584046004, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">36000, 36000, 2, -, -, 18000, no</column>
+<column name="- Loop 2">0, 4000, 2, -, -, 0 ~ 2000, no</column>
+<column name="- TEST_LOOP">0, 9584002000, 3061 ~ 4792001, -, -, 0 ~ 2000, no</column>
+<column name=" + SET_KNN_SET">30, 30, 1, -, -, 30, no</column>
+<column name=" + TRAINING_LOOP">2662, 4791601, 2662, -, -, 1 ~ 1800, no</column>
+<column name="  ++ LANES">2660, 2660, 266, -, -, 10, no</column>
+<column name="   +++ LANES.1">256, 256, 1, -, -, 256, no</column>
+<column name="   +++ FIND_MAX_DIST">6, 6, 2, -, -, 3, no</column>
+<column name="- Loop 4">0, 4000, 2, -, -, 0 ~ 2000, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>
